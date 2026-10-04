@@ -1,20 +1,6 @@
 {
   "files": [
     {
-      "name": "BeamClientSetup-2.0.6.exe",
-      "tag": "v2.0.9",
-      "bytes": 23590649,
-      "sha256": "879468c12a01dc10af04178871729ee01718de1cc003e07ae77a381a797108c8",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.0.9/BeamClientSetup-2.0.6.exe"
-    },
-    {
-      "name": "BeamServerSetup-2.0.9.exe",
-      "tag": "v2.0.9",
-      "bytes": 17422629,
-      "sha256": "ef21152a64902f57f0093bec5876af8c5e3a1e4c58a36065ea415d4d942c8323",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.0.9/BeamServerSetup-2.0.9.exe"
-    },
-    {
       "name": "BeamAndroid-0.2.1-arm32.apk",
       "tag": "android-v0.2.1",
       "bytes": 5343872,
@@ -48,131 +34,23 @@
       "bytes": 5737083,
       "sha256": "4ae31d46b8ba4af58d7cee71b3190e66aa6d369a0c2f2a00355d8c8c7abdc60d",
       "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.2.1/BeamAndroid-0.2.1-x86_64.apk"
+    },
+    {
+      "name": "BeamServerSetup-2.0.10.exe",
+      "tag": "v2.0.10",
+      "bytes": 17422954,
+      "sha256": "b2a91580b5630414d69b1ada3b7cf26b39bb76e09385af0a238beec32f14b60d",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.0.10/BeamServerSetup-2.0.10.exe"
+    },
+    {
+      "name": "BeamClientSetup-2.0.6.exe",
+      "tag": "v2.0.10",
+      "bytes": 23590649,
+      "sha256": "879468c12a01dc10af04178871729ee01718de1cc003e07ae77a381a797108c8",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.0.10/BeamClientSetup-2.0.6.exe"
     }
   ],
   "sources": [
-    {
-      "tag": "v2.0.9",
-      "name": "Beam-Windows-2.0.9-source.tar.gz",
-      "source_commit": "3690b452a3cd8c5a44a1617afc9564f70285bd1b",
-      "sha256": "d12cc15df078b2c783998978541047c2f5928276a46d124f4c747d452ca8e6d9",
-      "bytes": 172608194,
-      "file_count": 4723,
-      "submodules": [
-        {
-          "path": "Beam-Windows-2.0.9/client/app/SDL_GameControllerDB",
-          "commit": "8d9fefd7b810f2541f78cc7a8ccbd185bc84c7a5"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/client/moonlight-common-c/moonlight-common-c/enet",
-          "commit": "aca87840b57f045a1f7f9299e4b1b9b8e2a5e2f1"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/client/moonlight-common-c/moonlight-common-c/nanors",
-          "commit": "b1e3c22ca0cdc0bb83e3cd6ed1a2fc77869ed99a"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/client/qmdnsengine/qmdnsengine",
-          "commit": "920c097ffa742e2968290f15d4dde6693aec02e5"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/packaging/linux/flatpak/deps/flatpak-builder-tools",
-          "commit": "ea92dc22ab7e4ab44133407b883c9a6792e54302"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/packaging/linux/flatpak/deps/shared-modules",
-          "commit": "231e052557e37e120c94d584881f43daac3391fd"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/Simple-Web-Server",
-          "commit": "5b29c7004cc53252a8eff06d62899c8847ada971"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/TPCircularBuffer",
-          "commit": "cc520397504bb72bc6df79ff03eb72988a6dc50d"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/ViGEmClient",
-          "commit": "8d71f6740ffff4671cdadbca255ce528e3cd3fef"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/build-deps",
-          "commit": "a9a7f86328963837e30e21c8901faba00fe81542"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/doxyconfig",
-          "commit": "1188ef2b96efb3e003a591ee01714339c2d9161c"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/doxyconfig/doxygen-awesome-css",
-          "commit": "c085b886e38d47c30c7cad0865d641cdf5f2df86"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/googletest",
-          "commit": "52eb8108c5bdec04579160ae17225d66034bd723"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/inputtino",
-          "commit": "504f0abc7da8ebc351f8300fb2ed98db5438ee48"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/libdisplaydevice",
-          "commit": "f31e46d8736fa6932d34c1417111e60ca507b29f"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/libdisplaydevice/third-party/doxyconfig",
-          "commit": "a73f908fb70fac4f6076a28f0a751239ea5ac2d3"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/libdisplaydevice/third-party/doxyconfig/doxygen-awesome-css",
-          "commit": "98dd024a650e71d8afd1215c27134aa779bdbbd7"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/libdisplaydevice/third-party/googletest",
-          "commit": "f8d7d77c06936315286eb55f8de22cd23c188571"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/moonlight-common-c",
-          "commit": "c999436858471dfefa7617af3b7dc03ec1644ce4"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/moonlight-common-c/enet",
-          "commit": "115a10baa1d7f291ff5b870765610fd3b4a6e43c"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/nanors",
-          "commit": "19f07b513e924e471cadd141943c1ec4adc8d0e0"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/nv-codec-headers",
-          "commit": "22441b505d9d9afc1e3002290820909846c24bdc"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/nvapi-open-source-sdk",
-          "commit": "cce4e90b629f712ae6eebafac97739bd1196cdef"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/tray/third-party/doxyconfig",
-          "commit": "a73f908fb70fac4f6076a28f0a751239ea5ac2d3"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/tray/third-party/doxyconfig/doxygen-awesome-css",
-          "commit": "98dd024a650e71d8afd1215c27134aa779bdbbd7"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/tray/third-party/googletest",
-          "commit": "f8d7d77c06936315286eb55f8de22cd23c188571"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/wayland-protocols",
-          "commit": "0091197f5c1b1f2c131f1410e99f9c95d50646be"
-        },
-        {
-          "path": "Beam-Windows-2.0.9/server/third-party/wlr-protocols",
-          "commit": "a741f0ac5d655338a5100fc34bc8cec87d237346"
-        }
-      ]
-    },
     {
       "tag": "android-v0.2.1",
       "name": "Beam-Android-0.2.1-source.tar.gz",
@@ -181,6 +59,128 @@
       "bytes": 17921047,
       "file_count": 637,
       "submodules": []
+    },
+    {
+      "tag": "v2.0.10",
+      "name": "Beam-Windows-2.0.10-source.tar.gz",
+      "source_commit": "8acef32797fa3a0ad4dc231bf20d7beee4827987",
+      "sha256": "39fee78ec361434711b7525289ba3996af1755719c1e02832b591ee0038d3cfd",
+      "bytes": 172613574,
+      "file_count": 4726,
+      "submodules": [
+        {
+          "path": "Beam-Windows-2.0.10/client/app/SDL_GameControllerDB",
+          "commit": "8d9fefd7b810f2541f78cc7a8ccbd185bc84c7a5"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/client/moonlight-common-c/moonlight-common-c/enet",
+          "commit": "aca87840b57f045a1f7f9299e4b1b9b8e2a5e2f1"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/client/moonlight-common-c/moonlight-common-c/nanors",
+          "commit": "b1e3c22ca0cdc0bb83e3cd6ed1a2fc77869ed99a"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/client/qmdnsengine/qmdnsengine",
+          "commit": "920c097ffa742e2968290f15d4dde6693aec02e5"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/packaging/linux/flatpak/deps/flatpak-builder-tools",
+          "commit": "ea92dc22ab7e4ab44133407b883c9a6792e54302"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/packaging/linux/flatpak/deps/shared-modules",
+          "commit": "231e052557e37e120c94d584881f43daac3391fd"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/Simple-Web-Server",
+          "commit": "5b29c7004cc53252a8eff06d62899c8847ada971"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/TPCircularBuffer",
+          "commit": "cc520397504bb72bc6df79ff03eb72988a6dc50d"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/ViGEmClient",
+          "commit": "8d71f6740ffff4671cdadbca255ce528e3cd3fef"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/build-deps",
+          "commit": "a9a7f86328963837e30e21c8901faba00fe81542"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/doxyconfig",
+          "commit": "1188ef2b96efb3e003a591ee01714339c2d9161c"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/doxyconfig/doxygen-awesome-css",
+          "commit": "c085b886e38d47c30c7cad0865d641cdf5f2df86"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/googletest",
+          "commit": "52eb8108c5bdec04579160ae17225d66034bd723"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/inputtino",
+          "commit": "504f0abc7da8ebc351f8300fb2ed98db5438ee48"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/libdisplaydevice",
+          "commit": "f31e46d8736fa6932d34c1417111e60ca507b29f"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/libdisplaydevice/third-party/doxyconfig",
+          "commit": "a73f908fb70fac4f6076a28f0a751239ea5ac2d3"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/libdisplaydevice/third-party/doxyconfig/doxygen-awesome-css",
+          "commit": "98dd024a650e71d8afd1215c27134aa779bdbbd7"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/libdisplaydevice/third-party/googletest",
+          "commit": "f8d7d77c06936315286eb55f8de22cd23c188571"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/moonlight-common-c",
+          "commit": "c999436858471dfefa7617af3b7dc03ec1644ce4"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/moonlight-common-c/enet",
+          "commit": "115a10baa1d7f291ff5b870765610fd3b4a6e43c"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/nanors",
+          "commit": "19f07b513e924e471cadd141943c1ec4adc8d0e0"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/nv-codec-headers",
+          "commit": "22441b505d9d9afc1e3002290820909846c24bdc"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/nvapi-open-source-sdk",
+          "commit": "cce4e90b629f712ae6eebafac97739bd1196cdef"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/tray/third-party/doxyconfig",
+          "commit": "a73f908fb70fac4f6076a28f0a751239ea5ac2d3"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/tray/third-party/doxyconfig/doxygen-awesome-css",
+          "commit": "98dd024a650e71d8afd1215c27134aa779bdbbd7"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/tray/third-party/googletest",
+          "commit": "f8d7d77c06936315286eb55f8de22cd23c188571"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/wayland-protocols",
+          "commit": "0091197f5c1b1f2c131f1410e99f9c95d50646be"
+        },
+        {
+          "path": "Beam-Windows-2.0.10/server/third-party/wlr-protocols",
+          "commit": "a741f0ac5d655338a5100fc34bc8cec87d237346"
+        }
+      ]
     }
   ]
 }
