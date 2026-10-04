@@ -15,39 +15,39 @@
       "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.0.9/BeamServerSetup-2.0.9.exe"
     },
     {
-      "name": "BeamAndroid-0.2.0-arm32.apk",
-      "tag": "android-v0.2.0",
+      "name": "BeamAndroid-0.2.1-arm32.apk",
+      "tag": "android-v0.2.1",
       "bytes": 5343872,
-      "sha256": "8da510c97446ceb0b585f8cb761cfe5aae57ad912986d5c791de41f9b765e866",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.2.0/BeamAndroid-0.2.0-arm32.apk"
+      "sha256": "aeeb4a21a84dcf6a00e282a215a67faa518d595417313c988da5e31f7468ab6b",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.2.1/BeamAndroid-0.2.1-arm32.apk"
     },
     {
-      "name": "BeamAndroid-0.2.0-arm64.apk",
-      "tag": "android-v0.2.0",
+      "name": "BeamAndroid-0.2.1-arm64.apk",
+      "tag": "android-v0.2.1",
       "bytes": 6068862,
-      "sha256": "2f3b3f6c149f7f190055e8b9324a0b6903182bd6e3eddcbae9aac8dbc5cfd600",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.2.0/BeamAndroid-0.2.0-arm64.apk"
+      "sha256": "0c1036057f5e6070fff69d9dded546dcef7cc94c1219b8b59665e46fac7aae68",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.2.1/BeamAndroid-0.2.1-arm64.apk"
     },
     {
-      "name": "BeamAndroid-0.2.0-universal.apk",
-      "tag": "android-v0.2.0",
+      "name": "BeamAndroid-0.2.1-universal.apk",
+      "tag": "android-v0.2.1",
       "bytes": 11451239,
-      "sha256": "2fcd105372c5596388ddc527c3d191a328c50087377f564bc6bb346cd6abfc9e",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.2.0/BeamAndroid-0.2.0-universal.apk"
+      "sha256": "6cb846717080221df69248ece0b29e8d8205e85c35cf98b8ed28ebd01551d322",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.2.1/BeamAndroid-0.2.1-universal.apk"
     },
     {
-      "name": "BeamAndroid-0.2.0-x86.apk",
-      "tag": "android-v0.2.0",
+      "name": "BeamAndroid-0.2.1-x86.apk",
+      "tag": "android-v0.2.1",
       "bytes": 5544568,
-      "sha256": "d0a2c9f85161d6a2934bba621ee3599b25ee4222c2f6928e7ebbcc5b8f2c32f2",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.2.0/BeamAndroid-0.2.0-x86.apk"
+      "sha256": "321e32066f15f78ca8ddb0bd8f9dda8c04275de4ddaeec0d8d9be49bd5ac772a",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.2.1/BeamAndroid-0.2.1-x86.apk"
     },
     {
-      "name": "BeamAndroid-0.2.0-x86_64.apk",
-      "tag": "android-v0.2.0",
+      "name": "BeamAndroid-0.2.1-x86_64.apk",
+      "tag": "android-v0.2.1",
       "bytes": 5737083,
-      "sha256": "be6952f436a38b8c255850d9bd763be581c972742c3880fa599616c388fb38da",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.2.0/BeamAndroid-0.2.0-x86_64.apk"
+      "sha256": "4ae31d46b8ba4af58d7cee71b3190e66aa6d369a0c2f2a00355d8c8c7abdc60d",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.2.1/BeamAndroid-0.2.1-x86_64.apk"
     }
   ],
   "sources": [
@@ -174,12 +174,12 @@
       ]
     },
     {
-      "tag": "android-v0.2.0",
-      "name": "Beam-Android-0.2.0-source.tar.gz",
-      "source_commit": "f326b53cea502adf0b18752d9226eaaf1bbaf50e",
-      "sha256": "1725a505a8e472efd5f4e90ac926c5fac09e8dec58857ff210b914993a259981",
-      "bytes": 17918569,
-      "file_count": 634,
+      "tag": "android-v0.2.1",
+      "name": "Beam-Android-0.2.1-source.tar.gz",
+      "source_commit": "66f066bf871372c051237d220b93672123e3bfc4",
+      "sha256": "a7776869526e7bd1eb5e0e0690b73aef39d846e9e9b1fe52e143e4603f651684",
+      "bytes": 17921047,
+      "file_count": 637,
       "submodules": []
     }
   ]
