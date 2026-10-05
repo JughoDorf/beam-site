@@ -8,11 +8,11 @@
       "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.0.10/BeamServerSetup-2.0.10.exe"
     },
     {
-      "name": "BeamClientSetup-2.0.6.exe",
-      "tag": "v2.0.10",
-      "bytes": 23590649,
-      "sha256": "879468c12a01dc10af04178871729ee01718de1cc003e07ae77a381a797108c8",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.0.10/BeamClientSetup-2.0.6.exe"
+      "tag": "client-v2.0.7",
+      "name": "BeamClientSetup-2.0.7.exe",
+      "bytes": 23600371,
+      "sha256": "568d6184c26acb0d88de539b8bf1b8518fc7e5b361d8b72ca617e84ee6fb1eeb",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/client-v2.0.7/BeamClientSetup-2.0.7.exe"
     },
     {
       "name": "BeamAndroid-0.3.0-arm32.apk",
@@ -181,6 +181,32 @@
       "bytes": 17934946,
       "file_count": 643,
       "submodules": []
+    },
+    {
+      "tag": "client-v2.0.7",
+      "name": "Beam-Client-2.0.7-source.tar.gz",
+      "source_commit": "a72cfdb70ffc208ee300c67d6872d483a68718a2",
+      "bytes": 3209397,
+      "sha256": "3929d7a47581b5572e132c9f4da348014a7b45cd8c1ef836e3b584e560f4e2e7",
+      "file_count": 551,
+      "submodules": [
+        {
+          "path": "Beam-Client-2.0.7/client/app/SDL_GameControllerDB",
+          "commit": "8d9fefd7b810f2541f78cc7a8ccbd185bc84c7a5"
+        },
+        {
+          "path": "Beam-Client-2.0.7/client/moonlight-common-c/moonlight-common-c/enet",
+          "commit": "aca87840b57f045a1f7f9299e4b1b9b8e2a5e2f1"
+        },
+        {
+          "path": "Beam-Client-2.0.7/client/moonlight-common-c/moonlight-common-c/nanors",
+          "commit": "b1e3c22ca0cdc0bb83e3cd6ed1a2fc77869ed99a"
+        },
+        {
+          "path": "Beam-Client-2.0.7/client/qmdnsengine/qmdnsengine",
+          "commit": "920c097ffa742e2968290f15d4dde6693aec02e5"
+        }
+      ]
     }
   ]
 }

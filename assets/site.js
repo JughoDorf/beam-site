@@ -1,5 +1,5 @@
 'use strict';
-// Core downloads and navigation work without JavaScript. Only the APK variant changes here.
+// Downloads work without JavaScript. Animation never gates a download or navigation.
 const variants = {
   universal: { size: 11463583, file: 'BeamAndroid-0.3.0-universal.apk' },
   arm64: { size: 6081206, file: 'BeamAndroid-0.3.0-arm64.apk' },
@@ -19,4 +19,37 @@ function updateVariant() {
 if (picker && androidLink && androidSize) {
   picker.addEventListener('change', updateVariant);
   updateVariant();
+}
+
+const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+if (!motionPreference.matches && 'IntersectionObserver' in window) {
+  const blocks = document.querySelectorAll('.feature, .download-card, .setup-grid li, .closing');
+  const observer = new IntersectionObserver(entries => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      entry.target.classList.remove('reveal-pending');
+      entry.target.classList.add('reveal-visible');
+      observer.unobserve(entry.target);
+    }
+  }, { rootMargin: '0px 0px 40px 0px', threshold: 0.08 });
+  for (const block of blocks) {
+    if (block.getBoundingClientRect().top < window.innerHeight) continue;
+    block.classList.add('reveal-pending');
+    observer.observe(block);
+    block.addEventListener('animationend', () => block.classList.remove('reveal-visible'), { once: true });
+  }
+  // Reveal keyboard-focused controls immediately.
+  document.addEventListener('focusin', event => {
+    const block = event.target.closest('.reveal-pending');
+    if (!block) return;
+    block.classList.remove('reveal-pending');
+    observer.unobserve(block);
+  });
+  const stopMotion = () => {
+    if (!motionPreference.matches) return;
+    observer.disconnect();
+    for (const block of blocks) block.classList.remove('reveal-pending', 'reveal-visible');
+  };
+  if (motionPreference.addEventListener) motionPreference.addEventListener('change', stopMotion);
+  else motionPreference.addListener(stopMotion);
 }
