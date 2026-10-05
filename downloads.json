@@ -1,41 +1,6 @@
 {
   "files": [
     {
-      "name": "BeamAndroid-0.2.1-arm32.apk",
-      "tag": "android-v0.2.1",
-      "bytes": 5343872,
-      "sha256": "aeeb4a21a84dcf6a00e282a215a67faa518d595417313c988da5e31f7468ab6b",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.2.1/BeamAndroid-0.2.1-arm32.apk"
-    },
-    {
-      "name": "BeamAndroid-0.2.1-arm64.apk",
-      "tag": "android-v0.2.1",
-      "bytes": 6068862,
-      "sha256": "0c1036057f5e6070fff69d9dded546dcef7cc94c1219b8b59665e46fac7aae68",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.2.1/BeamAndroid-0.2.1-arm64.apk"
-    },
-    {
-      "name": "BeamAndroid-0.2.1-universal.apk",
-      "tag": "android-v0.2.1",
-      "bytes": 11451239,
-      "sha256": "6cb846717080221df69248ece0b29e8d8205e85c35cf98b8ed28ebd01551d322",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.2.1/BeamAndroid-0.2.1-universal.apk"
-    },
-    {
-      "name": "BeamAndroid-0.2.1-x86.apk",
-      "tag": "android-v0.2.1",
-      "bytes": 5544568,
-      "sha256": "321e32066f15f78ca8ddb0bd8f9dda8c04275de4ddaeec0d8d9be49bd5ac772a",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.2.1/BeamAndroid-0.2.1-x86.apk"
-    },
-    {
-      "name": "BeamAndroid-0.2.1-x86_64.apk",
-      "tag": "android-v0.2.1",
-      "bytes": 5737083,
-      "sha256": "4ae31d46b8ba4af58d7cee71b3190e66aa6d369a0c2f2a00355d8c8c7abdc60d",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.2.1/BeamAndroid-0.2.1-x86_64.apk"
-    },
-    {
       "name": "BeamServerSetup-2.0.10.exe",
       "tag": "v2.0.10",
       "bytes": 17422954,
@@ -48,18 +13,44 @@
       "bytes": 23590649,
       "sha256": "879468c12a01dc10af04178871729ee01718de1cc003e07ae77a381a797108c8",
       "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.0.10/BeamClientSetup-2.0.6.exe"
+    },
+    {
+      "name": "BeamAndroid-0.3.0-arm32.apk",
+      "tag": "android-v0.3.0",
+      "bytes": 5356216,
+      "sha256": "4bff7d9e723c3d44c7ce8dff55f570601963ee70e37e896391af0690356ec511",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.3.0/BeamAndroid-0.3.0-arm32.apk"
+    },
+    {
+      "name": "BeamAndroid-0.3.0-arm64.apk",
+      "tag": "android-v0.3.0",
+      "bytes": 6081206,
+      "sha256": "01cb27793dd0cd9c33c5138561ec11824c8fc092bafb18f253bf1cc0b7e6e732",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.3.0/BeamAndroid-0.3.0-arm64.apk"
+    },
+    {
+      "name": "BeamAndroid-0.3.0-universal.apk",
+      "tag": "android-v0.3.0",
+      "bytes": 11463583,
+      "sha256": "ea3cd435f8d137d9f56a9c6c08019b7585b85978924ddc21fec67dc57fe5ad2c",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.3.0/BeamAndroid-0.3.0-universal.apk"
+    },
+    {
+      "name": "BeamAndroid-0.3.0-x86.apk",
+      "tag": "android-v0.3.0",
+      "bytes": 5556912,
+      "sha256": "8f9827172e6aa2993ee708c8d43934618c331f073c6e44cea05f70119ffc1f1b",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.3.0/BeamAndroid-0.3.0-x86.apk"
+    },
+    {
+      "name": "BeamAndroid-0.3.0-x86_64.apk",
+      "tag": "android-v0.3.0",
+      "bytes": 5749427,
+      "sha256": "44a987fd924bdcd82c6079dc6e0e926aa6bc445383bc20ff29aad6529d61200d",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.3.0/BeamAndroid-0.3.0-x86_64.apk"
     }
   ],
   "sources": [
-    {
-      "tag": "android-v0.2.1",
-      "name": "Beam-Android-0.2.1-source.tar.gz",
-      "source_commit": "66f066bf871372c051237d220b93672123e3bfc4",
-      "sha256": "a7776869526e7bd1eb5e0e0690b73aef39d846e9e9b1fe52e143e4603f651684",
-      "bytes": 17921047,
-      "file_count": 637,
-      "submodules": []
-    },
     {
       "tag": "v2.0.10",
       "name": "Beam-Windows-2.0.10-source.tar.gz",
@@ -181,6 +172,15 @@
           "commit": "a741f0ac5d655338a5100fc34bc8cec87d237346"
         }
       ]
+    },
+    {
+      "tag": "android-v0.3.0",
+      "name": "Beam-Android-0.3.0-source.tar.gz",
+      "source_commit": "0ef614e37eb6ab8d5b88ceb7ad0944fb40fcab37",
+      "sha256": "358df6ad8c3fa6afc95f73eef5e627d2ed669c9ca9aa3236005d7506889dc210",
+      "bytes": 17934946,
+      "file_count": 643,
+      "submodules": []
     }
   ]
 }
