@@ -1,53 +1,53 @@
 {
   "files": [
     {
-      "name": "BeamServerSetup-2.0.10.exe",
-      "tag": "v2.0.10",
-      "bytes": 17422954,
-      "sha256": "b2a91580b5630414d69b1ada3b7cf26b39bb76e09385af0a238beec32f14b60d",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.0.10/BeamServerSetup-2.0.10.exe"
+      "name": "BeamServerSetup-2.0.11.exe",
+      "bytes": 17441868,
+      "sha256": "bf469ec15db360d796735a10ad3fa2cbfba3c3b7894f586a3a5cba05f65504ea",
+      "tag": "v2.0.11",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.0.11/BeamServerSetup-2.0.11.exe"
     },
     {
-      "tag": "client-v2.0.7",
-      "name": "BeamClientSetup-2.0.7.exe",
-      "bytes": 23600371,
-      "sha256": "568d6184c26acb0d88de539b8bf1b8518fc7e5b361d8b72ca617e84ee6fb1eeb",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/client-v2.0.7/BeamClientSetup-2.0.7.exe"
+      "name": "BeamClientSetup-2.0.8.exe",
+      "bytes": 23608284,
+      "sha256": "012f50358b8ac57c7d620c4a9164c3f9ead90a4d8432e012bd57c41faf67602b",
+      "tag": "v2.0.11",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.0.11/BeamClientSetup-2.0.8.exe"
     },
     {
-      "name": "BeamAndroid-0.3.0-arm32.apk",
-      "tag": "android-v0.3.0",
-      "bytes": 5356216,
-      "sha256": "4bff7d9e723c3d44c7ce8dff55f570601963ee70e37e896391af0690356ec511",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.3.0/BeamAndroid-0.3.0-arm32.apk"
+      "name": "BeamAndroid-0.3.1-arm32.apk",
+      "tag": "android-v0.3.1",
+      "bytes": 5360312,
+      "sha256": "4dc976fead3869418224e6980b5081f31c4a62f34ff9b54b92b6e8fe6e5f2130",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.3.1/BeamAndroid-0.3.1-arm32.apk"
     },
     {
-      "name": "BeamAndroid-0.3.0-arm64.apk",
-      "tag": "android-v0.3.0",
+      "name": "BeamAndroid-0.3.1-arm64.apk",
+      "tag": "android-v0.3.1",
       "bytes": 6081206,
-      "sha256": "01cb27793dd0cd9c33c5138561ec11824c8fc092bafb18f253bf1cc0b7e6e732",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.3.0/BeamAndroid-0.3.0-arm64.apk"
+      "sha256": "883fe3d5376089345a42f258f3b92f54dab3c73b5b21ee22129da8111c9e08e2",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.3.1/BeamAndroid-0.3.1-arm64.apk"
     },
     {
-      "name": "BeamAndroid-0.3.0-universal.apk",
-      "tag": "android-v0.3.0",
+      "name": "BeamAndroid-0.3.1-universal.apk",
+      "tag": "android-v0.3.1",
       "bytes": 11463583,
-      "sha256": "ea3cd435f8d137d9f56a9c6c08019b7585b85978924ddc21fec67dc57fe5ad2c",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.3.0/BeamAndroid-0.3.0-universal.apk"
+      "sha256": "dd57d2523634d36d3cc1f74bdef6166dc8c5608668aca198bb1f38671d2f3f88",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.3.1/BeamAndroid-0.3.1-universal.apk"
     },
     {
-      "name": "BeamAndroid-0.3.0-x86.apk",
-      "tag": "android-v0.3.0",
+      "name": "BeamAndroid-0.3.1-x86.apk",
+      "tag": "android-v0.3.1",
       "bytes": 5556912,
-      "sha256": "8f9827172e6aa2993ee708c8d43934618c331f073c6e44cea05f70119ffc1f1b",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.3.0/BeamAndroid-0.3.0-x86.apk"
+      "sha256": "6b32cdeffb0abcd931c9862f76110feb654ef0dbf9b6a5891513130e9fad6af4",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.3.1/BeamAndroid-0.3.1-x86.apk"
     },
     {
-      "name": "BeamAndroid-0.3.0-x86_64.apk",
-      "tag": "android-v0.3.0",
+      "name": "BeamAndroid-0.3.1-x86_64.apk",
+      "tag": "android-v0.3.1",
       "bytes": 5749427,
-      "sha256": "44a987fd924bdcd82c6079dc6e0e926aa6bc445383bc20ff29aad6529d61200d",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.3.0/BeamAndroid-0.3.0-x86_64.apk"
+      "sha256": "50eba0e5427e137c7d52dc34f0b2ec22c7ec296ac019f1559e7c1eb65dee8680",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.3.1/BeamAndroid-0.3.1-x86_64.apk"
     }
   ],
   "sources": [
@@ -207,6 +207,139 @@
           "commit": "920c097ffa742e2968290f15d4dde6693aec02e5"
         }
       ]
+    },
+    {
+      "tag": "v2.0.11",
+      "name": "Beam-Windows-2.0.11-source.tar.gz",
+      "source_commit": "7634759f11304df352e8c6e172d866848396a2ec",
+      "sha256": "ee6e6777262ecaef065d9af3e7fafb6f12944171e50a002690f373dc4d8d6f3b",
+      "bytes": 172639020,
+      "file_count": 4732,
+      "submodules": [
+        {
+          "path": "Beam-Windows-2.0.11/client/app/SDL_GameControllerDB",
+          "commit": "8d9fefd7b810f2541f78cc7a8ccbd185bc84c7a5"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/client/moonlight-common-c/moonlight-common-c/enet",
+          "commit": "aca87840b57f045a1f7f9299e4b1b9b8e2a5e2f1"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/client/moonlight-common-c/moonlight-common-c/nanors",
+          "commit": "b1e3c22ca0cdc0bb83e3cd6ed1a2fc77869ed99a"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/client/qmdnsengine/qmdnsengine",
+          "commit": "920c097ffa742e2968290f15d4dde6693aec02e5"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/packaging/linux/flatpak/deps/flatpak-builder-tools",
+          "commit": "ea92dc22ab7e4ab44133407b883c9a6792e54302"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/packaging/linux/flatpak/deps/shared-modules",
+          "commit": "231e052557e37e120c94d584881f43daac3391fd"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/Simple-Web-Server",
+          "commit": "5b29c7004cc53252a8eff06d62899c8847ada971"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/TPCircularBuffer",
+          "commit": "cc520397504bb72bc6df79ff03eb72988a6dc50d"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/ViGEmClient",
+          "commit": "8d71f6740ffff4671cdadbca255ce528e3cd3fef"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/build-deps",
+          "commit": "a9a7f86328963837e30e21c8901faba00fe81542"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/doxyconfig",
+          "commit": "1188ef2b96efb3e003a591ee01714339c2d9161c"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/doxyconfig/doxygen-awesome-css",
+          "commit": "c085b886e38d47c30c7cad0865d641cdf5f2df86"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/googletest",
+          "commit": "52eb8108c5bdec04579160ae17225d66034bd723"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/inputtino",
+          "commit": "504f0abc7da8ebc351f8300fb2ed98db5438ee48"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/libdisplaydevice",
+          "commit": "f31e46d8736fa6932d34c1417111e60ca507b29f"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/libdisplaydevice/third-party/doxyconfig",
+          "commit": "a73f908fb70fac4f6076a28f0a751239ea5ac2d3"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/libdisplaydevice/third-party/doxyconfig/doxygen-awesome-css",
+          "commit": "98dd024a650e71d8afd1215c27134aa779bdbbd7"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/libdisplaydevice/third-party/googletest",
+          "commit": "f8d7d77c06936315286eb55f8de22cd23c188571"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/moonlight-common-c",
+          "commit": "c999436858471dfefa7617af3b7dc03ec1644ce4"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/moonlight-common-c/enet",
+          "commit": "115a10baa1d7f291ff5b870765610fd3b4a6e43c"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/nanors",
+          "commit": "19f07b513e924e471cadd141943c1ec4adc8d0e0"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/nv-codec-headers",
+          "commit": "22441b505d9d9afc1e3002290820909846c24bdc"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/nvapi-open-source-sdk",
+          "commit": "cce4e90b629f712ae6eebafac97739bd1196cdef"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/tray/third-party/doxyconfig",
+          "commit": "a73f908fb70fac4f6076a28f0a751239ea5ac2d3"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/tray/third-party/doxyconfig/doxygen-awesome-css",
+          "commit": "98dd024a650e71d8afd1215c27134aa779bdbbd7"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/tray/third-party/googletest",
+          "commit": "f8d7d77c06936315286eb55f8de22cd23c188571"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/wayland-protocols",
+          "commit": "0091197f5c1b1f2c131f1410e99f9c95d50646be"
+        },
+        {
+          "path": "Beam-Windows-2.0.11/server/third-party/wlr-protocols",
+          "commit": "a741f0ac5d655338a5100fc34bc8cec87d237346"
+        }
+      ],
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.0.11/Beam-Windows-2.0.11-source.tar.gz"
+    },
+    {
+      "tag": "android-v0.3.1",
+      "name": "Beam-Android-0.3.1-source.tar.gz",
+      "source_commit": "7634759f11304df352e8c6e172d866848396a2ec",
+      "sha256": "2e62a7a6bd1294564bec37f6eee50760b7f46866885ae8dca4f36f5da99df816",
+      "bytes": 17938827,
+      "file_count": 646,
+      "submodules": [],
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/android-v0.3.1/Beam-Android-0.3.1-source.tar.gz"
     }
   ]
 }
