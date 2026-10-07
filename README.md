@@ -45,4 +45,3 @@ https://github.com/pmh1314520/MCTier and https://wiki.slarker.me/application/eas
 Update addresses only after protocol verification, then run
 `python scripts/check_site.py`. Publishing this data does not publish a Beam
 binary release or change the stable downloads.
-
