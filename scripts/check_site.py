@@ -41,4 +41,15 @@ for item in metadata['files']:
     assert item['url'].startswith('https://github.com/JughoDorf/beam-site/releases/download/'), item['name']
     assert item['url'].endswith('/'+item['name']), item['name']
 assert 'JughoDorf/Beam/releases/' not in (root/'index.html').read_text(encoding='utf-8')
+catalog = (root/'easytier-nodes.txt').read_text(encoding='ascii')
+nodes = catalog.split()
+assert len(catalog) <= 2048 and 2 <= len(nodes) <= 8 and len(set(nodes)) == len(nodes)
+for node in nodes:
+    address = urlsplit(node)
+    assert address.scheme in ('tcp', 'udp') and address.hostname and address.port
+    assert address.path == '' and not address.username and not address.password
+    assert '.' in address.hostname and not address.hostname.endswith('.local')
+    assert not re.fullmatch(r'[0-9.]+', address.hostname)
+    assert 1 <= address.port <= 65535
+assert 'public.easytier.cn' not in nodes
 print('PASS: local resources, navigation, seven downloads, SHA-256 metadata, public repository links')

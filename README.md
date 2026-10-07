@@ -29,3 +29,20 @@ Releases, сверяются размеры и SHA-256.
 проверку. Ключи подписи и пароли никогда не загружаются сюда.
 
 Программы и сайт — GPL-3.0. Авторские уведомления программ сохранены в архивах.
+# EasyTier node catalog
+
+`easytier-nodes.txt` supplies candidate bootstrap nodes to the experimental
+Windows EasyTier module. Beam validates this bounded HTTPS list, adds built-in
+fallback candidates and tests real EasyTier connections before selection.
+This list is not a guarantee of uptime, relay permission or streaming speed.
+The server saves the chosen common pool in invitations; clients check that pool
+without selecting a different network independently. The feed contains only
+public node addresses, never Beam accounts, VPN identities or invitation keys.
+
+The current candidates passed isolated no-TUN EasyTier 2.6.4 handshake probes
+on 2026-10-08. Operator references:
+https://github.com/pmh1314520/MCTier and https://wiki.slarker.me/application/easytier.html.
+Update addresses only after protocol verification, then run
+`python scripts/check_site.py`. Publishing this data does not publish a Beam
+binary release or change the stable downloads.
+
