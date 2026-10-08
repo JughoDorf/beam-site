@@ -345,9 +345,9 @@
   "preview": {
     "tag": "easytier-preview-2026-10-08",
     "status": "prerelease",
-    "date": "2026-10-08",
+    "date": "2026-10-09",
     "release_url": "https://github.com/JughoDorf/beam-site/releases/tag/easytier-preview-2026-10-08",
-    "source_commit": "dc5bcf5ea380dc1ee58166552fc85bd2ed4a95c1",
+    "source_commit": "9f03360fdaa3d9315b9e5fe6929a220e5f79d0e1",
     "wan_video_tested": false,
     "files": [
       {
@@ -358,11 +358,11 @@
         "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamServerSetup-2.0.15.exe"
       },
       {
-        "name": "BeamClientSetup-2.0.10.exe",
-        "bytes": 23662937,
-        "sha256": "e2e2f2c7360e94859b38e54daaff36798c6a6ac9c4cc95fddde43bc5378dfad0",
+        "name": "BeamClientSetup-2.0.11.exe",
+        "bytes": 23680772,
+        "sha256": "7fdc0f172a4d126b82a571405ffeeee4e1163bf15e77ed1e949fe6ebb43c4157",
         "tag": "easytier-preview-2026-10-08",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamClientSetup-2.0.10.exe"
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamClientSetup-2.0.11.exe"
       },
       {
         "name": "BeamEasyTierSetup-0.1.2.exe",
@@ -435,6 +435,33 @@
         "sha256": "4f587921b1ccae48dd688aaeabd917b0fad0dfcc88a41b40d9a831c076240c8e",
         "tag": "easytier-preview-2026-10-08",
         "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamEasyTier-0.1.2-source.tar.gz"
+      },
+      {
+        "name": "Beam-Client-2.0.11-source.tar.gz",
+        "bytes": 3394161,
+        "sha256": "dd82e15829582d23970f31b0f79cb48f6212eee75955c7c17209a0e198e73fa4",
+        "tag": "easytier-preview-2026-10-08",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/Beam-Client-2.0.11-source.tar.gz",
+        "source_commit": "9f03360fdaa3d9315b9e5fe6929a220e5f79d0e1",
+        "file_count": 610,
+        "submodules": [
+          {
+            "path": "Beam-Client-2.0.11/client/app/SDL_GameControllerDB",
+            "commit": "8d9fefd7b810f2541f78cc7a8ccbd185bc84c7a5"
+          },
+          {
+            "path": "Beam-Client-2.0.11/client/moonlight-common-c/moonlight-common-c/enet",
+            "commit": "aca87840b57f045a1f7f9299e4b1b9b8e2a5e2f1"
+          },
+          {
+            "path": "Beam-Client-2.0.11/client/moonlight-common-c/moonlight-common-c/nanors",
+            "commit": "b1e3c22ca0cdc0bb83e3cd6ed1a2fc77869ed99a"
+          },
+          {
+            "path": "Beam-Client-2.0.11/client/qmdnsengine/qmdnsengine",
+            "commit": "920c097ffa742e2968290f15d4dde6693aec02e5"
+          }
+        ]
       }
     ],
     "instructions_url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/INSTALL-EASYTIER-ru.md",
