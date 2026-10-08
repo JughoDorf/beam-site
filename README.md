@@ -32,7 +32,7 @@ Releases, сверяются размеры и SHA-256.
 
 ## Предварительный выпуск EasyTier
 
-Раздел `#easytier` содержит единый тестовый комплект перед 2.1: Server 2.0.14,
+Раздел `#easytier` содержит единый тестовый комплект перед 2.1: Server 2.0.15,
 Windows Client 2.0.10, модуль 0.1.2 и Android 0.4.0. Release
 `easytier-preview-2026-10-08` отмечен как prerelease и не заменяет Latest.
 В `downloads.json` его файлы, исходники и инструкция находятся в `preview`;
