@@ -21,6 +21,28 @@ if (picker && androidLink && androidSize) {
   updateVariant();
 }
 
+// The preview channel is independent of the stable APK selector above.
+const previewVariants = {
+  universal: { size: 35499276, file: 'BeamAndroid-0.4.0-universal.apk' },
+  arm64: { size: 11987773, file: 'BeamAndroid-0.4.0-arm64.apk' },
+  arm32: { size: 10804033, file: 'BeamAndroid-0.4.0-arm32.apk' },
+  x86_64: { size: 12073783, file: 'BeamAndroid-0.4.0-x86_64.apk' },
+  x86: { size: 11942705, file: 'BeamAndroid-0.4.0-x86.apk' },
+};
+const previewPicker = document.getElementById('preview-android-variant');
+const previewLink = document.querySelector('[data-download="preview-android"]');
+const previewSize = document.querySelector('[data-size="preview-android"]');
+function updatePreviewVariant() {
+  const variant = previewVariants[previewPicker.value] || previewVariants.universal;
+  previewLink.href = `https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/${variant.file}`;
+  previewSize.textContent = `${new Intl.NumberFormat('ru-RU', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(variant.size / 1000000)} МБ`;
+  previewLink.setAttribute('aria-label', `Скачать Beam Android 0.4.0, тестовый выпуск, ${previewPicker.options[previewPicker.selectedIndex].text}`);
+}
+if (previewPicker && previewLink && previewSize) {
+  previewPicker.addEventListener('change', updatePreviewVariant);
+  updatePreviewVariant();
+}
+
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 if (!motionPreference.matches && 'IntersectionObserver' in window) {
   const blocks = document.querySelectorAll('.feature, .download-card, .setup-grid li, .closing');

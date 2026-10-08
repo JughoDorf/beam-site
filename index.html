@@ -12,8 +12,8 @@
   <meta property="og:url" content="https://jughodorf.github.io/beam-site/">
   <title>Beam — ваш компьютер всегда рядом</title>
   <link rel="icon" type="image/png" href="assets/beam.png">
-  <link rel="stylesheet" href="assets/site.css?v=20261005">
-  <script src="assets/site.js?v=20261005-release211" defer></script>
+  <link rel="stylesheet" href="assets/site.css?v=20261008-easytier-preview">
+  <script src="assets/site.js?v=20261008-easytier-preview" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к содержимому</a>
@@ -50,7 +50,7 @@
           <a class="text-link" href="#setup">С чего начать <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a>
         </div>
         <div class="hero-platforms"><svg class="icon" aria-hidden="true"><use href="#windows"/></svg><span>Windows</span><span class="separator"></span><svg class="icon" aria-hidden="true"><use href="#phone"/></svg><span>Android и TV</span></div>
-        <a class="latest-update" href="#downloads"><span class="update-tag">Новое</span><strong>Клиент Windows 2.0.8</strong></a>
+        <a class="latest-update" href="#easytier"><span class="update-tag">Тестовый выпуск</span><strong>Интернет через EasyTier · Windows и Android</strong></a>
       </div>
       <div class="hero-visual" aria-label="Иллюстрация: компьютер и телефон подключены к сеансу Beam">
         <div class="visual-glow"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
@@ -78,9 +78,49 @@
         <article class="feature"><div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#sliders"/></svg></div><span class="feature-number">03</span><h3>Всё нужное под рукой</h3><p>Перемещаемая кнопка меню в сеансе: статистика, выбор экрана, растяжение и управление подключением.</p></article>
       </div>
     </section>
+    <section class="section container preview-section" id="easytier" aria-labelledby="easytier-title">
+      <div class="section-heading"><div><span class="section-kicker">Следующий шаг для Beam</span><h2 id="easytier-title">Ваш ПК через интернет.</h2></div><p>Встроенный EasyTier для Windows и Android. Свой VPS для подключения через общие узлы не требуется.</p></div>
+      <div class="preview-notice"><span class="release-badge beta">Тестовый выпуск</span><p>Комплект перед версией 2.1. Автоматические проверки пройдены; плавность длительных интернет-сеансов на Pixel, ТВ и ПК ещё проверяем. <a href="#downloads">К стабильным выпускам</a></p></div>
+      <div class="download-grid">
+        <article class="download-card" data-product="preview-server">
+          <div class="card-top"><div class="platform-icon"><svg class="icon" aria-hidden="true"><use href="#monitor"/></svg></div><span class="release-badge beta">Предварительная</span></div>
+          <h3>Beam Server</h3><p class="card-description">EasyTier уже в установщике. Выберите компонент «Интернет через EasyTier».</p>
+          <div class="compatibility">Windows 10 / 11 · x64</div>
+          <div class="version-row"><strong>2.0.14</strong><span data-size="preview-server">25,84 МБ</span></div>
+          <a class="button primary download-button" data-download="preview-server" href="https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamServerSetup-2.0.14.exe"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Скачать сервер</a>
+          <div class="card-links"><a href="#easytier-setup">Как подключить</a><a href="sources.html?v=20261008-easytier-preview#easytier">Исходники</a></div>
+        </article>
+        <article class="download-card featured" data-product="preview-client">
+          <div class="card-top"><div class="platform-icon"><svg class="icon" aria-hidden="true"><use href="#windows"/></svg></div><span class="release-badge beta">Предварительная</span></div>
+          <h3>Клиент для Windows</h3><p class="card-description">Установите клиент и модуль EasyTier, затем импортируйте приглашение сервера.</p>
+          <div class="compatibility">Windows 10 / 11 · x64</div>
+          <div class="version-row"><strong>2.0.10</strong><span data-size="preview-client">23,66 МБ</span></div>
+          <a class="button primary download-button" data-download="preview-client" href="https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamClientSetup-2.0.10.exe"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Скачать клиент</a>
+          <div class="card-links"><a href="#easytier-setup">Как подключить</a><a href="sources.html?v=20261008-easytier-preview#easytier">Исходники</a></div>
+        </article>
+        <article class="download-card android-card" data-product="preview-android">
+          <div class="card-top"><div class="platform-icon"><svg class="icon" aria-hidden="true"><use href="#phone"/></svg></div><span class="release-badge beta">Предварительная</span></div>
+          <h3>Android и TV</h3><p class="card-description">EasyTier встроен в приложение. Для Pixel выбирайте ARM64, для неизвестной архитектуры — Universal.</p>
+          <label class="visually-hidden" for="preview-android-variant">Вариант APK с EasyTier</label>
+          <select id="preview-android-variant"><option value="universal">Universal · все архитектуры</option><option value="arm64">ARM64 · Pixel и 64-битные устройства</option><option value="arm32">ARM32 · 32-битные устройства</option><option value="x86_64">x86_64 · совместимые устройства</option><option value="x86">x86 · совместимые устройства</option></select>
+          <div class="version-row"><strong>0.4.0 <small>Android 5.0+ · EasyTier с 7.0</small></strong><span data-size="preview-android">35,50 МБ</span></div>
+          <a class="button primary download-button" data-download="preview-android" href="https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamAndroid-0.4.0-universal.apk"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Скачать APK</a>
+          <div class="card-links"><a href="#easytier-setup">Как подключить</a><a href="sources.html?v=20261008-easytier-preview#easytier">Исходники</a></div>
+          <noscript><p class="noscript-note">Без JavaScript доступен Universal APK.</p></noscript>
+        </article>
+      </div>
+      <div class="module-download"><div><strong>Модуль EasyTier для Windows · 0.1.2</strong><p>Нужен на ПК клиента. На сервере можно выбрать его при установке.</p></div><a class="button secondary" data-download="preview-module" href="https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamEasyTierSetup-0.1.2.exe">Скачать модуль · 8,61 МБ <svg class="icon" aria-hidden="true"><use href="#download"/></svg></a></div>
+      <details class="preview-guide" id="easytier-setup"><summary>Как подключиться и обновить Beam</summary><div class="preview-guide-content">
+        <p><strong>Перед обновлением Windows завершите сеанс и отключите EasyTier на обоих ПК.</strong> Установите новые сервер, клиент и модуль вместе. Пользователей и профили удалять не нужно; APK можно поставить поверх прежнего Beam.</p>
+        <ol><li><strong>Подготовьте сервер.</strong> В установщике отметьте «Интернет через EasyTier». В веб-панели «Интернет → EasyTier» подберите рабочие узлы, сохраните сеть и включите её.</li><li><strong>Передайте приглашение.</strong> Получите его в веб-панели и импортируйте в настройках клиента «Интернет через EasyTier».</li><li><strong>Подключите сеть.</strong> На Windows нужен модуль из кнопки выше, на Android он уже встроен. Подтвердите системное разрешение на создание адаптера или VPN.</li><li><strong>Начните сеанс.</strong> Дождитесь маршрута, нажмите «Добавить сервер в Beam» и используйте обычный вход или PIN-сопряжение.</li></ol>
+        <p>Общие узлы помогают устройствам найти друг друга. По возможности соединение идёт напрямую; иначе доступность и скорость зависят от ретранслятора. Android допускает один VPN в профиле. После смены сети может потребоваться повторное подключение. Приглашение храните в секрете.</p>
+        <div class="preview-links"><a href="https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/INSTALL-EASYTIER-ru.md">Полная инструкция</a><a href="https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamEasyTier-0.1.2-windows-x64.zip">Модуль для переносной версии</a></div>
+      </div></details>
+      <div class="preview-links"><a href="https://github.com/JughoDorf/beam-site/releases/tag/easytier-preview-2026-10-08">Что нового и все файлы</a><a href="https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/SHA256SUMS.txt">Контрольные суммы SHA-256</a></div>
+    </section>
     <section class="download-section" id="downloads">
       <div class="container">
-        <div class="section-heading"><div><span class="section-kicker">Начнём с установки</span><h2>Скачайте свой Beam.</h2></div><p>Сервер — на удалённый компьютер.<br>Клиент — на устройство, с которого подключаетесь.</p></div>
+        <div class="section-heading"><div><span class="section-kicker">Стабильные выпуски</span><h2>Скачайте свой Beam.</h2></div><p>Сервер — на удалённый компьютер.<br>Для нового встроенного EasyTier используйте <a class="inline-link" href="#easytier">тестовый комплект выше</a>.</p></div>
         <div class="download-grid">
           <article class="download-card" data-product="server">
             <div class="card-top"><div class="platform-icon"><svg class="icon" aria-hidden="true"><use href="#monitor"/></svg></div><span class="release-badge">Стабильная</span></div>
@@ -91,7 +131,7 @@
             <div class="card-links"><a href="https://github.com/JughoDorf/beam-site/releases/tag/v2.0.11">Что нового</a><a href="sources.html?v=20261005-release211">Исходники</a><a href="https://github.com/JughoDorf/beam-site/releases/download/v2.0.11/SHA256SUMS.txt">SHA-256</a></div>
           </article>
           <article class="download-card featured" data-product="client">
-            <div class="card-top"><div class="platform-icon"><svg class="icon" aria-hidden="true"><use href="#windows"/></svg></div><span class="release-badge new">Новый выпуск</span></div>
+            <div class="card-top"><div class="platform-icon"><svg class="icon" aria-hidden="true"><use href="#windows"/></svg></div><span class="release-badge">Стабильная</span></div>
             <h3>Клиент для Windows</h3><p class="card-description">Управляйте удалённым компьютером с другого ПК.</p>
             <div class="compatibility">Windows 10 / 11 · x64</div>
             <div class="version-row"><strong>2.0.8</strong><span data-size="client">23,61 МБ</span></div>

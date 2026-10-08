@@ -152,6 +152,32 @@ select{width:100%;height:39px;background:#f5f9ff;border:1px solid #cbdcf0;border
 .source-page .button{margin:12px 12px 12px 0}
 .source-page code{word-break:break-all;color:#3f5e87;font-size:12px}
 .source-page .notice{padding:18px 22px;border:1px solid #c4d9f5;border-radius:12px;background:#eaf3ff}
+.preview-section{padding-top:0}
+.preview-notice{display:flex;align-items:flex-start;gap:16px;background:#fff8e9;border:1px solid #eadab9;border-radius:14px;padding:17px 20px;margin-bottom:24px}
+.preview-notice p{margin:0;color:#695535;font-size:13px;line-height:1.8}
+.preview-notice .release-badge{margin-top:3px;flex-shrink:0}
+.preview-notice a,.preview-links a,.inline-link{color:#145bbd;text-decoration:underline;text-underline-offset:4px}
+.preview-section .compatibility{height:auto;min-height:39px}
+.module-download{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:23px 25px;border:1px solid #c4d9f5;border-radius:16px;background:#eaf3ff;margin-top:22px}
+.module-download strong{display:block;font-size:16px;font-weight:750}
+.module-download p{font-size:13px;color:var(--muted);margin:5px 0 0}
+.secondary{background:#fff;color:#1858bf;border:1px solid #a9c8f0;box-shadow:0 4px 12px #315b900d;flex-shrink:0}
+.secondary:hover{background:#f5f9ff;border-color:#6b9de0}
+.preview-guide{margin-top:24px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.preview-guide summary{cursor:pointer;padding:18px 22px;font-size:15px;font-weight:750;color:#243f62}
+.preview-guide-content{padding:0 22px 20px;font-size:14px;line-height:1.85;color:var(--muted)}
+.preview-guide-content p{margin:0 0 16px}
+.preview-guide-content ol{padding-left:22px;margin:0 0 16px}
+.preview-guide-content li{padding-left:4px;margin-bottom:12px}
+.preview-guide-content strong{color:#243f62}
+.preview-links{display:flex;flex-wrap:wrap;gap:10px 25px;margin-top:22px;font-size:13px;font-weight:650}
+@media(max-width:760px){
+ .preview-notice{flex-direction:column;gap:9px;padding:17px}.preview-notice .release-badge{margin-top:0}
+ .module-download{flex-direction:column;align-items:stretch;gap:17px;padding:22px}
+ .module-download .button{white-space:normal;font-size:13px}
+ .preview-guide summary{padding:17px;font-size:14px}.preview-guide-content{padding-inline:17px;font-size:13px}
+ .preview-links{font-size:12px;gap:10px 20px}
+}
 /* Repeating motion is decorative; core content remains visible without JS. */
 @keyframes phone-float{0%,100%{transform:translateY(0) rotate(7deg)}50%{transform:translateY(-7px) rotate(7deg)}}
 @keyframes hero-enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}

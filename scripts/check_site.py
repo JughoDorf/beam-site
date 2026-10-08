@@ -35,11 +35,33 @@ for filename, page in pages.items():
 
 metadata = json.loads((root/'downloads.json').read_text(encoding='utf-8'))
 assert len(metadata['files']) == 7
-for item in metadata['files']:
+preview = metadata['preview']
+assert preview['status'] == 'prerelease' and preview['wan_video_tested'] is False
+assert len(preview['files']) == 9 and len(preview['sources']) == 3
+assert re.fullmatch(r'[a-f0-9]{40}', preview['source_commit'])
+assert preview['release_url'] == 'https://github.com/JughoDorf/beam-site/releases/tag/' + preview['tag']
+current = metadata['files'] + preview['files'] + preview['sources']
+assert len({item['name'] for item in current}) == len(current)
+for item in current:
     assert re.fullmatch(r'[a-f0-9]{64}', item['sha256']), item['name']
     assert item['bytes'] > 1000000, item['name']
     assert item['url'].startswith('https://github.com/JughoDorf/beam-site/releases/download/'), item['name']
     assert item['url'].endswith('/'+item['name']), item['name']
+    assert item['url'].split('/')[-2] == item['tag'], item['name']
+known_downloads = {item['url'] for item in current}
+known_downloads.update(item['url'] for item in metadata['sources'] if 'url' in item)
+known_downloads.update('https://github.com/JughoDorf/beam-site/releases/download/' + item['tag'] + '/SHA256SUMS.txt' for item in current)
+known_downloads.add(preview['instructions_url'])
+for filename, page in pages.items():
+    for link in page.links:
+        if '/releases/download/' in link:
+            assert link in known_downloads, (filename, 'Missing download metadata', link)
+preview_prefix = 'https://github.com/JughoDorf/beam-site/releases/download/' + preview['tag'] + '/'
+assert preview['checksums_url'] == preview_prefix + 'SHA256SUMS.txt'
+assert preview['instructions_url'] == preview_prefix + 'INSTALL-EASYTIER-ru.md'
+assert set(x['name'] for x in metadata['files']) == {
+    'BeamServerSetup-2.0.11.exe', 'BeamClientSetup-2.0.8.exe',
+    *('BeamAndroid-0.3.1-' + abi + '.apk' for abi in ['arm32','arm64','universal','x86','x86_64'])}
 assert 'JughoDorf/Beam/releases/' not in (root/'index.html').read_text(encoding='utf-8')
 catalog = (root/'easytier-nodes.txt').read_text(encoding='ascii')
 nodes = catalog.split()
@@ -52,4 +74,4 @@ for node in nodes:
     assert not re.fullmatch(r'[0-9.]+', address.hostname)
     assert 1 <= address.port <= 65535
 assert 'public.easytier.cn' not in nodes
-print('PASS: local resources, navigation, seven downloads, SHA-256 metadata, public repository links')
+print('PASS: resources, navigation, 7 stable / 9 preview downloads, 3 preview sources, SHA-256, public links')
