@@ -60,11 +60,11 @@ preview_prefix = 'https://github.com/JughoDorf/beam-site/releases/download/' + p
 assert preview['checksums_url'] == preview_prefix + 'SHA256SUMS.txt'
 assert preview['instructions_url'] == preview_prefix + 'INSTALL-EASYTIER-ru.md'
 assert set(x['name'] for x in preview['files']) == {
-    'BeamServerSetup-2.1.0.exe', 'BeamClientSetup-2.1.2.exe',
+    'BeamServerSetup-2.1.0.exe', 'BeamClientSetup-2.1.3.exe',
     'BeamEasyTierSetup-0.1.2.exe', 'BeamEasyTier-0.1.2-windows-x64.zip',
     *('BeamAndroid-0.4.0-' + abi + '.apk' for abi in ['arm32','arm64','universal','x86','x86_64'])}
 assert set(x['name'] for x in preview['sources']) == {
-    'Beam-Windows-2.1.2-source.tar.gz', 'Beam-Android-0.4.0-source.tar.gz', 'BeamEasyTier-0.1.2-source.tar.gz'}
+    'Beam-Windows-2.1.3-source.tar.gz', 'Beam-Android-0.4.0-source.tar.gz', 'BeamEasyTier-0.1.2-source.tar.gz'}
 assert set(x['name'] for x in metadata['files']) == {
     'BeamServerSetup-2.0.11.exe', 'BeamClientSetup-2.0.8.exe',
     *('BeamAndroid-0.3.1-' + abi + '.apk' for abi in ['arm32','arm64','universal','x86','x86_64'])}
