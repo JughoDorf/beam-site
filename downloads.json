@@ -347,7 +347,7 @@
     "status": "prerelease",
     "date": "2026-10-10",
     "release_url": "https://github.com/JughoDorf/beam-site/releases/tag/easytier-preview-2026-10-08",
-    "source_commit": "cc4399be6cd9e5c24de8d4262bbfcedbd5a2b560",
+    "source_commit": "226372fc7d2846dae049e6fb281579e4b8ae449b",
     "wan_video_tested": false,
     "files": [
       {
@@ -358,11 +358,11 @@
         "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamServerSetup-2.1.0.exe"
       },
       {
-        "name": "BeamClientSetup-2.1.1.exe",
-        "bytes": 23700429,
-        "sha256": "42126f5deb52a3395464677b11ed6a840c4739b3e0a733de92b5949ddd3f9b08",
+        "name": "BeamClientSetup-2.1.2.exe",
+        "bytes": 23701889,
+        "sha256": "9574a61e4b63764cf468c4db70c0904e7f0f68a6421b7102f42cc060e50b5454",
         "tag": "easytier-preview-2026-10-08",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamClientSetup-2.1.1.exe"
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamClientSetup-2.1.2.exe"
       },
       {
         "name": "BeamEasyTierSetup-0.1.2.exe",
@@ -416,14 +416,14 @@
     ],
     "sources": [
       {
-        "name": "Beam-Windows-2.1.1-source.tar.gz",
-        "bytes": 172860631,
-        "sha256": "6acac8852f67254da5b01185aa4134dd0a9cb007c8953dea7e4bad9ddb4a25a4",
+        "name": "Beam-Windows-2.1.2-source.tar.gz",
+        "bytes": 172864549,
+        "sha256": "c094f814bad30e2fb22b6eaacbd73114e262d17ccfffcc2f01f1014aad343d97",
         "tag": "easytier-preview-2026-10-08",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/Beam-Windows-2.1.1-source.tar.gz",
-        "source_commit": "cc4399be6cd9e5c24de8d4262bbfcedbd5a2b560",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/Beam-Windows-2.1.2-source.tar.gz",
+        "source_commit": "226372fc7d2846dae049e6fb281579e4b8ae449b",
         "server_release_commit": "6686b8a11de688ac529fc39bb601d75e8f0875c4",
-        "file_count": 4826
+        "file_count": 4831
       },
       {
         "name": "Beam-Android-0.4.0-source.tar.gz",
