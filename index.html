@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f9fd">
+  <meta name="theme-color" content="#f5f8fd" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#050a17" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
   <meta name="description" content="Beam — ваш компьютер всегда рядом. Удалённый рабочий стол для Windows, Android и телевизоров. Скачать сервер и клиент Beam.">
   <meta property="og:title" content="Beam — ваш компьютер всегда рядом">
   <meta property="og:description" content="Работайте, играйте и управляйте своим компьютером с другого устройства. Скачать Beam для Windows и Android.">
@@ -12,11 +14,15 @@
   <meta property="og:url" content="https://jughodorf.github.io/beam-site/">
   <title>Beam — ваш компьютер всегда рядом</title>
   <link rel="icon" type="image/png" href="assets/beam.png">
-  <link rel="stylesheet" href="assets/site.css?v=20261009-client2011">
-  <script src="assets/site.js?v=20261009-client2011" defer></script>
+  <link rel="preload" href="assets/fonts/unbounded-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/onest-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/site.css?v=20261010-design">
+  <script src="assets/site.js?v=20261010-design" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
   <svg class="icon-definitions" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
     <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
     <symbol id="download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></symbol>
@@ -43,7 +49,7 @@
     <section class="hero container">
       <div class="hero-copy">
         <div class="eyebrow"><span class="live-dot"></span> Удалённый рабочий стол</div>
-        <h1>Ваш компьютер.<br>Всегда <span class="gradient-text">рядом.</span></h1>
+        <h1><span class="line"><span>Ваш компьютер.</span></span><span class="line"><span>Всегда <span class="gradient-text">рядом.</span></span></span></h1>
         <p class="hero-description">Рабочий стол, игры и приложения — на том устройстве, которое сейчас с вами. Дома, в другой комнате или через VPN.</p>
         <div class="hero-actions">
           <a class="button primary" href="#downloads">Скачать Beam <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a>
@@ -53,7 +59,7 @@
         <a class="latest-update" href="#easytier"><span class="update-tag">Клиент 2.0.11</span><strong>Быстрее меню · Мониторы · Обновления</strong></a>
       </div>
       <div class="hero-visual" aria-label="Иллюстрация: компьютер и телефон подключены к сеансу Beam">
-        <div class="visual-glow"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="visual-glow"></div><div class="orbits"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div></div>
         <div class="desktop-demo">
           <div class="demo-titlebar"><div class="window-dots"><i></i><i></i><i></i></div><span>Beam</span><span class="demo-connected"><span class="live-dot"></span> Сеанс подключён</span></div>
           <div class="demo-screen">
@@ -64,6 +70,7 @@
           </div>
         </div>
         <div class="desktop-foot"></div>
+        <svg class="beam-link" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false"><defs><linearGradient id="beam-gradient" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2fd0ff"/><stop offset=".6" stop-color="#4a8bff"/><stop offset="1" stop-color="#8f7bff"/></linearGradient></defs><path class="beam-glow" d="M58 42C70 26 85 30 86 56"/><path class="beam-core" pathLength="100" d="M58 42C70 26 85 30 86 56"/><path class="beam-packets" pathLength="10" d="M58 42C70 26 85 30 86 56"/></svg>
         <div class="phone-demo"><div class="phone-camera"></div><img src="assets/beam.png" alt="" width="50" height="50"><strong>Ваш ПК<br>в кармане.</strong><div class="phone-screen"><span class="live-dot"></span> Beam</div></div>
         <div class="connection-chip"><span class="live-dot"></span><span>Один компьютер.<br><strong>Больше возможностей.</strong></span></div>
         <div class="visual-caption">Ваш компьютер — на ваших устройствах</div>

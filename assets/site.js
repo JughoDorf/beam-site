@@ -43,9 +43,40 @@ if (previewPicker && previewLink && previewSize) {
   updatePreviewVariant();
 }
 
+// Glass header once the page is scrolled (a style, not motion: also with reduced motion).
+const header = document.querySelector('.header');
+if (header) {
+  let scrolledFrame = 0;
+  const updateHeader = () => {
+    scrolledFrame = 0;
+    header.classList.toggle('scrolled', window.scrollY > 8);
+  };
+  window.addEventListener('scroll', () => { if (!scrolledFrame) scrolledFrame = requestAnimationFrame(updateHeader); }, { passive: true });
+  updateHeader();
+}
+
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+// Spotlight that follows the pointer over cards (mouse/pen only, one update per frame).
+if (!motionPreference.matches && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+  for (const card of document.querySelectorAll('.feature, .download-card, .closing')) {
+    let frame = 0, x = 0, y = 0;
+    card.addEventListener('pointermove', event => {
+      const box = card.getBoundingClientRect();
+      x = event.clientX - box.left;
+      y = event.clientY - box.top;
+      if (frame) return;
+      frame = requestAnimationFrame(() => {
+        frame = 0;
+        card.style.setProperty('--mx', `${x}px`);
+        card.style.setProperty('--my', `${y}px`);
+      });
+    }, { passive: true });
+  }
+}
+
 if (!motionPreference.matches && 'IntersectionObserver' in window) {
-  const blocks = document.querySelectorAll('.feature, .download-card, .setup-grid li, .closing');
+  const blocks = document.querySelectorAll('.section-heading, .feature, .download-card, .preview-notice, .module-download, .setup-grid li, .faq-list, .closing, .value-strip');
   const observer = new IntersectionObserver(entries => {
     for (const entry of entries) {
       if (!entry.isIntersecting) continue;
@@ -53,9 +84,13 @@ if (!motionPreference.matches && 'IntersectionObserver' in window) {
       entry.target.classList.add('reveal-visible');
       observer.unobserve(entry.target);
     }
-  }, { rootMargin: '0px 0px 40px 0px', threshold: 0.08 });
+  }, { rootMargin: '0px 0px 8% 0px', threshold: 0.06 });
   for (const block of blocks) {
     if (block.getBoundingClientRect().top < window.innerHeight) continue;
+    // Cards of one grid appear one after another.
+    const siblings = [...block.parentElement.children].filter(item => item.matches('.feature, .download-card, .setup-grid li'));
+    const index = siblings.indexOf(block);
+    if (index > 0) block.style.setProperty('--reveal-delay', `${Math.min(index, 3) * 0.09}s`);
     block.classList.add('reveal-pending');
     observer.observe(block);
     block.addEventListener('animationend', () => block.classList.remove('reveal-visible'), { once: true });
