@@ -37,7 +37,7 @@ metadata = json.loads((root/'downloads.json').read_text(encoding='utf-8'))
 assert len(metadata['files']) == 7
 preview = metadata['preview']
 assert preview['status'] == 'prerelease' and preview['wan_video_tested'] is False
-assert len(preview['files']) == 9 and len(preview['sources']) == 4
+assert len(preview['files']) == 9 and len(preview['sources']) == 3
 assert re.fullmatch(r'[a-f0-9]{40}', preview['source_commit'])
 assert preview['release_url'] == 'https://github.com/JughoDorf/beam-site/releases/tag/' + preview['tag']
 current = metadata['files'] + preview['files'] + preview['sources']
@@ -60,12 +60,11 @@ preview_prefix = 'https://github.com/JughoDorf/beam-site/releases/download/' + p
 assert preview['checksums_url'] == preview_prefix + 'SHA256SUMS.txt'
 assert preview['instructions_url'] == preview_prefix + 'INSTALL-EASYTIER-ru.md'
 assert set(x['name'] for x in preview['files']) == {
-    'BeamServerSetup-2.0.15.exe', 'BeamClientSetup-2.0.11.exe',
+    'BeamServerSetup-2.1.0.exe', 'BeamClientSetup-2.1.1.exe',
     'BeamEasyTierSetup-0.1.2.exe', 'BeamEasyTier-0.1.2-windows-x64.zip',
     *('BeamAndroid-0.4.0-' + abi + '.apk' for abi in ['arm32','arm64','universal','x86','x86_64'])}
 assert set(x['name'] for x in preview['sources']) == {
-    'Beam-Windows-2.0.15-source.tar.gz', 'Beam-Client-2.0.11-source.tar.gz',
-    'Beam-Android-0.4.0-source.tar.gz', 'BeamEasyTier-0.1.2-source.tar.gz'}
+    'Beam-Windows-2.1.1-source.tar.gz', 'Beam-Android-0.4.0-source.tar.gz', 'BeamEasyTier-0.1.2-source.tar.gz'}
 assert set(x['name'] for x in metadata['files']) == {
     'BeamServerSetup-2.0.11.exe', 'BeamClientSetup-2.0.8.exe',
     *('BeamAndroid-0.3.1-' + abi + '.apk' for abi in ['arm32','arm64','universal','x86','x86_64'])}
@@ -81,4 +80,4 @@ for node in nodes:
     assert not re.fullmatch(r'[0-9.]+', address.hostname)
     assert 1 <= address.port <= 65535
 assert 'public.easytier.cn' not in nodes
-print('PASS: resources, navigation, 7 stable / 9 preview downloads, 4 preview sources, SHA-256, public links')
+print('PASS: resources, navigation, 7 stable / 9 preview downloads, 3 preview sources, SHA-256, public links')
