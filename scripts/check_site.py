@@ -60,18 +60,18 @@ preview_prefix = 'https://github.com/JughoDorf/beam-site/releases/download/' + p
 assert preview['checksums_url'] == preview_prefix + 'SHA256SUMS.txt'
 assert preview['instructions_url'] == preview_prefix + 'INSTALL-EASYTIER-ru.md'
 assert set(x['name'] for x in preview['files']) == {
-    'BeamServerSetup-2.1.3.exe', 'BeamClientSetup-2.1.7.exe', 'BeamSetup-2.1.7.exe',
-    'BeamEasyTierSetup-0.1.2.exe', 'BeamEasyTier-0.1.2-windows-x64.zip',
+    'BeamServerSetup-2.1.4.exe', 'BeamClientSetup-2.1.8.exe', 'BeamSetup-2.1.8.exe',
+    'BeamEasyTierSetup-0.1.3.exe', 'BeamEasyTier-0.1.3-windows-x64.zip',
     *('BeamAndroid-0.4.0-' + abi + '.apk' for abi in ['arm32','arm64','universal','x86','x86_64'])}
 assert set(x['name'] for x in preview['sources']) == {
-    'Beam-Windows-2.1.7-source.tar.gz', 'Beam-Android-0.4.0-source.tar.gz', 'BeamEasyTier-0.1.2-source.tar.gz'}
+    'Beam-Windows-2.1.8-source.tar.gz', 'Beam-Android-0.4.0-source.tar.gz', 'BeamEasyTier-0.1.3-source.tar.gz'}
 assert set(x['name'] for x in metadata['files']) == {
     'BeamServerSetup-2.0.11.exe', 'BeamClientSetup-2.0.8.exe',
     *('BeamAndroid-0.3.1-' + abi + '.apk' for abi in ['arm32','arm64','universal','x86','x86_64'])}
 assert 'JughoDorf/Beam/releases/' not in (root/'index.html').read_text(encoding='utf-8')
 catalog = (root/'easytier-nodes.txt').read_text(encoding='ascii')
 nodes = catalog.split()
-assert len(catalog) <= 2048 and 2 <= len(nodes) <= 8 and len(set(nodes)) == len(nodes)
+assert len(catalog.encode("ascii")) <= 65536 and 2 <= len(nodes) <= 256 and len(set(nodes)) == len(nodes)
 for node in nodes:
     address = urlsplit(node)
     assert address.scheme in ('tcp', 'udp') and address.hostname and address.port

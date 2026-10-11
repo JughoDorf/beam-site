@@ -347,43 +347,43 @@
     "status": "prerelease",
     "date": "2026-10-11",
     "release_url": "https://github.com/JughoDorf/beam-site/releases/tag/easytier-preview-2026-10-08",
-    "source_commit": "4f2f2bb17d0037c73e49ffe62756e3a2dc249cce",
+    "source_commit": "7da4f1adb7aeba77152c4470825e7886146f4aa0",
     "wan_video_tested": false,
     "files": [
       {
-        "name": "BeamServerSetup-2.1.3.exe",
-        "bytes": 25905344,
-        "sha256": "3c983948b96c4aeaed90193b0dbb95d8a4aba550e81dbd606986a96a769c1745",
+        "name": "BeamClientSetup-2.1.8.exe",
         "tag": "easytier-preview-2026-10-08",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamServerSetup-2.1.3.exe"
+        "bytes": 32111391,
+        "sha256": "7f74b7af2159d3b43f64d71e51baceb730b7abfa0348cc8c5971253988d939b3",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamClientSetup-2.1.8.exe"
       },
       {
-        "name": "BeamClientSetup-2.1.7.exe",
-        "bytes": 23712510,
-        "sha256": "fa6634a773db888c5d2fef0c309fc0d6dd2dbd2b3d163ce64749c50d0ffcfdd9",
+        "name": "BeamServerSetup-2.1.4.exe",
         "tag": "easytier-preview-2026-10-08",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamClientSetup-2.1.7.exe"
+        "bytes": 25939133,
+        "sha256": "97123ec91469c21c996baf3750ec7e5327b94a875ea341e7229cd1552fd1df49",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamServerSetup-2.1.4.exe"
       },
       {
-        "name": "BeamSetup-2.1.7.exe",
-        "bytes": 50115674,
-        "sha256": "92e13743bba939f40d7f2eeebde8bbd4dfc638eead258db1c39706442d3f2b26",
+        "name": "BeamSetup-2.1.8.exe",
         "tag": "easytier-preview-2026-10-08",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamSetup-2.1.7.exe"
+        "bytes": 58548637,
+        "sha256": "68d9c07dfd53538f39d39e4df1490aa5f130afa8ab23c05425d84ef9b39cd9ab",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamSetup-2.1.8.exe"
       },
       {
-        "name": "BeamEasyTierSetup-0.1.2.exe",
-        "bytes": 8614746,
-        "sha256": "7da969a8995ae80694d39292298c3e8e3c30e2ded52276860b6825e3c33261e0",
+        "name": "BeamEasyTierSetup-0.1.3.exe",
         "tag": "easytier-preview-2026-10-08",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamEasyTierSetup-0.1.2.exe"
+        "bytes": 8639652,
+        "sha256": "c4f6e32f36b37667595100b8a4f261b212b6cef2918c38f7d17256e9b3cab48b",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamEasyTierSetup-0.1.3.exe"
       },
       {
-        "name": "BeamEasyTier-0.1.2-windows-x64.zip",
-        "bytes": 13906482,
-        "sha256": "417e09019c2cdc1f23f8b50f7d1d8b29c8a6ed7fd19ff7bf9071b8ebee2d0546",
+        "name": "BeamEasyTier-0.1.3-windows-x64.zip",
         "tag": "easytier-preview-2026-10-08",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamEasyTier-0.1.2-windows-x64.zip"
+        "bytes": 13934161,
+        "sha256": "eec3bf144fbc30d1466c0fe829108be1371bae8cdce230a18f7336ecd31c7497",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamEasyTier-0.1.3-windows-x64.zip"
       },
       {
         "name": "BeamAndroid-0.4.0-arm32.apk",
@@ -423,14 +423,127 @@
     ],
     "sources": [
       {
-        "name": "Beam-Windows-2.1.7-source.tar.gz",
-        "bytes": 173160671,
-        "sha256": "f6d98691349a8007f11f3117b2b88c6214dd6fa07a1dc7c79721004a9b25543a",
+        "name": "Beam-Windows-2.1.8-source.tar.gz",
         "tag": "easytier-preview-2026-10-08",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/Beam-Windows-2.1.7-source.tar.gz",
-        "source_commit": "4f2f2bb17d0037c73e49ffe62756e3a2dc249cce",
-        "server_release_commit": "f5415249cc3dcc389c2a1792483dc55bba535bc8",
-        "file_count": 4853
+        "bytes": 173184907,
+        "sha256": "bacfd975b87fa6296dcf74551c6b8047227017b72ec9504e610733e0bdce3fac",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/Beam-Windows-2.1.8-source.tar.gz",
+        "source_commit": "7da4f1adb7aeba77152c4470825e7886146f4aa0",
+        "file_count": 4861,
+        "submodules": [
+          {
+            "path": "Beam-Windows-2.1.8/client/app/SDL_GameControllerDB",
+            "commit": "8d9fefd7b810f2541f78cc7a8ccbd185bc84c7a5"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/client/moonlight-common-c/moonlight-common-c/enet",
+            "commit": "aca87840b57f045a1f7f9299e4b1b9b8e2a5e2f1"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/client/moonlight-common-c/moonlight-common-c/nanors",
+            "commit": "b1e3c22ca0cdc0bb83e3cd6ed1a2fc77869ed99a"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/client/qmdnsengine/qmdnsengine",
+            "commit": "920c097ffa742e2968290f15d4dde6693aec02e5"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/packaging/linux/flatpak/deps/flatpak-builder-tools",
+            "commit": "ea92dc22ab7e4ab44133407b883c9a6792e54302"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/packaging/linux/flatpak/deps/shared-modules",
+            "commit": "231e052557e37e120c94d584881f43daac3391fd"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/Simple-Web-Server",
+            "commit": "5b29c7004cc53252a8eff06d62899c8847ada971"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/TPCircularBuffer",
+            "commit": "cc520397504bb72bc6df79ff03eb72988a6dc50d"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/ViGEmClient",
+            "commit": "8d71f6740ffff4671cdadbca255ce528e3cd3fef"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/build-deps",
+            "commit": "a9a7f86328963837e30e21c8901faba00fe81542"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/doxyconfig",
+            "commit": "1188ef2b96efb3e003a591ee01714339c2d9161c"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/doxyconfig/doxygen-awesome-css",
+            "commit": "c085b886e38d47c30c7cad0865d641cdf5f2df86"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/googletest",
+            "commit": "52eb8108c5bdec04579160ae17225d66034bd723"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/inputtino",
+            "commit": "504f0abc7da8ebc351f8300fb2ed98db5438ee48"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/libdisplaydevice",
+            "commit": "f31e46d8736fa6932d34c1417111e60ca507b29f"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/libdisplaydevice/third-party/doxyconfig",
+            "commit": "a73f908fb70fac4f6076a28f0a751239ea5ac2d3"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/libdisplaydevice/third-party/doxyconfig/doxygen-awesome-css",
+            "commit": "98dd024a650e71d8afd1215c27134aa779bdbbd7"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/libdisplaydevice/third-party/googletest",
+            "commit": "f8d7d77c06936315286eb55f8de22cd23c188571"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/moonlight-common-c",
+            "commit": "c999436858471dfefa7617af3b7dc03ec1644ce4"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/moonlight-common-c/enet",
+            "commit": "115a10baa1d7f291ff5b870765610fd3b4a6e43c"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/nanors",
+            "commit": "19f07b513e924e471cadd141943c1ec4adc8d0e0"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/nv-codec-headers",
+            "commit": "22441b505d9d9afc1e3002290820909846c24bdc"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/nvapi-open-source-sdk",
+            "commit": "cce4e90b629f712ae6eebafac97739bd1196cdef"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/tray/third-party/doxyconfig",
+            "commit": "a73f908fb70fac4f6076a28f0a751239ea5ac2d3"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/tray/third-party/doxyconfig/doxygen-awesome-css",
+            "commit": "98dd024a650e71d8afd1215c27134aa779bdbbd7"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/tray/third-party/googletest",
+            "commit": "f8d7d77c06936315286eb55f8de22cd23c188571"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/wayland-protocols",
+            "commit": "0091197f5c1b1f2c131f1410e99f9c95d50646be"
+          },
+          {
+            "path": "Beam-Windows-2.1.8/server/third-party/wlr-protocols",
+            "commit": "a741f0ac5d655338a5100fc34bc8cec87d237346"
+          }
+        ]
       },
       {
         "name": "Beam-Android-0.4.0-source.tar.gz",
@@ -440,11 +553,13 @@
         "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/Beam-Android-0.4.0-source.tar.gz"
       },
       {
-        "name": "BeamEasyTier-0.1.2-source.tar.gz",
-        "bytes": 4869887,
-        "sha256": "4f587921b1ccae48dd688aaeabd917b0fad0dfcc88a41b40d9a831c076240c8e",
+        "name": "BeamEasyTier-0.1.3-source.tar.gz",
         "tag": "easytier-preview-2026-10-08",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamEasyTier-0.1.2-source.tar.gz"
+        "bytes": 5005259,
+        "sha256": "e40f2d721626e81b02916fcb263ec015fc02b39c277ecd9930cca7852dc7afc2",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamEasyTier-0.1.3-source.tar.gz",
+        "source_commit": "7da4f1adb7aeba77152c4470825e7886146f4aa0",
+        "file_count": 822
       }
     ],
     "instructions_url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/INSTALL-EASYTIER-ru.md",

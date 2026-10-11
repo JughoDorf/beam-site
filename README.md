@@ -32,22 +32,21 @@ Releases, сверяются размеры и SHA-256.
 
 ## Предварительный выпуск EasyTier
 
-Раздел `#easytier` содержит тестовый комплект Beam: Server 2.1.3, Windows
-Client 2.1.7, общий установщик 2.1.7, модуль 0.1.2 и Android 0.4.0.
-Release `easytier-preview-2026-10-08` остаётся prerelease и не заменяет Latest.
-В `downloads.json` сохранены точные размеры и SHA-256 готовых пакетов.
-Архив Windows соответствует коммиту 4f2f2bb17d0037c73e49ffe62756e3a2dc249cce;
-включены 4853 файла и 28 закреплённых подмодулей. Прежние файлы выпуска
-сохранены для действующих ссылок. Основной репозиторий остаётся закрытым.
+Раздел `#easytier` содержит Server 2.1.4, Windows Client 2.1.8, общий
+установщик 2.1.8, модуль 0.1.3 и прежний Android 0.4.0.
+Release `easytier-preview-2026-10-08` остаётся prerelease.
+Архив Windows соответствует коммиту 7da4f1adb7aeba77152c4470825e7886146f4aa0.
+Закреплённые подмодули, патчи и инструкции сборки включены; соответствующие
+исходники native-модуля и helper доступны отдельным архивом 0.1.3.
+В `downloads.json` зафиксированы размеры и SHA-256. Старые файлы сохранены.
+Основной репозиторий остаётся закрытым.
 
-В клиенте 2.1.7 обновлены плитка и меню сеанса; BeamPiP следует за перемещением
-и изменением размера окна. Пройдены 536 проверок раскладки меню и тесты PiP.
-
-Без включённого фильтра приложений звуковой тракт Apollo не меняется.
-Фильтр требует Windows 11, исключает одно приложение, следует за его
-запуском раз в секунду; при нескольких звучащих экземплярах звук приостанавливается.
-Зависание удалённого ПК при встречных сеансах не считается устранённым.
-Реальная установка общего пакета ещё требует проверки на отдельном ПК/VM.
+ID-вход использует прежних пользователей и права. Ключ сети выводится из
+публичного ID: пароль защищает вход Beam, но не исключает сетевой DoS/DHCP.
+Для закрытой группы остаётся секретное приглашение. Android использует приглашение.
+Кодеки, очереди, FEC и исходный звуковой тракт в этом выпуске не менялись.
+Периодические лаги в Wi-Fi/играх не воспроизведены и не объявлены устранёнными.
+Реальная установка нового пакета требует проверки на отдельном ПК/VM.
 
 Клиент 2.0.11 использует `downloads.json` для проверки и скачивания обновлений:
 `files` — стабильный канал, `preview.files` — тестовый канал по выбору пользователя.
@@ -71,9 +70,12 @@ The server saves the chosen common pool in invitations; clients check that pool
 without selecting a different network independently. The feed contains only
 public node addresses, never Beam accounts, VPN identities or invitation keys.
 
-The current candidates passed isolated no-TUN EasyTier 2.6.4 handshake probes
-on 2026-10-08. Operator references:
-https://github.com/pmh1314520/MCTier and https://wiki.slarker.me/application/easytier.html.
+The six current candidates passed isolated no-TUN EasyTier 2.6.4 handshake
+probes on 2026-10-11; availability varied between repeated checks. Beam uses
+six common anchors and at most two additional distinct hostnames; a 256-entry
+catalog is capacity, not a guarantee or automatic scan of 256 nodes. Operator references:
+https://github.com/pmh1314520/MCTier, https://wiki.slarker.me/application/easytier.html
+and https://easytier.dreamlife.indevs.in/.
 Update addresses only after protocol verification, then run
 `python scripts/check_site.py`. Publishing this data does not publish a Beam
 binary release or change the stable downloads.
