@@ -345,7 +345,7 @@
   "preview": {
     "tag": "easytier-preview-2026-10-08",
     "status": "prerelease",
-    "date": "2026-10-11",
+    "date": "2026-10-12",
     "release_url": "https://github.com/JughoDorf/beam-site/releases/tag/easytier-preview-2026-10-08",
     "source_commit": "7da4f1adb7aeba77152c4470825e7886146f4aa0",
     "wan_video_tested": false,
@@ -386,39 +386,39 @@
         "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamEasyTier-0.1.3-windows-x64.zip"
       },
       {
-        "name": "BeamAndroid-0.4.0-arm32.apk",
-        "bytes": 10804033,
-        "sha256": "104fb07903cd2ba3d467b202f1447d3824fe22d72eccc30bf3c7c25263641ecd",
+        "name": "BeamAndroid-0.5.0-arm32.apk",
+        "bytes": 10825521,
+        "sha256": "30a941942cee17f78fab034878035290d0e63d947a53ee1814b4a65fbc9486a7",
         "tag": "easytier-preview-2026-10-08",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamAndroid-0.4.0-arm32.apk"
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamAndroid-0.5.0-arm32.apk"
       },
       {
-        "name": "BeamAndroid-0.4.0-arm64.apk",
-        "bytes": 11987773,
-        "sha256": "38c1330adcc7379f6c0dc2e6a5190a27fa82d3f288e850b01edb0f35de48185a",
+        "name": "BeamAndroid-0.5.0-arm64.apk",
+        "bytes": 12005165,
+        "sha256": "6f9226abc882065feab57ee4094a6431e7d26b06ce05c4ee52fab0fedd764419",
         "tag": "easytier-preview-2026-10-08",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamAndroid-0.4.0-arm64.apk"
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamAndroid-0.5.0-arm64.apk"
       },
       {
-        "name": "BeamAndroid-0.4.0-universal.apk",
-        "bytes": 35499276,
-        "sha256": "e9b2070aeb661c8bd67c6045ee77084f8a825312b54e643daaf55c093a43abc1",
+        "name": "BeamAndroid-0.5.0-universal.apk",
+        "bytes": 35520764,
+        "sha256": "f72f8906b1aef7e60a63a3c3aa5fc494caad142ed1e02de1d57de694d3f2accf",
         "tag": "easytier-preview-2026-10-08",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamAndroid-0.4.0-universal.apk"
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamAndroid-0.5.0-universal.apk"
       },
       {
-        "name": "BeamAndroid-0.4.0-x86.apk",
-        "bytes": 11942705,
-        "sha256": "fbf6577aa8ee881e01572280bcb7fcbe3b7eb1242262d0fc94cba8790bb9a46d",
+        "name": "BeamAndroid-0.5.0-x86.apk",
+        "bytes": 11964193,
+        "sha256": "fa0a8c0794cba6629f7f35919a324129c655be0cafa51281efafa2d69850bbdf",
         "tag": "easytier-preview-2026-10-08",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamAndroid-0.4.0-x86.apk"
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamAndroid-0.5.0-x86.apk"
       },
       {
-        "name": "BeamAndroid-0.4.0-x86_64.apk",
-        "bytes": 12073783,
-        "sha256": "73d80bcf6d693d845face7c96060ee52c10987627af8dd49ab04073ea28c86f8",
+        "name": "BeamAndroid-0.5.0-x86_64.apk",
+        "bytes": 12095271,
+        "sha256": "e0b5416d14e5b2c3bb26906d405dc1b413877ae08198702d0ea68fea90dbe4f9",
         "tag": "easytier-preview-2026-10-08",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamAndroid-0.4.0-x86_64.apk"
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamAndroid-0.5.0-x86_64.apk"
       }
     ],
     "sources": [
@@ -546,13 +546,6 @@
         ]
       },
       {
-        "name": "Beam-Android-0.4.0-source.tar.gz",
-        "bytes": 22701237,
-        "sha256": "b6b8aeed4f9575744d8d61c513aa50bfb1ecae13390a41434ad86c3502172618",
-        "tag": "easytier-preview-2026-10-08",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/Beam-Android-0.4.0-source.tar.gz"
-      },
-      {
         "name": "BeamEasyTier-0.1.3-source.tar.gz",
         "tag": "easytier-preview-2026-10-08",
         "bytes": 5005259,
@@ -560,9 +553,19 @@
         "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamEasyTier-0.1.3-source.tar.gz",
         "source_commit": "7da4f1adb7aeba77152c4470825e7886146f4aa0",
         "file_count": 822
+      },
+      {
+        "name": "Beam-Android-0.5.0-source.tar.gz",
+        "bytes": 22725279,
+        "sha256": "87099aa79542a0f9eca82df39d077db41721c5ce6b5311f39765d5379f5a467b",
+        "tag": "easytier-preview-2026-10-08",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/Beam-Android-0.5.0-source.tar.gz",
+        "source_commit": "eaaa23f8bad13f41d22263b104d3ce91b7af4dab",
+        "file_count": 1535
       }
     ],
     "instructions_url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/INSTALL-EASYTIER-ru.md",
-    "checksums_url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/SHA256SUMS.txt"
+    "checksums_url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/SHA256SUMS.txt",
+    "android_source_commit": "eaaa23f8bad13f41d22263b104d3ce91b7af4dab"
   }
 }

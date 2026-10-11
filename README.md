@@ -33,7 +33,7 @@ Releases, сверяются размеры и SHA-256.
 ## Предварительный выпуск EasyTier
 
 Раздел `#easytier` содержит Server 2.1.4, Windows Client 2.1.8, общий
-установщик 2.1.8, модуль 0.1.3 и прежний Android 0.4.0.
+установщик 2.1.8, модуль 0.1.3 и Android 0.5.0.
 Release `easytier-preview-2026-10-08` остаётся prerelease.
 Архив Windows соответствует коммиту 7da4f1adb7aeba77152c4470825e7886146f4aa0.
 Закреплённые подмодули, патчи и инструкции сборки включены; соответствующие
@@ -43,7 +43,7 @@ Release `easytier-preview-2026-10-08` остаётся prerelease.
 
 ID-вход использует прежних пользователей и права. Ключ сети выводится из
 публичного ID: пароль защищает вход Beam, но не исключает сетевой DoS/DHCP.
-Для закрытой группы остаётся секретное приглашение. Android использует приглашение.
+Для закрытой группы остаётся секретное приглашение. Android 0.5.0 принимает ID на Android 7.0+; приглашения сохраняются.
 Кодеки, очереди, FEC и исходный звуковой тракт в этом выпуске не менялись.
 Периодические лаги в Wi-Fi/играх не воспроизведены и не объявлены устранёнными.
 Реальная установка нового пакета требует проверки на отдельном ПК/VM.
@@ -79,3 +79,11 @@ and https://easytier.dreamlife.indevs.in/.
 Update addresses only after protocol verification, then run
 `python scripts/check_site.py`. Publishing this data does not publish a Beam
 binary release or change the stable downloads.
+
+## Главный вариант скачивания
+
+Основной установщик Windows — BeamSetup-2.1.8.exe в карточке #beam-installer.
+Кнопки «Скачать Beam» ведут к нему; отдельные сервер, клиент и модуль
+доступны в раскрываемом разделе #separate-installers. Android 0.5.0
+доступен рядом, в пяти ABI; Windows-бинарники не менялись.
+Архив Android соответствует коммиту eaaa23f8bad13f41d22263b104d3ce91b7af4dab.

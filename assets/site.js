@@ -1,4 +1,16 @@
 'use strict';
+// A direct link to separate components opens the native details section.
+const separateInstallers = document.getElementById('separate-installers');
+function revealSeparateInstallers() {
+  if (separateInstallers && location.hash === '#separate-installers') separateInstallers.open = true;
+}
+if (separateInstallers) {
+  for (const link of document.querySelectorAll('a[href="#separate-installers"]')) {
+    link.addEventListener('click', () => { separateInstallers.open = true; });
+  }
+  window.addEventListener('hashchange', revealSeparateInstallers);
+  revealSeparateInstallers();
+}
 // Downloads work without JavaScript. Animation never gates a download or navigation.
 const variants = {
   universal: { size: 11463583, file: 'BeamAndroid-0.3.1-universal.apk' },
@@ -23,11 +35,11 @@ if (picker && androidLink && androidSize) {
 
 // The preview channel is independent of the stable APK selector above.
 const previewVariants = {
-  universal: { size: 35499276, file: 'BeamAndroid-0.4.0-universal.apk' },
-  arm64: { size: 11987773, file: 'BeamAndroid-0.4.0-arm64.apk' },
-  arm32: { size: 10804033, file: 'BeamAndroid-0.4.0-arm32.apk' },
-  x86_64: { size: 12073783, file: 'BeamAndroid-0.4.0-x86_64.apk' },
-  x86: { size: 11942705, file: 'BeamAndroid-0.4.0-x86.apk' },
+  universal: { size: 35520764, file: 'BeamAndroid-0.5.0-universal.apk' },
+  arm64: { size: 12005165, file: 'BeamAndroid-0.5.0-arm64.apk' },
+  arm32: { size: 10825521, file: 'BeamAndroid-0.5.0-arm32.apk' },
+  x86_64: { size: 12095271, file: 'BeamAndroid-0.5.0-x86_64.apk' },
+  x86: { size: 11964193, file: 'BeamAndroid-0.5.0-x86.apk' },
 };
 const previewPicker = document.getElementById('preview-android-variant');
 const previewLink = document.querySelector('[data-download="preview-android"]');
@@ -36,7 +48,7 @@ function updatePreviewVariant() {
   const variant = previewVariants[previewPicker.value] || previewVariants.universal;
   previewLink.href = `https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/${variant.file}`;
   previewSize.textContent = `${new Intl.NumberFormat('ru-RU', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(variant.size / 1000000)} МБ`;
-  previewLink.setAttribute('aria-label', `Скачать Beam Android 0.4.0, тестовый выпуск, ${previewPicker.options[previewPicker.selectedIndex].text}`);
+  previewLink.setAttribute('aria-label', `Скачать Beam Android 0.5.0, тестовый выпуск, ${previewPicker.options[previewPicker.selectedIndex].text}`);
 }
 if (previewPicker && previewLink && previewSize) {
   previewPicker.addEventListener('change', updatePreviewVariant);
