@@ -347,29 +347,29 @@
     "status": "prerelease",
     "date": "2026-10-11",
     "release_url": "https://github.com/JughoDorf/beam-site/releases/tag/easytier-preview-2026-10-08",
-    "source_commit": "f5415249cc3dcc389c2a1792483dc55bba535bc8",
+    "source_commit": "4f2f2bb17d0037c73e49ffe62756e3a2dc249cce",
     "wan_video_tested": false,
     "files": [
       {
         "name": "BeamServerSetup-2.1.3.exe",
-        "bytes": 25897814,
-        "sha256": "13e2b8ffef8b5cd8434396af35141260f9cb610760466290611791151bfd6a06",
+        "bytes": 25905344,
+        "sha256": "3c983948b96c4aeaed90193b0dbb95d8a4aba550e81dbd606986a96a769c1745",
         "tag": "easytier-preview-2026-10-08",
         "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamServerSetup-2.1.3.exe"
       },
       {
-        "name": "BeamClientSetup-2.1.6.exe",
-        "bytes": 23696638,
-        "sha256": "3b7ed8955f54e2ab9c468ebbf77f4b3c3cce00fa0448d992998adf1d26532b70",
+        "name": "BeamClientSetup-2.1.7.exe",
+        "bytes": 23712510,
+        "sha256": "fa6634a773db888c5d2fef0c309fc0d6dd2dbd2b3d163ce64749c50d0ffcfdd9",
         "tag": "easytier-preview-2026-10-08",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamClientSetup-2.1.6.exe"
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamClientSetup-2.1.7.exe"
       },
       {
-        "name": "BeamSetup-2.1.6.exe",
-        "bytes": 50092271,
-        "sha256": "354166dbce6a59bac963f14d92bccb02474fec90a55cb5a0975bd27db5634e9f",
+        "name": "BeamSetup-2.1.7.exe",
+        "bytes": 50115674,
+        "sha256": "92e13743bba939f40d7f2eeebde8bbd4dfc638eead258db1c39706442d3f2b26",
         "tag": "easytier-preview-2026-10-08",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamSetup-2.1.6.exe"
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/BeamSetup-2.1.7.exe"
       },
       {
         "name": "BeamEasyTierSetup-0.1.2.exe",
@@ -423,14 +423,14 @@
     ],
     "sources": [
       {
-        "name": "Beam-Windows-2.1.6-source.tar.gz",
-        "bytes": 173158285,
-        "sha256": "06ff6a5577f3c47b438d124cf2ca524ba0dc18bf3bba246ec293c91a9ac273fe",
+        "name": "Beam-Windows-2.1.7-source.tar.gz",
+        "bytes": 173160671,
+        "sha256": "f6d98691349a8007f11f3117b2b88c6214dd6fa07a1dc7c79721004a9b25543a",
         "tag": "easytier-preview-2026-10-08",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/Beam-Windows-2.1.6-source.tar.gz",
-        "source_commit": "f5415249cc3dcc389c2a1792483dc55bba535bc8",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/easytier-preview-2026-10-08/Beam-Windows-2.1.7-source.tar.gz",
+        "source_commit": "4f2f2bb17d0037c73e49ffe62756e3a2dc249cce",
         "server_release_commit": "f5415249cc3dcc389c2a1792483dc55bba535bc8",
-        "file_count": 4852
+        "file_count": 4853
       },
       {
         "name": "Beam-Android-0.4.0-source.tar.gz",
