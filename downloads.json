@@ -347,27 +347,27 @@
     "status": "prerelease",
     "date": "2026-10-13",
     "release_url": "https://github.com/JughoDorf/beam-site/releases/tag/v2.2.1-preview",
-    "source_commit": "c142abbc1d2c237f385ddbf674326d32cf917444",
+    "source_commit": "8000505803f4db1f37ddfba0920f3dca063177f8",
     "wan_video_tested": false,
     "files": [
       {
         "name": "BeamClientSetup-2.2.1.exe",
-        "bytes": 31580355,
-        "sha256": "727a132c4a50f48d2bf5a63981cb60d3edae6027a2c6fb41d5ea83da5db779d2",
+        "bytes": 31570391,
+        "sha256": "381b00b9458f6010b8a6bde512031eeb31d33f2e2296b758bece391ed603331c",
         "tag": "v2.2.1-preview",
         "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/BeamClientSetup-2.2.1.exe"
       },
       {
         "name": "BeamServerSetup-2.2.1.exe",
-        "bytes": 24931901,
-        "sha256": "dc4e73b7eb423bffb0639d316b952643ae3303f9e06abf808bfa74952e90d172",
+        "bytes": 24929478,
+        "sha256": "7a966e67c305f3d497e65543588640f7bf590a0e638fdf9245c2674bc4a40f56",
         "tag": "v2.2.1-preview",
         "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/BeamServerSetup-2.2.1.exe"
       },
       {
         "name": "BeamSetup-2.2.1.exe",
-        "bytes": 49728268,
-        "sha256": "dffb08dabfb7845e3df3fc3a0112aa6bb60d23eb37861aa74bc7433e86a29ad5",
+        "bytes": 49737706,
+        "sha256": "675a6b4de30d01137478fff433439b92985851463fd4864a2341d20ecfaccb0e",
         "tag": "v2.2.1-preview",
         "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/BeamSetup-2.2.1.exe"
       },
@@ -424,12 +424,12 @@
     "sources": [
       {
         "name": "Beam-Windows-2.2.1-source.tar.gz",
-        "bytes": 176249902,
-        "sha256": "f50496f75756112f5b4497f19ca1c49e93a6940dc57a9ba5b1f9a224bb43db6d",
+        "bytes": 173245442,
+        "sha256": "7b959e254f06cd5e02bf22d20b5a7e4f902cb1aba4894c3df435450fc150ef89",
         "tag": "v2.2.1-preview",
         "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/Beam-Windows-2.2.1-source.tar.gz",
-        "source_commit": "c142abbc1d2c237f385ddbf674326d32cf917444",
-        "file_count": 4883,
+        "source_commit": "8000505803f4db1f37ddfba0920f3dca063177f8",
+        "file_count": 4885,
         "submodules": [
           {
             "path": "Beam-Windows-2.2.1/client/app/SDL_GameControllerDB",
@@ -556,16 +556,16 @@
       },
       {
         "name": "Beam-Android-2.2.1-source.tar.gz",
-        "bytes": 22812662,
-        "sha256": "75ea7126b216ef8e788e6fd6c828c4482d0c62d1a61f731fcb25edb0c99062c7",
+        "bytes": 22589846,
+        "sha256": "a15bd7d47f624bbcf70ac6f1d50110ec37fcb2a87c5c7e4222ae9a269f989db2",
         "tag": "v2.2.1-preview",
         "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/Beam-Android-2.2.1-source.tar.gz",
-        "source_commit": "c142abbc1d2c237f385ddbf674326d32cf917444",
+        "source_commit": "8000505803f4db1f37ddfba0920f3dca063177f8",
         "file_count": 1371
       }
     ],
     "instructions_url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/INSTALL-EASYTIER-ru.md",
     "checksums_url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/SHA256SUMS.txt",
-    "android_source_commit": "c142abbc1d2c237f385ddbf674326d32cf917444"
+    "android_source_commit": "8000505803f4db1f37ddfba0920f3dca063177f8"
   }
 }

@@ -94,7 +94,7 @@
           <span class="installer-label">Основной установщик</span>
           <h3>Beam для Windows</h3><p class="card-description">Сервер и клиент в одном мастере. Выберите, что установить на этот компьютер: подключаться к другим ПК, предоставлять доступ к своему или оба варианта. EasyTier для интернета входит в комплект.</p>
           <div class="compatibility">Windows 10 / 11 · x64</div>
-          <div class="version-row"><strong>2.2.1 <small>Сервер 2.2.1 · Клиент 2.2.1</small></strong><span data-size="preview-setup">49,73 МБ</span></div>
+          <div class="version-row"><strong>2.2.1 <small>Сервер 2.2.1 · Клиент 2.2.1</small></strong><span data-size="preview-setup">49,74 МБ</span></div>
           <a class="button primary download-button" data-download="preview-setup" href="https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/BeamSetup-2.2.1.exe"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Скачать Beam</a>
           <div class="card-links"><a href="#separate-installers">Отдельные компоненты</a><a href="sources.html#easytier">Исходники</a></div>
         </article>
@@ -122,7 +122,7 @@
           <div class="card-top"><div class="platform-icon"><svg class="icon" aria-hidden="true"><use href="#windows"/></svg></div><span class="release-badge beta">Предварительная</span></div>
           <h3>Клиент для Windows</h3><p class="card-description">BeamPiP: второй монитор в миниатюре, отдельные окна мониторов и новое меню сеанса. Подключение по ID — с компонентом EasyTier в установщике.</p>
           <div class="compatibility">Windows 10 / 11 · x64</div>
-          <div class="version-row"><strong>2.2.1</strong><span data-size="preview-client">31,58 МБ</span></div>
+          <div class="version-row"><strong>2.2.1</strong><span data-size="preview-client">31,57 МБ</span></div>
           <a class="button secondary download-button" data-download="preview-client" href="https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/BeamClientSetup-2.2.1.exe"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Скачать клиент</a>
           <div class="card-links"><a href="#easytier-setup">Как подключить</a><a href="sources.html?v=20261013-release221#easytier">Исходники</a></div>
         </article>
@@ -136,7 +136,8 @@
         </article>
       </div></div></details>
       <details class="preview-guide" id="client-update"><summary>Что нового в Beam · 13 октября</summary><div class="preview-guide-content">
-        <p><strong>Новое в Beam 2.2.1.</strong> Подключение стало быстрее: на тестовом ПК первое подключение после запуска сервера занимает 1,7 с до первого кадра вместо 5,2 с, повторное — 1,7 с вместо 2,2 с. Сервер заранее проверяет кодировщики и больше не задерживает ответ на запуск сеанса проверкой настроек дисплея. Общий установщик стал меньше на 8,8 МБ, Android APK — на 1,4 МБ. Тракт и качество видео и звука не менялись; FPS и нагрузка во время трансляции не хуже, чем в 2.2.0.</p>
+        <p><strong>Стабильность подключения.</strong> Фоновая проверка кодировщиков завершается перед подготовкой первого сеанса и не запускается после начала подключения. Во время проверки клиент получает последний завершённый список кодеков и возможностей BeamPiP. При обновлении удаляются неиспользуемые библиотеки и изображения прежнего пакета, поэтому уменьшение установленного размера действует и для существующих установок. Исходный медиатракт сохранён.</p>
+        <p><strong>Новое в Beam 2.2.1.</strong> Подключение стало быстрее: на тестовом ПК первое подключение после запуска сервера занимает 1,7 с до первого кадра вместо 5,2 с, повторное — 1,7 с вместо 2,2 с. Сервер заранее проверяет кодировщики и больше не задерживает ответ на запуск сеанса проверкой настроек дисплея. Общий установщик стал меньше на 8,8 МБ, Android APK — на 1,4 МБ. Параметры захвата, кодирования, передачи и воспроизведения сохранены. В локальном сравнении на Intel Quick Sync частота кадров и нагрузка остались на уровне 2.2.0; длительную работу на других устройствах ещё проверяем.</p>
         <p><strong>Новое в Beam 2.2.0.</strong> Кнопка «Обновить» и F5 проверяют компьютеры и ищут новые устройства в локальных сетях. Переключатели просмотра, растяжения, BeamPiP и звука подстраиваются под размер окна. Уменьшены фоновые пробуждения потоков опроса. Серверные кнопки используют цвета выбранной темы; тихие пользователи не вызывают уведомлений о PIN-сопряжении.</p>
         <p><strong>Клавиатура Android 2.2.0.</strong> Исправлен показ системной клавиатуры из меню Beam после возврата фокуса в сеанс. Проверены ввод русского текста и эмодзи, удаление и отмена старого ввода. APK подписан прежним ключом; устанавливайте поверх существующего Beam. Автоматические проверки API 23/36 пройдены; показ Gboard на реальном Pixel ещё требуется проверить.</p>
         <p><strong>Android 2.2.0.</strong> Введите девятизначный Beam ID в «+» на главном экране: приложение подключит EasyTier и откроет обычный вход Beam. ID сохраняется в карточке компьютера. Переключатель «Звук» задаёт звук до подключения; новое меню сеанса поддерживает сенсор, мышь и пульт. Вход по ID и EasyTier требуют Android 7.0+, обычное подключение — Android 5.0+. Обновление сохраняет подпись, профили и настройки. Локальная сборка и автоматические проверки пройдены; живые сеансы на Pixel и ТВ ещё проверяем.</p>
