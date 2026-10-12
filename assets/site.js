@@ -35,20 +35,20 @@ if (picker && androidLink && androidSize) {
 
 // The preview channel is independent of the stable APK selector above.
 const previewVariants = {
-  universal: { size: 35520764, file: 'BeamAndroid-2.2.0-universal.apk' },
-  arm64: { size: 12009261, file: 'BeamAndroid-2.2.0-arm64.apk' },
-  arm32: { size: 10825521, file: 'BeamAndroid-2.2.0-arm32.apk' },
-  x86_64: { size: 12099367, file: 'BeamAndroid-2.2.0-x86_64.apk' },
-  x86: { size: 11968289, file: 'BeamAndroid-2.2.0-x86.apk' },
+  universal: { size: 34102623, file: 'BeamAndroid-2.2.1-universal.apk' },
+  arm64: { size: 10591120, file: 'BeamAndroid-2.2.1-arm64.apk' },
+  arm32: { size: 9407380, file: 'BeamAndroid-2.2.1-arm32.apk' },
+  x86_64: { size: 10681226, file: 'BeamAndroid-2.2.1-x86_64.apk' },
+  x86: { size: 10550148, file: 'BeamAndroid-2.2.1-x86.apk' },
 };
 const previewPicker = document.getElementById('preview-android-variant');
 const previewLink = document.querySelector('[data-download="preview-android"]');
 const previewSize = document.querySelector('[data-size="preview-android"]');
 function updatePreviewVariant() {
   const variant = previewVariants[previewPicker.value] || previewVariants.universal;
-  previewLink.href = `https://github.com/JughoDorf/beam-site/releases/download/v2.2.0-preview/${variant.file}`;
+  previewLink.href = `https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/${variant.file}`;
   previewSize.textContent = `${new Intl.NumberFormat('ru-RU', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(variant.size / 1000000)} МБ`;
-  previewLink.setAttribute('aria-label', `Скачать Beam Android 2.2.0, тестовый выпуск, ${previewPicker.options[previewPicker.selectedIndex].text}`);
+  previewLink.setAttribute('aria-label', `Скачать Beam Android 2.2.1, тестовый выпуск, ${previewPicker.options[previewPicker.selectedIndex].text}`);
 }
 if (previewPicker && previewLink && previewSize) {
   previewPicker.addEventListener('change', updatePreviewVariant);

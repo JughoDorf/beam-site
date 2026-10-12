@@ -343,204 +343,204 @@
     }
   ],
   "preview": {
-    "tag": "v2.2.0-preview",
+    "tag": "v2.2.1-preview",
     "status": "prerelease",
-    "date": "2026-10-12",
-    "release_url": "https://github.com/JughoDorf/beam-site/releases/tag/v2.2.0-preview",
-    "source_commit": "20625e4cc1957bc6b17a0b1aea4fd5df9321820c",
+    "date": "2026-10-13",
+    "release_url": "https://github.com/JughoDorf/beam-site/releases/tag/v2.2.1-preview",
+    "source_commit": "c142abbc1d2c237f385ddbf674326d32cf917444",
     "wan_video_tested": false,
     "files": [
       {
-        "name": "BeamClientSetup-2.2.0.exe",
-        "bytes": 32122543,
-        "sha256": "c2002f1161cf5e65705656d8fc190c0fa969ef72046a8043e8e896a8c430a427",
-        "tag": "v2.2.0-preview",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.0-preview/BeamClientSetup-2.2.0.exe"
+        "name": "BeamClientSetup-2.2.1.exe",
+        "bytes": 31580355,
+        "sha256": "727a132c4a50f48d2bf5a63981cb60d3edae6027a2c6fb41d5ea83da5db779d2",
+        "tag": "v2.2.1-preview",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/BeamClientSetup-2.2.1.exe"
       },
       {
-        "name": "BeamServerSetup-2.2.0.exe",
-        "bytes": 25932087,
-        "sha256": "925067f525eed3663f2f9018017bd323f6c46a1da7ff8d29f69aabf1714e8d44",
-        "tag": "v2.2.0-preview",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.0-preview/BeamServerSetup-2.2.0.exe"
+        "name": "BeamServerSetup-2.2.1.exe",
+        "bytes": 24931901,
+        "sha256": "dc4e73b7eb423bffb0639d316b952643ae3303f9e06abf808bfa74952e90d172",
+        "tag": "v2.2.1-preview",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/BeamServerSetup-2.2.1.exe"
       },
       {
-        "name": "BeamSetup-2.2.0.exe",
-        "bytes": 58552734,
-        "sha256": "70c669b404f14e900ea9a7388868c0f3aee39ed8290a4c42c8e9d21ae75e2490",
-        "tag": "v2.2.0-preview",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.0-preview/BeamSetup-2.2.0.exe"
+        "name": "BeamSetup-2.2.1.exe",
+        "bytes": 49728268,
+        "sha256": "dffb08dabfb7845e3df3fc3a0112aa6bb60d23eb37861aa74bc7433e86a29ad5",
+        "tag": "v2.2.1-preview",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/BeamSetup-2.2.1.exe"
       },
       {
         "name": "BeamEasyTierSetup-0.1.4.exe",
         "bytes": 8635086,
         "sha256": "60de81b418b80373d4f6dfea30cf9daaae919a6f66842df71e0bcafe1d15afed",
-        "tag": "v2.2.0-preview",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.0-preview/BeamEasyTierSetup-0.1.4.exe"
+        "tag": "v2.2.1-preview",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/BeamEasyTierSetup-0.1.4.exe"
       },
       {
         "name": "BeamEasyTier-0.1.4-windows-x64.zip",
         "bytes": 13920522,
         "sha256": "cd91b20e9c724cf44ba2f0e5809029e63d105ff27b00428eaeba766c7d92c3da",
-        "tag": "v2.2.0-preview",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.0-preview/BeamEasyTier-0.1.4-windows-x64.zip"
+        "tag": "v2.2.1-preview",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/BeamEasyTier-0.1.4-windows-x64.zip"
       },
       {
-        "name": "BeamAndroid-2.2.0-arm32.apk",
-        "bytes": 10825521,
-        "sha256": "b22a884c6acb290aba3a3fb03209f22a75c31b15de620552e456e6618e832689",
-        "tag": "v2.2.0-preview",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.0-preview/BeamAndroid-2.2.0-arm32.apk"
+        "name": "BeamAndroid-2.2.1-arm32.apk",
+        "bytes": 9407380,
+        "sha256": "b33e49a415e1ae1479d1d04b495f98883a573b3b50e56a0ea793841db204d070",
+        "tag": "v2.2.1-preview",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/BeamAndroid-2.2.1-arm32.apk"
       },
       {
-        "name": "BeamAndroid-2.2.0-arm64.apk",
-        "bytes": 12009261,
-        "sha256": "4cf485f38eafda9452162ab31ce102ce8b7fbf59fd35ac5db33e21aeca9c4a93",
-        "tag": "v2.2.0-preview",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.0-preview/BeamAndroid-2.2.0-arm64.apk"
+        "name": "BeamAndroid-2.2.1-arm64.apk",
+        "bytes": 10591120,
+        "sha256": "7bc825239c7beec62bcbbba94aa8e036da8b8324ae7e4d598d22aa4efd1cc933",
+        "tag": "v2.2.1-preview",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/BeamAndroid-2.2.1-arm64.apk"
       },
       {
-        "name": "BeamAndroid-2.2.0-universal.apk",
-        "bytes": 35520764,
-        "sha256": "513072f52090768edb594aaccfb9bd8ab2f16e899c33390afebcdb7c70656f01",
-        "tag": "v2.2.0-preview",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.0-preview/BeamAndroid-2.2.0-universal.apk"
+        "name": "BeamAndroid-2.2.1-universal.apk",
+        "bytes": 34102623,
+        "sha256": "faae179a6e4be7e81a425cc547d7a11c6883da9bd927b0803378cb07c85b965e",
+        "tag": "v2.2.1-preview",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/BeamAndroid-2.2.1-universal.apk"
       },
       {
-        "name": "BeamAndroid-2.2.0-x86.apk",
-        "bytes": 11968289,
-        "sha256": "3281a2716fb644b6534689e5ff9ed0ef77e54ca070948273d2dbe833e255d19e",
-        "tag": "v2.2.0-preview",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.0-preview/BeamAndroid-2.2.0-x86.apk"
+        "name": "BeamAndroid-2.2.1-x86.apk",
+        "bytes": 10550148,
+        "sha256": "04d30bcc3d754870132476651a5ae449d0d534058b326a91139ebd4aaef72193",
+        "tag": "v2.2.1-preview",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/BeamAndroid-2.2.1-x86.apk"
       },
       {
-        "name": "BeamAndroid-2.2.0-x86_64.apk",
-        "bytes": 12099367,
-        "sha256": "3d05daf9297cd172af8e4e787d3458db98d85c313bf042ac1152e2e4aa7edc0d",
-        "tag": "v2.2.0-preview",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.0-preview/BeamAndroid-2.2.0-x86_64.apk"
+        "name": "BeamAndroid-2.2.1-x86_64.apk",
+        "bytes": 10681226,
+        "sha256": "efb637cf9726e137b51046465913f17aa743b935c0ea177a1f47626a0a4813aa",
+        "tag": "v2.2.1-preview",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/BeamAndroid-2.2.1-x86_64.apk"
       }
     ],
     "sources": [
       {
-        "name": "Beam-Windows-2.2.0-source.tar.gz",
-        "bytes": 173219951,
-        "sha256": "aaa286811829fc53158c1546426eec9ec09ebc8be653af5682e4a55b4d22acc9",
-        "tag": "v2.2.0-preview",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.0-preview/Beam-Windows-2.2.0-source.tar.gz",
-        "source_commit": "20625e4cc1957bc6b17a0b1aea4fd5df9321820c",
-        "file_count": 4880,
+        "name": "Beam-Windows-2.2.1-source.tar.gz",
+        "bytes": 176249902,
+        "sha256": "f50496f75756112f5b4497f19ca1c49e93a6940dc57a9ba5b1f9a224bb43db6d",
+        "tag": "v2.2.1-preview",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/Beam-Windows-2.2.1-source.tar.gz",
+        "source_commit": "c142abbc1d2c237f385ddbf674326d32cf917444",
+        "file_count": 4883,
         "submodules": [
           {
-            "path": "Beam-Windows-2.2.0/client/app/SDL_GameControllerDB",
+            "path": "Beam-Windows-2.2.1/client/app/SDL_GameControllerDB",
             "commit": "8d9fefd7b810f2541f78cc7a8ccbd185bc84c7a5"
           },
           {
-            "path": "Beam-Windows-2.2.0/client/moonlight-common-c/moonlight-common-c/enet",
+            "path": "Beam-Windows-2.2.1/client/moonlight-common-c/moonlight-common-c/enet",
             "commit": "aca87840b57f045a1f7f9299e4b1b9b8e2a5e2f1"
           },
           {
-            "path": "Beam-Windows-2.2.0/client/moonlight-common-c/moonlight-common-c/nanors",
+            "path": "Beam-Windows-2.2.1/client/moonlight-common-c/moonlight-common-c/nanors",
             "commit": "b1e3c22ca0cdc0bb83e3cd6ed1a2fc77869ed99a"
           },
           {
-            "path": "Beam-Windows-2.2.0/client/qmdnsengine/qmdnsengine",
+            "path": "Beam-Windows-2.2.1/client/qmdnsengine/qmdnsengine",
             "commit": "920c097ffa742e2968290f15d4dde6693aec02e5"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/packaging/linux/flatpak/deps/flatpak-builder-tools",
+            "path": "Beam-Windows-2.2.1/server/packaging/linux/flatpak/deps/flatpak-builder-tools",
             "commit": "ea92dc22ab7e4ab44133407b883c9a6792e54302"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/packaging/linux/flatpak/deps/shared-modules",
+            "path": "Beam-Windows-2.2.1/server/packaging/linux/flatpak/deps/shared-modules",
             "commit": "231e052557e37e120c94d584881f43daac3391fd"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/Simple-Web-Server",
+            "path": "Beam-Windows-2.2.1/server/third-party/Simple-Web-Server",
             "commit": "5b29c7004cc53252a8eff06d62899c8847ada971"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/TPCircularBuffer",
+            "path": "Beam-Windows-2.2.1/server/third-party/TPCircularBuffer",
             "commit": "cc520397504bb72bc6df79ff03eb72988a6dc50d"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/ViGEmClient",
+            "path": "Beam-Windows-2.2.1/server/third-party/ViGEmClient",
             "commit": "8d71f6740ffff4671cdadbca255ce528e3cd3fef"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/build-deps",
+            "path": "Beam-Windows-2.2.1/server/third-party/build-deps",
             "commit": "a9a7f86328963837e30e21c8901faba00fe81542"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/doxyconfig",
+            "path": "Beam-Windows-2.2.1/server/third-party/doxyconfig",
             "commit": "1188ef2b96efb3e003a591ee01714339c2d9161c"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/doxyconfig/doxygen-awesome-css",
+            "path": "Beam-Windows-2.2.1/server/third-party/doxyconfig/doxygen-awesome-css",
             "commit": "c085b886e38d47c30c7cad0865d641cdf5f2df86"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/googletest",
+            "path": "Beam-Windows-2.2.1/server/third-party/googletest",
             "commit": "52eb8108c5bdec04579160ae17225d66034bd723"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/inputtino",
+            "path": "Beam-Windows-2.2.1/server/third-party/inputtino",
             "commit": "504f0abc7da8ebc351f8300fb2ed98db5438ee48"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/libdisplaydevice",
+            "path": "Beam-Windows-2.2.1/server/third-party/libdisplaydevice",
             "commit": "f31e46d8736fa6932d34c1417111e60ca507b29f"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/libdisplaydevice/third-party/doxyconfig",
+            "path": "Beam-Windows-2.2.1/server/third-party/libdisplaydevice/third-party/doxyconfig",
             "commit": "a73f908fb70fac4f6076a28f0a751239ea5ac2d3"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/libdisplaydevice/third-party/doxyconfig/doxygen-awesome-css",
+            "path": "Beam-Windows-2.2.1/server/third-party/libdisplaydevice/third-party/doxyconfig/doxygen-awesome-css",
             "commit": "98dd024a650e71d8afd1215c27134aa779bdbbd7"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/libdisplaydevice/third-party/googletest",
+            "path": "Beam-Windows-2.2.1/server/third-party/libdisplaydevice/third-party/googletest",
             "commit": "f8d7d77c06936315286eb55f8de22cd23c188571"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/moonlight-common-c",
+            "path": "Beam-Windows-2.2.1/server/third-party/moonlight-common-c",
             "commit": "c999436858471dfefa7617af3b7dc03ec1644ce4"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/moonlight-common-c/enet",
+            "path": "Beam-Windows-2.2.1/server/third-party/moonlight-common-c/enet",
             "commit": "115a10baa1d7f291ff5b870765610fd3b4a6e43c"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/nanors",
+            "path": "Beam-Windows-2.2.1/server/third-party/nanors",
             "commit": "19f07b513e924e471cadd141943c1ec4adc8d0e0"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/nv-codec-headers",
+            "path": "Beam-Windows-2.2.1/server/third-party/nv-codec-headers",
             "commit": "22441b505d9d9afc1e3002290820909846c24bdc"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/nvapi-open-source-sdk",
+            "path": "Beam-Windows-2.2.1/server/third-party/nvapi-open-source-sdk",
             "commit": "cce4e90b629f712ae6eebafac97739bd1196cdef"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/tray/third-party/doxyconfig",
+            "path": "Beam-Windows-2.2.1/server/third-party/tray/third-party/doxyconfig",
             "commit": "a73f908fb70fac4f6076a28f0a751239ea5ac2d3"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/tray/third-party/doxyconfig/doxygen-awesome-css",
+            "path": "Beam-Windows-2.2.1/server/third-party/tray/third-party/doxyconfig/doxygen-awesome-css",
             "commit": "98dd024a650e71d8afd1215c27134aa779bdbbd7"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/tray/third-party/googletest",
+            "path": "Beam-Windows-2.2.1/server/third-party/tray/third-party/googletest",
             "commit": "f8d7d77c06936315286eb55f8de22cd23c188571"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/wayland-protocols",
+            "path": "Beam-Windows-2.2.1/server/third-party/wayland-protocols",
             "commit": "0091197f5c1b1f2c131f1410e99f9c95d50646be"
           },
           {
-            "path": "Beam-Windows-2.2.0/server/third-party/wlr-protocols",
+            "path": "Beam-Windows-2.2.1/server/third-party/wlr-protocols",
             "commit": "a741f0ac5d655338a5100fc34bc8cec87d237346"
           }
         ]
@@ -549,23 +549,23 @@
         "name": "BeamEasyTier-0.1.4-source.tar.gz",
         "bytes": 5108682,
         "sha256": "56468cf3f033d1e061f8dee55759109191c2559c5d730029d557f3c9f14c21df",
-        "tag": "v2.2.0-preview",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.0-preview/BeamEasyTier-0.1.4-source.tar.gz",
+        "tag": "v2.2.1-preview",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/BeamEasyTier-0.1.4-source.tar.gz",
         "source_commit": "16c83ab8ad411bf708a7a960f61a0a975a8fb34b",
         "file_count": 825
       },
       {
-        "name": "Beam-Android-2.2.0-source.tar.gz",
-        "bytes": 22732924,
-        "sha256": "bc3b1f0ac175143ad3383d46e107ecca4febb152ebc9e24b5ec07db90b65ee5b",
-        "tag": "v2.2.0-preview",
-        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.0-preview/Beam-Android-2.2.0-source.tar.gz",
-        "source_commit": "20625e4cc1957bc6b17a0b1aea4fd5df9321820c",
-        "file_count": 1382
+        "name": "Beam-Android-2.2.1-source.tar.gz",
+        "bytes": 22812662,
+        "sha256": "75ea7126b216ef8e788e6fd6c828c4482d0c62d1a61f731fcb25edb0c99062c7",
+        "tag": "v2.2.1-preview",
+        "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/Beam-Android-2.2.1-source.tar.gz",
+        "source_commit": "c142abbc1d2c237f385ddbf674326d32cf917444",
+        "file_count": 1371
       }
     ],
-    "instructions_url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.0-preview/INSTALL-EASYTIER-ru.md",
-    "checksums_url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.0-preview/SHA256SUMS.txt",
-    "android_source_commit": "20625e4cc1957bc6b17a0b1aea4fd5df9321820c"
+    "instructions_url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/INSTALL-EASYTIER-ru.md",
+    "checksums_url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.1-preview/SHA256SUMS.txt",
+    "android_source_commit": "c142abbc1d2c237f385ddbf674326d32cf917444"
   }
 }
