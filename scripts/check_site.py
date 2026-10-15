@@ -34,13 +34,22 @@ for filename, page in pages.items():
             assert url.fragment in pages[path.name].ids, (filename, link)
 
 metadata = json.loads((root/'downloads.json').read_text(encoding='utf-8'))
-assert len(metadata['files']) == 7
+assert len(metadata['files']) == 10
+stable = metadata['stable']
+assert stable['version'] == '2.2.2' and stable['status'] == 'stable'
+assert stable['brand'] == 'Project Beam' and stable['application'] == 'Beam'
+assert stable['wan_video_tested'] is False and stable['media_pipeline_changed'] is False
+assert re.fullmatch(r'[a-f0-9]{40}', stable['source_commit'])
+stable_sources = [x for x in metadata['sources'] if x['tag'] == stable['tag']]
+assert len(stable_sources) == 3
+assert all(x['source_commit'] == stable['source_commit'] and x['file_count'] > 100 for x in stable_sources)
+assert set(x['name'] for x in stable_sources) == {'Beam-Windows-2.2.2-source.tar.gz','Beam-Android-2.2.2-source.tar.gz','BeamConnect-0.1.5-source.tar.gz'}
 preview = metadata['preview']
 assert preview['status'] == 'prerelease' and preview['wan_video_tested'] is False
 assert len(preview['files']) == 10 and len(preview['sources']) == 3
 assert re.fullmatch(r'[a-f0-9]{40}', preview['source_commit'])
 assert preview['release_url'] == 'https://github.com/JughoDorf/beam-site/releases/tag/' + preview['tag']
-current = metadata['files'] + preview['files'] + preview['sources']
+current = metadata['files'] + preview['files'] + preview['sources'] + stable_sources
 assert len({item['name'] for item in current}) == len(current)
 for item in current:
     assert re.fullmatch(r'[a-f0-9]{64}', item['sha256']), item['name']
@@ -51,7 +60,7 @@ for item in current:
 known_downloads = {item['url'] for item in current}
 known_downloads.update(item['url'] for item in metadata['sources'] if 'url' in item)
 known_downloads.update('https://github.com/JughoDorf/beam-site/releases/download/' + item['tag'] + '/SHA256SUMS.txt' for item in current)
-known_downloads.add(preview['instructions_url'])
+known_downloads.update([preview['instructions_url'], stable['instructions_url'], stable['checksums_url']])
 for filename, page in pages.items():
     for link in page.links:
         if '/releases/download/' in link:
@@ -66,8 +75,9 @@ assert set(x['name'] for x in preview['files']) == {
 assert set(x['name'] for x in preview['sources']) == {
     'Beam-Windows-2.2.1-source.tar.gz', 'Beam-Android-2.2.1-source.tar.gz', 'BeamEasyTier-0.1.4-source.tar.gz'}
 assert set(x['name'] for x in metadata['files']) == {
-    'BeamServerSetup-2.0.11.exe', 'BeamClientSetup-2.0.8.exe',
-    *('BeamAndroid-0.3.1-' + abi + '.apk' for abi in ['arm32','arm64','universal','x86','x86_64'])}
+    'BeamSetup-2.2.2.exe', 'BeamServerSetup-2.2.2.exe', 'BeamClientSetup-2.2.2.exe',
+    'BeamConnectSetup-0.1.5.exe', 'BeamConnect-0.1.5-windows-x64.zip',
+    *('BeamAndroid-2.2.2-' + abi + '.apk' for abi in ['arm32','arm64','universal','x86','x86_64'])}
 assert 'JughoDorf/Beam/releases/' not in (root/'index.html').read_text(encoding='utf-8')
 catalog = (root/'easytier-nodes.txt').read_text(encoding='ascii')
 nodes = catalog.split()
@@ -80,4 +90,4 @@ for node in nodes:
     assert not re.fullmatch(r'[0-9.]+', address.hostname)
     assert 1 <= address.port <= 65535
 assert 'public.easytier.cn' not in nodes
-print('PASS: resources, navigation, 7 stable / 10 preview downloads, 3 preview sources, SHA-256, public links')
+print('PASS: resources, navigation, 10 stable / 10 preview downloads, 3 stable / 3 preview sources, SHA-256, public links')

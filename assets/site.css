@@ -371,3 +371,7 @@ details[open]::details-content{block-size:auto}
  .primary:hover,.secondary:hover,.feature:hover,.download-card:hover,.button:hover .icon,.text-link:hover .icon,.nav-download:hover,.latest-update:hover{transform:none}
  .hero-visual:hover .desktop-demo{transform:perspective(1200px) rotateY(-8deg) rotateX(4deg)}
 }
+
+/* Project Beam is the brand; Beam remains the application name. */
+.brand span{font-family:Onest,"Segoe UI",sans-serif;font-size:20px;font-weight:800;letter-spacing:-.4px}
+@media(max-width:480px){.brand span{font-size:16px}.nav .brand img{width:30px;height:30px}}
