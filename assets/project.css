@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* The shared brand navigation and two independent products. */
+.product-bar{border-block:1px solid var(--line);background:var(--glass)}
+.product-nav{display:flex;align-items:center;gap:8px;min-height:56px;padding-block:8px;font-size:13px;font-weight:650}
+.product-nav a{padding:6px 14px;border-radius:9px;color:var(--muted);transition:color .2s,background .2s}
+.product-nav a:hover{color:var(--text);background:var(--surface-2)}
+.product-nav a[aria-current="page"]{color:var(--accent-ink);background:var(--accent-soft)}
+.hub-hero{display:grid;grid-template-columns:1.15fr 1fr;align-items:center;gap:56px;padding-block:70px 66px}
+.hub-hero h1,.dns-hero h1{font-size:clamp(32px,4.4vw,56px);line-height:1.15;letter-spacing:-.05em;margin:0 0 24px}
+.hub-lead{font-size:18px;line-height:1.8;max-width:520px;margin:0 0 29px;color:var(--muted)}
+.hub-art{position:relative;display:flex;flex-direction:column;justify-content:center;min-height:330px;padding:18px 0;isolation:isolate}
+.hub-ring{position:absolute;width:320px;aspect-ratio:1;border:1px solid var(--line-strong);border-radius:50%;left:36px;top:12px;z-index:-1;background:radial-gradient(ellipse,var(--accent-soft),transparent 68%)}
+.hub-ring:before{content:"";position:absolute;inset:27px;border:1px dashed var(--line-strong);border-radius:50%}
+.hub-app{display:flex;align-items:center;gap:18px;position:relative;border:1px solid var(--line-strong);background:var(--glass);border-radius:22px;padding:22px;box-shadow:var(--shadow);max-width:365px;backdrop-filter:blur(14px)}
+.hub-app img{flex-shrink:0;object-fit:contain}
+.hub-app div{min-width:0}.hub-app strong{display:block;font-family:var(--font-display);font-size:23px;letter-spacing:-.04em}
+.hub-app span{font-size:12px;color:var(--muted)}
+.hub-app i{width:7px;height:7px;border-radius:50%;background:var(--good);margin-left:auto;flex-shrink:0}
+.hub-app-beam{transform:rotate(-4deg);margin-bottom:22px}
+.hub-app-dns{margin-left:45px;transform:rotate(3deg)}
+.hub-art-label{margin:23px 0 0 45px;font-size:11px;color:var(--muted);font-family:var(--font-mono)}
+.product-section{padding-block:30px 74px}
+.product-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.product-card{position:relative;overflow:hidden;display:flex;flex-direction:column;min-width:0;border:1px solid var(--line-strong);border-radius:26px;background:var(--surface);padding:30px;box-shadow:var(--shadow-sm);transition:transform .3s var(--ease-out),box-shadow .3s}
+.product-card:before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent-2),var(--accent-3));opacity:.8}
+.product-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.product-card-top{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:24px}
+.product-card-top img{object-fit:contain;flex-shrink:0}
+.product-category{font-family:var(--font-mono);font-size:11px;letter-spacing:.04em;color:var(--accent-ink)}
+.product-card h3{font-size:34px;line-height:1.2;letter-spacing:-.04em;margin:8px 0 17px}
+.product-card>p{font-size:16px;color:var(--muted);line-height:1.8;margin:0 0 20px}
+.product-points{list-style:none;margin:0 0 27px;padding:0;font-size:13.5px;color:var(--text-2)}
+.product-points li{margin:9px 0;padding-left:18px;position:relative}
+.product-points li:before{content:"";position:absolute;width:5px;height:5px;left:0;top:.7em;border-radius:50%;background:var(--accent)}
+.product-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:auto}
+.product-actions .button{font-size:14px;padding-inline:19px}
+.product-actions .text-link{font-size:13px}
+.product-version-note{margin-top:17px;color:var(--muted);font-family:var(--font-mono);font-size:10.5px}
+.release-badge.beta{color:var(--warn-ink);background:var(--warn-soft);border:1px solid var(--warn-line)}
+.project-about{display:grid;grid-template-columns:1fr 1fr;gap:60px;padding-block:46px 66px;border-top:1px solid var(--line)}
+.project-about h2{font-size:clamp(24px,3vw,32px);line-height:1.35;letter-spacing:-.04em;margin-top:0}
+.project-about p{color:var(--muted);font-size:15px;margin:0 0 18px;line-height:1.9}
+.project-compat{font-size:13px;color:var(--muted);padding-bottom:26px}.project-compat a{color:var(--accent-ink);text-decoration:underline;text-underline-offset:4px}
+.project-home .footer,.dns-page .footer{border-top:1px solid var(--line);padding-top:30px}
+
+/* BeamDNS: related to Beam, with its own calm teal accent. */
+.dns-page,.product-dns{--accent:#087b8c;--accent-2:#00a5a2;--accent-3:#3175d8;--accent-ink:#096d80;--accent-soft:#e8f7f7;--glow:rgba(0,150,150,.18);--spot:rgba(0,150,150,.08)}
+@media(prefers-color-scheme:dark){.dns-page,.product-dns{--accent:#26b8c7;--accent-2:#36d6bc;--accent-3:#4688ee;--accent-ink:#68ddd4;--accent-soft:rgba(38,184,199,.12);--glow:rgba(38,184,199,.19);--spot:rgba(38,184,199,.10)}}
+.dns-download{background:linear-gradient(120deg,#078981,#087b9d 70%,#2b6ed3);color:#fff}
+.dns-hero{display:grid;grid-template-columns:1.08fr 1fr;gap:56px;align-items:center;padding-block:64px 52px}
+.dns-product-title{display:flex;align-items:center;gap:13px;margin-bottom:29px;font-weight:750;font-size:21px}
+.dns-product-title img{object-fit:contain}.dns-product-title .release-badge{font-size:10px;padding:3px 8px}
+.dns-hero-meta{display:flex;gap:8px 16px;flex-wrap:wrap;margin-top:22px;color:var(--muted);font-size:11px;font-family:var(--font-mono)}
+.dns-flow{position:relative;margin:0;min-width:0;padding:28px;background:var(--surface);border:1px solid var(--line-strong);border-radius:24px;box-shadow:var(--shadow)}
+.dns-flow figcaption{font-family:var(--font-display);font-size:15px;font-weight:600;margin:0 0 22px;line-height:1.6}
+.flow-query,.flow-rule{display:flex;align-items:center;gap:13px;border:1px solid var(--line);border-radius:14px;background:var(--surface-2);padding:16px;min-width:0}
+.flow-query small,.flow-rule small{display:block;color:var(--muted);font-size:10px;margin-bottom:3px}
+.flow-query strong,.flow-rule strong{display:block;color:var(--text);font-weight:700;font-size:14px}
+.flow-query strong{font-family:var(--font-mono);font-size:13px}
+.flow-icon,.flow-step{display:grid;place-items:center;width:34px;height:34px;flex-shrink:0;border-radius:10px;background:var(--accent-soft);color:var(--accent-ink);font-weight:700}
+.flow-protocol{margin-left:auto;color:var(--muted);font-size:10px;font-family:var(--font-mono)}
+.flow-connector{text-align:center;padding:5px;color:var(--accent-ink)}
+.flow-rule{background:var(--accent-soft);border-color:var(--line-strong)}
+.flow-rule>span:last-child{margin-left:auto;font-size:25px;color:var(--accent-ink)}
+.flow-step{font-size:11px;background:var(--surface)}
+.flow-branches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:20px}
+.flow-branch{padding:11px 6px;background:var(--surface-2);border:1px solid var(--line);border-radius:12px;text-align:center;position:relative}
+.flow-branch:before{content:"";position:absolute;top:-20px;left:50%;height:19px;width:1px;background:var(--line-strong)}
+.flow-branch>span{display:block;font-size:23px;color:var(--accent-ink);line-height:1.5}.flow-branch strong{display:block;font-size:10px;font-weight:700}.flow-branch small{display:block;font-size:9px;color:var(--muted);margin-top:4px}
+.flow-caption{font-size:11px;color:var(--muted);margin:19px 0 0;line-height:1.8}
+.dns-protocols{display:flex;align-items:center;gap:24px;padding:19px 0;border-block:1px solid var(--line);font-family:var(--font-mono);font-size:14px}
+.dns-protocols>span{margin-right:auto;font-family:var(--font-body);color:var(--muted);font-size:13px}.dns-protocols strong{font-weight:650;color:var(--accent-ink)}
+.dns-feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.dns-feature{padding:28px;background:var(--surface);border:1px solid var(--line);border-radius:20px}
+.dns-feature-number{font-size:10px;font-family:var(--font-mono);font-weight:650;color:var(--accent-ink)}
+.dns-feature h3{font-size:19px;line-height:1.5;letter-spacing:-.035em;margin:16px 0 12px}
+.dns-feature p{font-size:14px;color:var(--muted);line-height:1.9;margin:0}
+.dns-how{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;padding-block:24px 45px}
+.dns-how h2{font-size:clamp(24px,3vw,32px);line-height:1.35;letter-spacing:-.04em;margin:0 0 23px}.dns-how p{font-size:15px;color:var(--muted);line-height:1.9;margin:0}
+.dns-boundary{padding:25px 28px;border:1px solid var(--line-strong);border-radius:20px;background:var(--accent-soft)}
+.dns-boundary h3{font-size:16px;margin:0 0 16px}.dns-boundary ul{margin:0;padding-left:18px;color:var(--muted);font-size:13px;line-height:1.85}.dns-boundary li+li{margin-top:12px}.dns-boundary li::marker{color:var(--accent)}
+.dns-download-section{padding-block:45px 76px}
+.dns-download-layout{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.dns-install-card{padding:30px;min-width:0}.dns-install-card h3{font-size:23px;line-height:1.5}.dns-install-card .card-description{min-height:0}.dns-install-card .compatibility{height:auto;padding-block:14px}
+.dns-install-card .product-card-top{margin-bottom:20px}.dns-install-card .button{width:100%;font-size:14px}
+.dns-signing-note{font-size:11px!important;color:var(--muted)!important;line-height:1.8;margin:20px 0 0!important}
+.dns-install-guide{padding:18px 0;min-width:0}.dns-install-guide h3{font-size:20px;line-height:1.5;margin:0 0 27px}
+.dns-install-guide ol{margin:0 0 24px;padding:0;list-style:none;counter-reset:install}
+.dns-install-guide li{position:relative;padding-left:45px;margin-bottom:25px;counter-increment:install}
+.dns-install-guide li:before{content:counter(install);position:absolute;top:0;left:0;display:grid;place-items:center;width:29px;height:29px;border:1px solid var(--line-strong);border-radius:9px;background:var(--accent-soft);color:var(--accent-ink);font-family:var(--font-mono);font-size:11px;font-weight:700}
+.dns-install-guide li strong{display:block;font-size:14px;margin-bottom:7px;color:var(--text)}.dns-install-guide li span{display:block;color:var(--muted);font-size:13px;line-height:1.85}
+.dns-file-details{margin-top:24px;border-top:1px solid var(--line);padding-top:16px;font-size:12px;color:var(--muted)}.dns-file-details summary{cursor:pointer;color:var(--accent-ink);font-weight:650;padding:5px 0}.dns-file-details code{font-family:var(--font-mono);font-size:10px;overflow-wrap:anywhere;word-break:break-all}
+.dns-faq{padding-bottom:56px}.dns-release-links{padding-block:28px 54px;border-top:1px solid var(--line)}
+.dns-release-links h2{font-size:17px;margin:0 0 17px}.dns-release-links p{display:flex;flex-wrap:wrap;gap:12px 28px;font-size:12px;color:var(--accent-ink)}.dns-release-links a{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:1050px){.hub-hero,.dns-hero{gap:30px}.hub-art{padding:10px 12px}.hub-app{padding:18px;gap:14px}.hub-app img{width:58px;height:58px}.hub-app strong{font-size:20px}.hub-app-dns{margin-left:20px}.hub-ring{left:0;width:270px}.hub-app span{font-size:10px}.hub-art-label{font-size:9px;margin-left:20px}.product-card{padding:25px}.product-card h3{font-size:28px}.product-card>p{font-size:15px}.product-actions{gap:13px}.product-actions .button{font-size:12px;padding-inline:15px}.dns-flow{padding:22px}.flow-branches{gap:6px}.flow-branch strong{font-size:9px}.flow-branch small{font-size:8px}.dns-how,.dns-download-layout{gap:30px}.dns-install-card{padding:24px}.dns-install-card h3{font-size:20px}.project-about{gap:35px}}
+@media(max-width:760px){.product-nav{gap:4px;min-height:49px;font-size:12px}.product-nav a{padding:5px 12px}.hub-hero{grid-template-columns:1fr;padding-block:42px 26px;gap:8px}.hub-hero h1,.dns-hero h1{font-size:clamp(30px,8vw,45px);margin-bottom:20px}.hub-lead{font-size:15.5px;margin-bottom:24px}.hub-art{display:none}.product-section{padding-block:37px 45px}.product-grid{grid-template-columns:1fr;max-width:540px;margin-inline:auto;gap:21px}.product-card{padding:25px}.product-card-top{margin-bottom:20px}.product-card-top img{width:55px;height:55px}.product-card h3{font-size:30px}.product-card>p{font-size:14.5px}.product-points{font-size:13px;margin-bottom:22px}.product-actions .button{font-size:13px}.product-version-note{font-size:10px}.product-category{font-size:10px}.project-about{grid-template-columns:1fr;gap:10px;padding-block:34px 32px}.project-about h2{font-size:24px}.project-about p{font-size:14px}.project-compat{font-size:12px}.project-home .footer,.dns-page .footer{padding-top:24px}.project-home .footer-links,.dns-page .footer-links{gap:12px;flex-wrap:wrap;font-size:11px}.dns-hero{grid-template-columns:1fr;padding-block:35px 29px;gap:34px}.dns-product-title{margin-bottom:24px}.dns-product-title img{width:45px;height:45px}.dns-hero .hero-actions{gap:18px}.dns-hero .button{font-size:13px;padding-inline:18px}.dns-hero .text-link{font-size:12px}.dns-flow{width:100%;max-width:470px;margin-inline:auto;padding:23px}.flow-branches{gap:8px}.flow-branch strong{font-size:10px}.flow-branch small{font-size:9px}.dns-protocols{flex-wrap:wrap;justify-content:space-between;gap:10px 20px;font-size:13px}.dns-protocols>span{flex-basis:100%;font-size:12px}.dns-feature-grid{grid-template-columns:1fr;gap:14px}.dns-feature{padding:23px}.dns-feature h3{font-size:17px;margin-top:14px}.dns-feature p{font-size:14px}.dns-how{grid-template-columns:1fr;gap:25px;padding-block:0 24px}.dns-how h2{font-size:25px}.dns-how p{font-size:14px}.dns-boundary{padding:23px}.dns-download-section{padding-block:44px}.dns-download-layout{grid-template-columns:1fr;gap:20px;max-width:540px;margin-inline:auto}.dns-install-card{padding:25px}.dns-install-card h3{font-size:21px}.dns-install-guide{padding:17px 0}.dns-install-guide h3{font-size:19px}.dns-faq{padding-bottom:35px}.dns-release-links{padding-block:25px 30px}.dns-release-links p{gap:13px 20px}}
+@media(max-width:360px){.product-card{padding:21px}.product-card-top{gap:10px}.product-card-top .release-badge{font-size:9px}.product-actions{gap:15px}.product-actions .button{font-size:12px;padding-inline:14px}.dns-flow{padding:17px}.dns-flow figcaption{font-size:13px}.flow-query,.flow-rule{padding:12px;gap:10px}.flow-query strong{font-size:11px}.flow-rule strong{font-size:12px}.flow-branch strong{font-size:9px}.flow-branch small{font-size:8px}.dns-install-card{padding:21px}.dns-install-card h3{font-size:18px}.dns-install-card .product-card-top .release-badge{font-size:9px}.dns-hero .hero-actions{gap:13px}.dns-hero .text-link{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.product-card:hover{transform:none}}
