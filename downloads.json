@@ -1,39 +1,39 @@
 {
   "files": [
     {
-      "name": "BeamSetup-2.2.2.exe",
-      "bytes": 49978858,
-      "sha256": "f363b6001d5c56b319feec3e7170d5986d38cbced3cf55148b0923fa43007136",
-      "tag": "v2.2.2",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.2/BeamSetup-2.2.2.exe"
+      "name": "BeamSetup-2.2.3.exe",
+      "bytes": 49891236,
+      "sha256": "ffb5e8c4f257f4f6ed8a859e493e279c3f537f3f4154959864252b53bd1f342b",
+      "tag": "v2.2.3",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.3/BeamSetup-2.2.3.exe"
     },
     {
-      "name": "BeamServerSetup-2.2.2.exe",
-      "bytes": 25043055,
-      "sha256": "4328ec71f6cc068b972cb8687a7c5bb838341650342618c2f6d78a289cb4f273",
-      "tag": "v2.2.2",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.2/BeamServerSetup-2.2.2.exe"
+      "name": "BeamServerSetup-2.2.3.exe",
+      "bytes": 25043596,
+      "sha256": "494b084d3c55a9e784c8796fce5f93e5d1ab9a07c1abb37142084ffde7244e44",
+      "tag": "v2.2.3",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.3/BeamServerSetup-2.2.3.exe"
     },
     {
-      "name": "BeamClientSetup-2.2.2.exe",
-      "bytes": 31805240,
-      "sha256": "6db5a22372c9b36bfc0db508cc937bb05f015b89c372db414b94a43353f49fa9",
-      "tag": "v2.2.2",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.2/BeamClientSetup-2.2.2.exe"
+      "name": "BeamClientSetup-2.2.3.exe",
+      "bytes": 31709687,
+      "sha256": "9765a6e27777cd7159338bddf0df84956c08ee321047395fb9be03d27621a049",
+      "tag": "v2.2.3",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.3/BeamClientSetup-2.2.3.exe"
     },
     {
-      "name": "BeamConnectSetup-0.1.5.exe",
-      "bytes": 8710546,
-      "sha256": "4a4710de6b0252b0f7265bcee90a763b021758e36a85ba5fb00acf96cccaa919",
-      "tag": "v2.2.2",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.2/BeamConnectSetup-0.1.5.exe"
+      "name": "BeamConnectSetup-0.1.6.exe",
+      "bytes": 8719207,
+      "sha256": "07d34e78e626f094c1f85ddbd8026567dc9738e342d8abde423f593745569904",
+      "tag": "v2.2.3",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.3/BeamConnectSetup-0.1.6.exe"
     },
     {
-      "name": "BeamConnect-0.1.5-windows-x64.zip",
-      "bytes": 13921053,
-      "sha256": "34e9beffdbac24aa688394e7d40bacb4cd18b0fccce7f6bf2c4b5efeb13ff790",
-      "tag": "v2.2.2",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.2/BeamConnect-0.1.5-windows-x64.zip"
+      "name": "BeamConnect-0.1.6-windows-x64.zip",
+      "bytes": 13894450,
+      "sha256": "bdc71a24451791ea4717935f9080862ea2e316f397f6ba8777629aabca7c484e",
+      "tag": "v2.2.3",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.3/BeamConnect-0.1.6-windows-x64.zip"
     },
     {
       "name": "BeamAndroid-2.2.2-arm32.apk",
@@ -72,6 +72,24 @@
     }
   ],
   "sources": [
+    {
+      "name": "Beam-Windows-2.2.3-source.tar.gz",
+      "bytes": 173177034,
+      "sha256": "cbeaf605a3d9490a98b550087ad6c26a87ad17342e2e36778c22ae7e758f82b5",
+      "tag": "v2.2.3",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.3/Beam-Windows-2.2.3-source.tar.gz",
+      "source_commit": "87f3b5309e122e81c42ac1ebe47dfaf8e298b9e2",
+      "file_count": 4927
+    },
+    {
+      "name": "BeamConnect-0.1.6-source.tar.gz",
+      "bytes": 5410110,
+      "sha256": "6ef0d27396b63a744234f91fce2a83c6cfdec1078c14bcb552277ee2cbe1eaba",
+      "tag": "v2.2.3",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.3/BeamConnect-0.1.6-source.tar.gz",
+      "source_commit": "87f3b5309e122e81c42ac1ebe47dfaf8e298b9e2",
+      "file_count": 837
+    },
     {
       "name": "Beam-Windows-2.2.2-source.tar.gz",
       "bytes": 173161196,
@@ -618,6 +636,41 @@
   },
   "legacy_files": [
     {
+      "name": "BeamSetup-2.2.2.exe",
+      "bytes": 49978858,
+      "sha256": "f363b6001d5c56b319feec3e7170d5986d38cbced3cf55148b0923fa43007136",
+      "tag": "v2.2.2",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.2/BeamSetup-2.2.2.exe"
+    },
+    {
+      "name": "BeamServerSetup-2.2.2.exe",
+      "bytes": 25043055,
+      "sha256": "4328ec71f6cc068b972cb8687a7c5bb838341650342618c2f6d78a289cb4f273",
+      "tag": "v2.2.2",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.2/BeamServerSetup-2.2.2.exe"
+    },
+    {
+      "name": "BeamClientSetup-2.2.2.exe",
+      "bytes": 31805240,
+      "sha256": "6db5a22372c9b36bfc0db508cc937bb05f015b89c372db414b94a43353f49fa9",
+      "tag": "v2.2.2",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.2/BeamClientSetup-2.2.2.exe"
+    },
+    {
+      "name": "BeamConnectSetup-0.1.5.exe",
+      "bytes": 8710546,
+      "sha256": "4a4710de6b0252b0f7265bcee90a763b021758e36a85ba5fb00acf96cccaa919",
+      "tag": "v2.2.2",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.2/BeamConnectSetup-0.1.5.exe"
+    },
+    {
+      "name": "BeamConnect-0.1.5-windows-x64.zip",
+      "bytes": 13921053,
+      "sha256": "34e9beffdbac24aa688394e7d40bacb4cd18b0fccce7f6bf2c4b5efeb13ff790",
+      "tag": "v2.2.2",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.2/BeamConnect-0.1.5-windows-x64.zip"
+    },
+    {
       "name": "BeamServerSetup-2.0.11.exe",
       "bytes": 17441868,
       "sha256": "bf469ec15db360d796735a10ad3fa2cbfba3c3b7894f586a3a5cba05f65504ea",
@@ -668,18 +721,26 @@
     }
   ],
   "stable": {
-    "version": "2.2.2",
+    "version": "2.2.3",
     "brand": "Project Beam",
     "application": "Beam",
     "status": "stable",
-    "tag": "v2.2.2",
+    "tag": "v2.2.3",
     "date": "2026-10-16",
-    "source_commit": "5c74c4dafb4cb5e2fee82c0a97d3753c172d10ae",
+    "source_commit": "87f3b5309e122e81c42ac1ebe47dfaf8e298b9e2",
     "android_source_commit": "5c74c4dafb4cb5e2fee82c0a97d3753c172d10ae",
-    "release_url": "https://github.com/JughoDorf/beam-site/releases/tag/v2.2.2",
-    "checksums_url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.2/SHA256SUMS.txt",
-    "instructions_url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.2/INSTALL-BEAM-ru.md",
+    "release_url": "https://github.com/JughoDorf/beam-site/releases/tag/v2.2.3",
+    "checksums_url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.3/SHA256SUMS.txt",
+    "instructions_url": "https://github.com/JughoDorf/beam-site/releases/download/v2.2.3/INSTALL-BEAM-ru.md",
     "wan_video_tested": false,
-    "media_pipeline_changed": false
+    "media_pipeline_changed": false,
+    "windows_version": "2.2.3",
+    "android_version": "2.2.2",
+    "module_version": "0.1.6",
+    "sources": [
+      "Beam-Windows-2.2.3-source.tar.gz",
+      "Beam-Android-2.2.2-source.tar.gz",
+      "BeamConnect-0.1.6-source.tar.gz"
+    ]
   }
 }

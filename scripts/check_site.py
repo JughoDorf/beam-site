@@ -36,14 +36,21 @@ for filename, page in pages.items():
 metadata = json.loads((root/'downloads.json').read_text(encoding='utf-8'))
 assert len(metadata['files']) == 10
 stable = metadata['stable']
-assert stable['version'] == '2.2.2' and stable['status'] == 'stable'
+assert stable['version'] == '2.2.3' and stable['status'] == 'stable'
+assert stable['windows_version'] == '2.2.3' and stable['android_version'] == '2.2.2'
+assert stable['module_version'] == '0.1.6'
 assert stable['brand'] == 'Project Beam' and stable['application'] == 'Beam'
 assert stable['wan_video_tested'] is False and stable['media_pipeline_changed'] is False
 assert re.fullmatch(r'[a-f0-9]{40}', stable['source_commit'])
-stable_sources = [x for x in metadata['sources'] if x['tag'] == stable['tag']]
+assert len(set(stable['sources'])) == 3
+stable_sources = [x for x in metadata['sources'] if x['name'] in stable['sources']]
 assert len(stable_sources) == 3
-assert all(x['source_commit'] == stable['source_commit'] and x['file_count'] > 100 for x in stable_sources)
-assert set(x['name'] for x in stable_sources) == {'Beam-Windows-2.2.2-source.tar.gz','Beam-Android-2.2.2-source.tar.gz','BeamConnect-0.1.5-source.tar.gz'}
+for item in stable_sources:
+    android = item['name'].startswith('Beam-Android-')
+    assert item['source_commit'] == stable['android_source_commit' if android else 'source_commit']
+    assert item['tag'] == ('v2.2.2' if android else stable['tag'])
+    assert item['file_count'] > 100
+assert set(x['name'] for x in stable_sources) == {'Beam-Windows-2.2.3-source.tar.gz','Beam-Android-2.2.2-source.tar.gz','BeamConnect-0.1.6-source.tar.gz'}
 preview = metadata['preview']
 assert preview['status'] == 'prerelease' and preview['wan_video_tested'] is False
 assert len(preview['files']) == 10 and len(preview['sources']) == 3
@@ -75,8 +82,8 @@ assert set(x['name'] for x in preview['files']) == {
 assert set(x['name'] for x in preview['sources']) == {
     'Beam-Windows-2.2.1-source.tar.gz', 'Beam-Android-2.2.1-source.tar.gz', 'BeamEasyTier-0.1.4-source.tar.gz'}
 assert set(x['name'] for x in metadata['files']) == {
-    'BeamSetup-2.2.2.exe', 'BeamServerSetup-2.2.2.exe', 'BeamClientSetup-2.2.2.exe',
-    'BeamConnectSetup-0.1.5.exe', 'BeamConnect-0.1.5-windows-x64.zip',
+    'BeamSetup-2.2.3.exe', 'BeamServerSetup-2.2.3.exe', 'BeamClientSetup-2.2.3.exe',
+    'BeamConnectSetup-0.1.6.exe', 'BeamConnect-0.1.6-windows-x64.zip',
     *('BeamAndroid-2.2.2-' + abi + '.apk' for abi in ['arm32','arm64','universal','x86','x86_64'])}
 assert 'JughoDorf/Beam/releases/' not in (root/'index.html').read_text(encoding='utf-8')
 catalog = (root/'easytier-nodes.txt').read_text(encoding='ascii')
