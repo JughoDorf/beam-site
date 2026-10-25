@@ -14,24 +14,24 @@ if (separateInstallers) {
 // Downloads work without JavaScript. Animation never gates a download or navigation.
 const variants = {
   "universal": {
-    "size": 34102623,
-    "file": "BeamAndroid-2.2.4-universal.apk"
+    "size": 34106719,
+    "file": "BeamAndroid-2.3.0-universal.apk"
   },
   "arm64": {
-    "size": 10591120,
-    "file": "BeamAndroid-2.2.4-arm64.apk"
+    "size": 10595216,
+    "file": "BeamAndroid-2.3.0-arm64.apk"
   },
   "arm32": {
-    "size": 9407380,
-    "file": "BeamAndroid-2.2.4-arm32.apk"
+    "size": 9411476,
+    "file": "BeamAndroid-2.3.0-arm32.apk"
   },
   "x86_64": {
-    "size": 10681226,
-    "file": "BeamAndroid-2.2.4-x86_64.apk"
+    "size": 10685322,
+    "file": "BeamAndroid-2.3.0-x86_64.apk"
   },
   "x86": {
-    "size": 10550148,
-    "file": "BeamAndroid-2.2.4-x86.apk"
+    "size": 10554244,
+    "file": "BeamAndroid-2.3.0-x86.apk"
   }
 };
 const picker = document.getElementById('android-variant');
@@ -39,9 +39,9 @@ const androidLink = document.querySelector('[data-download="android"]');
 const androidSize = document.querySelector('[data-size="android"]');
 function updateVariant() {
   const variant = variants[picker.value] || variants.universal;
-  androidLink.href = `https://github.com/JughoDorf/beam-site/releases/download/v2.2.4/${variant.file}`;
+  androidLink.href = `https://github.com/JughoDorf/beam-site/releases/download/v2.3.0/${variant.file}`;
   androidSize.textContent = `${new Intl.NumberFormat('ru-RU', {minimumFractionDigits:2,maximumFractionDigits:2}).format(variant.size/1000000)} МБ`;
-  androidLink.setAttribute('aria-label', `Скачать Beam Android 2.2.4, ${picker.options[picker.selectedIndex].text}`);
+  androidLink.setAttribute('aria-label', `Скачать Beam Android 2.3.0, ${picker.options[picker.selectedIndex].text}`);
 }
 if(picker && androidLink && androidSize) {picker.addEventListener('change',updateVariant);updateVariant();}
 

@@ -36,11 +36,13 @@ for filename, page in pages.items():
 metadata = json.loads((root/'downloads.json').read_text(encoding='utf-8'))
 assert len(metadata['files']) == 10
 stable = metadata['stable']
-assert stable['version'] == '2.2.4' and stable['status'] == 'stable'
-assert stable['windows_version'] == '2.2.4' and stable['android_version'] == '2.2.4'
+assert stable['version'] == '2.3.0' and stable['status'] == 'stable'
+assert stable['windows_version'] == '2.3.0' and stable['android_version'] == '2.3.0'
 assert stable['module_version'] == '0.1.6'
 assert stable['brand'] == 'Project Beam' and stable['application'] == 'Beam'
-assert stable['wan_video_tested'] is False and stable['media_pipeline_changed'] is False
+assert stable['wan_video_tested'] is False and stable['media_pipeline_changed'] is True
+assert stable['media_transport_changed'] is False and stable['encoder_presets_changed'] is False
+assert stable['network_adaptation_changed'] is True and stable['network_policy_revision'] == 10
 assert re.fullmatch(r'[a-f0-9]{40}', stable['source_commit'])
 assert len(set(stable['sources'])) == 3
 stable_sources = [x for x in metadata['sources'] if x['name'] in stable['sources']]
@@ -50,7 +52,7 @@ for item in stable_sources:
     assert item['source_commit'] == stable['module_source_commit' if module else 'source_commit']
     assert item['tag'] == (stable['module_tag'] if module else stable['tag'])
     assert item['file_count'] > 100
-assert set(x['name'] for x in stable_sources) == {'Beam-Windows-2.2.4-source.tar.gz','Beam-Android-2.2.4-source.tar.gz','BeamConnect-0.1.6-source.tar.gz'}
+assert set(x['name'] for x in stable_sources) == {'Beam-Windows-2.3.0-source.tar.gz','Beam-Android-2.3.0-source.tar.gz','BeamConnect-0.1.6-source.tar.gz'}
 preview = metadata['preview']
 assert preview['status'] == 'prerelease' and preview['wan_video_tested'] is False
 assert len(preview['files']) == 10 and len(preview['sources']) == 3
@@ -83,7 +85,7 @@ assert dns_installer['name'] == 'BeamDNS-Setup-0.9.0-beta.4-win-x64.exe' and dns
 assert dns_installer['url'] in (root/'beamdns.html').read_text(encoding='utf-8')
 assert set(pages) == {'index.html', 'beam.html', 'beamdns.html', 'sources.html'}
 assert 'Project Beam — программы' in (root/'index.html').read_text(encoding='utf-8')
-assert 'BeamSetup-2.2.4.exe' in (root/'beam.html').read_text(encoding='utf-8')
+assert 'BeamSetup-2.3.0.exe' in (root/'beam.html').read_text(encoding='utf-8')
 for filename, page in pages.items():
     for link in page.links:
         if '/releases/download/' in link:
@@ -98,9 +100,9 @@ assert set(x['name'] for x in preview['files']) == {
 assert set(x['name'] for x in preview['sources']) == {
     'Beam-Windows-2.2.1-source.tar.gz', 'Beam-Android-2.2.1-source.tar.gz', 'BeamEasyTier-0.1.4-source.tar.gz'}
 assert set(x['name'] for x in metadata['files']) == {
-    'BeamSetup-2.2.4.exe', 'BeamServerSetup-2.2.4.exe', 'BeamClientSetup-2.2.4.exe',
+    'BeamSetup-2.3.0.exe', 'BeamServerSetup-2.3.0.exe', 'BeamClientSetup-2.3.0.exe',
     'BeamConnectSetup-0.1.6.exe', 'BeamConnect-0.1.6-windows-x64.zip',
-    *('BeamAndroid-2.2.4-' + abi + '.apk' for abi in ['arm32','arm64','universal','x86','x86_64'])}
+    *('BeamAndroid-2.3.0-' + abi + '.apk' for abi in ['arm32','arm64','universal','x86','x86_64'])}
 assert 'JughoDorf/Beam/releases/' not in (root/'index.html').read_text(encoding='utf-8')
 catalog = (root/'easytier-nodes.txt').read_text(encoding='ascii')
 nodes = catalog.split()
