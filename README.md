@@ -13,7 +13,7 @@
 и другие разделы Beam на `beam.html` с сохранением якоря. Без JavaScript на
 главной доступны ссылки на страницу и установщик Beam.
 
-BeamDNS 0.9.0-beta.7 опубликован отдельным prerelease `beamdns-v0.9.0-beta.7` (beta.4 остаётся в Releases).
+BeamDNS 0.10.0-beta.4 опубликован отдельным prerelease `beamdns-v0.10.0-beta.4` (прежние бета-версии остаются в Releases).
 Его файлы и SHA-256 находятся в `beamdns-downloads.json`; этот каталог не меняет
 `downloads.json` и канал обновлений Beam. Не отмечать релиз BeamDNS как Latest:
 последним стабильным выпуском Beam остаётся v2.3.0. Публикуются установщик,
