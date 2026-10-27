@@ -1,65 +1,72 @@
 {
   "product": "BeamDNS",
   "brand": "Project Beam",
-  "version": "0.10.0-beta.4",
+  "version": "0.11.0-beta.1",
   "status": "beta",
-  "tag": "beamdns-v0.10.0-beta.4",
-  "release_url": "https://github.com/JughoDorf/beam-site/releases/tag/beamdns-v0.10.0-beta.4",
+  "tag": "beamdns-v0.11.0-beta.1",
+  "release_url": "https://github.com/JughoDorf/beam-site/releases/tag/beamdns-v0.11.0-beta.1",
   "files": [
     {
-      "name": "BeamDNS-Setup-0.10.0-beta.4-win-x64.exe",
-      "bytes": 5557248,
-      "sha256": "db238c27b6a14ec0e3d0634d0a30d6eae544772ba024c01690cfb8932cd417e7",
-      "tag": "beamdns-v0.10.0-beta.4",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/beamdns-v0.10.0-beta.4/BeamDNS-Setup-0.10.0-beta.4-win-x64.exe"
+      "name": "BeamDNS-Setup-0.11.0-beta.1-win-x64.exe",
+      "bytes": 5579264,
+      "sha256": "81b9dbe3a5bff7e255479231c8248ca2214da39d15c68226f73966061d05aceb",
+      "tag": "beamdns-v0.11.0-beta.1",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/beamdns-v0.11.0-beta.1/BeamDNS-Setup-0.11.0-beta.1-win-x64.exe"
     },
     {
-      "name": "BeamDNS-0.10.0-beta.4-portable-win-x64.zip",
-      "bytes": 5140649,
-      "sha256": "6b3d2e0741c0a3e3f1acea4a78f17fbc994e2b93137c6b48237a761fdf7e51a9",
-      "tag": "beamdns-v0.10.0-beta.4",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/beamdns-v0.10.0-beta.4/BeamDNS-0.10.0-beta.4-portable-win-x64.zip"
+      "name": "BeamDNS-0.11.0-beta.1-portable-win-x64.zip",
+      "bytes": 5162461,
+      "sha256": "2a12b329173b4aeccb03551ddcb3254dc364d6f1d8e3aa60d6f74a29294d5ab7",
+      "tag": "beamdns-v0.11.0-beta.1",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/beamdns-v0.11.0-beta.1/BeamDNS-0.11.0-beta.1-portable-win-x64.zip"
+    },
+    {
+      "name": "beamdns-ai-proxy.sh",
+      "bytes": 9861,
+      "sha256": "4fc2a2ee1a06ac709294322b89fb711515489b52e3e4fc65820ded6a464cb66a",
+      "tag": "beamdns-v0.11.0-beta.1",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/beamdns-v0.11.0-beta.1/beamdns-ai-proxy.sh"
     },
     {
       "name": "INSTALL-BeamDNS-ru.md",
-      "bytes": 5483,
-      "sha256": "745b3e14770a365b819aeeb259f40c7143364528f4cc08bb9b5275d030ad4a9e",
-      "tag": "beamdns-v0.10.0-beta.4",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/beamdns-v0.10.0-beta.4/INSTALL-BeamDNS-ru.md"
+      "bytes": 7055,
+      "sha256": "9683c609cb7d9d51e46945caf8a64dbb6ef2ba96630311f009173bff4c90e456",
+      "tag": "beamdns-v0.11.0-beta.1",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/beamdns-v0.11.0-beta.1/INSTALL-BeamDNS-ru.md"
     },
     {
-      "name": "RELEASE-NOTES-BeamDNS-0.10.0-beta.4.md",
-      "bytes": 5248,
-      "sha256": "beb2d66781e701d9d07ac9d38695cdd3579763ac31b360fc164bf86bfbeb372e",
-      "tag": "beamdns-v0.10.0-beta.4",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/beamdns-v0.10.0-beta.4/RELEASE-NOTES-BeamDNS-0.10.0-beta.4.md"
+      "name": "RELEASE-NOTES-BeamDNS-0.11.0-beta.1.md",
+      "bytes": 3454,
+      "sha256": "72c59400389ac3373b6a6d2aca1d35f45995c5c8af6788ad57b5c3f0af98b10b",
+      "tag": "beamdns-v0.11.0-beta.1",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/beamdns-v0.11.0-beta.1/RELEASE-NOTES-BeamDNS-0.11.0-beta.1.md"
     },
     {
       "name": "THIRD-PARTY-NOTICES.txt",
       "bytes": 144155,
-      "sha256": "30c333e73135c584068a1c9cec624f93b551eceaf1935f77f75faebeb90c3e52",
-      "tag": "beamdns-v0.10.0-beta.4",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/beamdns-v0.10.0-beta.4/THIRD-PARTY-NOTICES.txt"
+      "sha256": "708d2795279f7b78d82d52a50037ece70778501b29358e9a060e624e7b18bc84",
+      "tag": "beamdns-v0.11.0-beta.1",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/beamdns-v0.11.0-beta.1/THIRD-PARTY-NOTICES.txt"
     },
     {
       "name": "WinDivert-2.2.2-source.tar.gz",
       "bytes": 164606,
       "sha256": "300c1b14e08652e0f8647bf06e9b212f924af76cb2459bd0f88da481c9b08336",
-      "tag": "beamdns-v0.10.0-beta.4",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/beamdns-v0.10.0-beta.4/WinDivert-2.2.2-source.tar.gz"
+      "tag": "beamdns-v0.11.0-beta.1",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/beamdns-v0.11.0-beta.1/WinDivert-2.2.2-source.tar.gz"
     },
     {
       "name": "SHA256SUMS.txt",
-      "bytes": 594,
-      "sha256": "9028a0104c397132e0cb0b73792cba120e8e79cfccd652d23dc53fc92d85ef6d",
-      "tag": "beamdns-v0.10.0-beta.4",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/beamdns-v0.10.0-beta.4/SHA256SUMS.txt"
+      "bytes": 680,
+      "sha256": "9f0fc7f5f83597a52b2c2aedcb49a8383548a3e380394aa65db558062daa3b9e",
+      "tag": "beamdns-v0.11.0-beta.1",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/beamdns-v0.11.0-beta.1/SHA256SUMS.txt"
     }
   ],
   "platform": "Windows 10/11 x64",
   "requires": ".NET Framework 4.8",
   "signed": false,
-  "release_date": "2026-10-27",
-  "checksums_url": "https://github.com/JughoDorf/beam-site/releases/download/beamdns-v0.10.0-beta.4/SHA256SUMS.txt",
-  "instructions_url": "https://github.com/JughoDorf/beam-site/releases/download/beamdns-v0.10.0-beta.4/INSTALL-BeamDNS-ru.md"
+  "release_date": "2026-10-28",
+  "checksums_url": "https://github.com/JughoDorf/beam-site/releases/download/beamdns-v0.11.0-beta.1/SHA256SUMS.txt",
+  "instructions_url": "https://github.com/JughoDorf/beam-site/releases/download/beamdns-v0.11.0-beta.1/INSTALL-BeamDNS-ru.md"
 }

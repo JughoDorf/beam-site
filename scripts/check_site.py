@@ -72,16 +72,16 @@ known_downloads.update('https://github.com/JughoDorf/beam-site/releases/download
 known_downloads.update([preview['instructions_url'], stable['instructions_url'], stable['checksums_url']])
 dns = json.loads((root/'beamdns-downloads.json').read_text(encoding='utf-8'))
 assert dns['product'] == 'BeamDNS' and dns['brand'] == 'Project Beam'
-assert dns['status'] == 'beta' and dns['version'] == '0.10.0-beta.4'
-assert dns['tag'] == 'beamdns-v0.10.0-beta.4' and dns['signed'] is False
-assert len(dns['files']) == 7 and len({x['name'] for x in dns['files']}) == 7
+assert dns['status'] == 'beta' and dns['version'] == '0.11.0-beta.1'
+assert dns['tag'] == 'beamdns-v0.11.0-beta.1' and dns['signed'] is False
+assert len(dns['files']) == 8 and len({x['name'] for x in dns['files']}) == 8
 for item in dns['files']:
     assert item['tag'] == dns['tag'] and item['bytes'] > 0
     assert re.fullmatch(r'[a-f0-9]{64}', item['sha256']), item['name']
     assert item['url'] == 'https://github.com/JughoDorf/beam-site/releases/download/' + dns['tag'] + '/' + item['name']
 known_downloads.update(item['url'] for item in dns['files'])
 dns_installer = next(x for x in dns['files'] if x['name'].endswith('.exe'))
-assert dns_installer['name'] == 'BeamDNS-Setup-0.10.0-beta.4-win-x64.exe' and dns_installer['bytes'] == 5557248
+assert dns_installer['name'] == 'BeamDNS-Setup-0.11.0-beta.1-win-x64.exe' and dns_installer['bytes'] == 5579264
 assert dns_installer['url'] in (root/'beamdns.html').read_text(encoding='utf-8')
 assert set(pages) == {'index.html', 'beam.html', 'beamdns.html', 'sources.html'}
 assert 'Project Beam — программы' in (root/'index.html').read_text(encoding='utf-8')
