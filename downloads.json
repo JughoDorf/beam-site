@@ -1,25 +1,25 @@
 {
   "files": [
     {
-      "name": "BeamSetup-2.3.1.exe",
-      "bytes": 50013643,
-      "sha256": "e28ae2f1fd8031cd7a599358d753aaaff58326f280dabf95e7167799709fa750",
-      "tag": "v2.3.1",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.3.1/BeamSetup-2.3.1.exe"
+      "name": "BeamSetup-2.3.2.exe",
+      "bytes": 50112875,
+      "sha256": "6b468eb72c3c7f777d1d0b08b47e3eb0f839d28dd459d889f6f6c92a6b6df624",
+      "tag": "v2.3.2",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.3.2/BeamSetup-2.3.2.exe"
     },
     {
-      "name": "BeamServerSetup-2.3.0.exe",
-      "bytes": 25054149,
-      "sha256": "99cdcfea36aaf713a1b24cf988c4f3c86effaecd257dd5c64eb971f185610d20",
-      "tag": "v2.3.0",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.3.0/BeamServerSetup-2.3.0.exe"
+      "name": "BeamServerSetup-2.3.2.exe",
+      "bytes": 25140106,
+      "sha256": "e6c5afbc8c32a1fd8f835a9c242dbd53ffcb7fb4aba9b67a7cacee9203342c4e",
+      "tag": "v2.3.2",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.3.2/BeamServerSetup-2.3.2.exe"
     },
     {
-      "name": "BeamClientSetup-2.3.1.exe",
-      "bytes": 31822848,
-      "sha256": "49e90ebc04dbb793465b746a6420aae3788ec8e120a2c2f5af15dbcd20ce5655",
-      "tag": "v2.3.1",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.3.1/BeamClientSetup-2.3.1.exe"
+      "name": "BeamClientSetup-2.3.2.exe",
+      "bytes": 31832746,
+      "sha256": "7506dba1752c5d8622be8fdb827b01e36b07d5cc12fc6adfcd4c7744bb690cc7",
+      "tag": "v2.3.2",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.3.2/BeamClientSetup-2.3.2.exe"
     },
     {
       "name": "BeamConnectSetup-0.1.6.exe",
@@ -72,6 +72,15 @@
     }
   ],
   "sources": [
+    {
+      "name": "Beam-Windows-2.3.2-source.tar.gz",
+      "bytes": 173519973,
+      "sha256": "9f50b824423af8e41bd54ef055f5c1ba3c2f663239f3e08176ea9813128572ca",
+      "tag": "v2.3.2",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.3.2/Beam-Windows-2.3.2-source.tar.gz",
+      "source_commit": "426e92869a5e6880a988fd9df59b1f14143bfb9b",
+      "file_count": 5001
+    },
     {
       "name": "Beam-Windows-2.3.1-source.tar.gz",
       "bytes": 173383117,
@@ -878,24 +887,24 @@
     }
   ],
   "stable": {
-    "version": "2.3.1",
+    "version": "2.3.2",
     "brand": "Project Beam",
     "application": "Beam",
     "status": "stable",
-    "tag": "v2.3.1",
+    "tag": "v2.3.2",
     "date": "2026-10-28",
-    "source_commit": "6433d75f49ba9d9c3d0e41a955b0d8d3a9ff7bcf",
+    "source_commit": "426e92869a5e6880a988fd9df59b1f14143bfb9b",
     "android_source_commit": "45a6a4d4112cb78f723c5117d5662522b09f0dcf",
-    "release_url": "https://github.com/JughoDorf/beam-site/releases/tag/v2.3.1",
-    "checksums_url": "https://github.com/JughoDorf/beam-site/releases/download/v2.3.1/SHA256SUMS.txt",
-    "instructions_url": "https://github.com/JughoDorf/beam-site/releases/download/v2.3.1/INSTALL-BEAM-ru.md",
+    "release_url": "https://github.com/JughoDorf/beam-site/releases/tag/v2.3.2",
+    "checksums_url": "https://github.com/JughoDorf/beam-site/releases/download/v2.3.2/SHA256SUMS.txt",
+    "instructions_url": "https://github.com/JughoDorf/beam-site/releases/download/v2.3.2/INSTALL-BEAM-ru.md",
     "wan_video_tested": false,
     "media_pipeline_changed": false,
-    "windows_version": "2.3.1",
+    "windows_version": "2.3.2",
     "android_version": "2.3.0",
     "module_version": "0.1.6",
     "sources": [
-      "Beam-Windows-2.3.1-source.tar.gz",
+      "Beam-Windows-2.3.2-source.tar.gz",
       "Beam-Android-2.3.0-source.tar.gz",
       "BeamConnect-0.1.6-source.tar.gz"
     ],
@@ -903,17 +912,40 @@
     "module_tag": "v2.2.3",
     "media_transport_changed": false,
     "encoder_presets_changed": false,
-    "network_adaptation_changed": false,
-    "network_policy_revision": 10,
+    "network_adaptation_changed": true,
+    "network_policy_revision": 11,
     "network_feedback_revision": 6,
-    "client_version": "2.3.1",
-    "server_version": "2.3.0",
-    "server_source_commit": "45a6a4d4112cb78f723c5117d5662522b09f0dcf",
+    "client_version": "2.3.2",
+    "server_version": "2.3.2",
+    "server_source_commit": "426e92869a5e6880a988fd9df59b1f14143bfb9b",
     "android_tag": "v2.3.0",
-    "server_tag": "v2.3.0",
-    "ui_only": true
+    "server_tag": "v2.3.2",
+    "ui_only": false,
+    "default_style": "swiss",
+    "default_color_scheme": "system"
   },
   "historical_files": [
+    {
+      "name": "BeamClientSetup-2.3.1.exe",
+      "bytes": 31822848,
+      "sha256": "49e90ebc04dbb793465b746a6420aae3788ec8e120a2c2f5af15dbcd20ce5655",
+      "tag": "v2.3.1",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.3.1/BeamClientSetup-2.3.1.exe"
+    },
+    {
+      "name": "BeamServerSetup-2.3.0.exe",
+      "bytes": 25054149,
+      "sha256": "99cdcfea36aaf713a1b24cf988c4f3c86effaecd257dd5c64eb971f185610d20",
+      "tag": "v2.3.0",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.3.0/BeamServerSetup-2.3.0.exe"
+    },
+    {
+      "name": "BeamSetup-2.3.1.exe",
+      "bytes": 50013643,
+      "sha256": "e28ae2f1fd8031cd7a599358d753aaaff58326f280dabf95e7167799709fa750",
+      "tag": "v2.3.1",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/v2.3.1/BeamSetup-2.3.1.exe"
+    },
     {
       "name": "BeamClientSetup-2.3.0.exe",
       "bytes": 31723789,
