@@ -17,9 +17,9 @@
   <link rel="icon" type="image/png" href="assets/beam.png">
   <link rel="preload" href="assets/fonts/unbounded-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/onest-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/site.css?v=20261028-stable232">
-  <script src="assets/site.js?v=20261028-stable232" defer></script>
-  <link rel="stylesheet" href="assets/project.css?v=20261028-stable232">
+  <link rel="stylesheet" href="assets/site.css?v=20261029-stable240">
+  <script src="assets/site.js?v=20261029-stable240" defer></script>
+  <link rel="stylesheet" href="assets/project.css?v=20261029-stable240">
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к содержимому</a>
@@ -59,7 +59,7 @@
           <a class="text-link" href="#setup">С чего начать <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a>
         </div>
         <div class="hero-platforms"><svg class="icon" aria-hidden="true"><use href="#windows"/></svg><span>Windows</span><span class="separator"></span><svg class="icon" aria-hidden="true"><use href="#phone"/></svg><span>Android и TV</span></div>
-        <a class="latest-update" href="#client-update"><span class="update-tag">Beam 2.3.2</span><strong>Новый стиль и точнее адаптация</strong></a>
+        <a class="latest-update" href="#client-update"><span class="update-tag">Beam 2.4.0</span><strong>Больше контроля. Бережнее к качеству.</strong></a>
       </div>
       <div class="hero-visual" aria-label="Иллюстрация: компьютер и телефон подключены к сеансу Beam">
         <div class="visual-glow"></div><div class="orbits"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div></div>
@@ -90,16 +90,16 @@
     </section>
     <span id="downloads"></span>
     <section class="section container preview-section" id="easytier" aria-labelledby="easytier-title">
-      <div class="section-heading"><div><span class="section-kicker">Стабильный выпуск 2.3.2</span><h2 id="easytier-title">Связь и диагностика.</h2></div><p>BeamPiP, отдельные окна мониторов и Beam Connect. Свой VPS для подключения через общие узлы не требуется.</p></div>
-      <div class="preview-notice"><span class="release-badge stable">Стабильная 2.3.2</span><p>Клиент и сервер Windows 2.3.2: неошвейцарский стиль и системная цветовая схема по умолчанию. R11 исправляет лишнее снижение битрейта при устаревшей оценке POOR. Android — 2.3.0; Beam Connect для Windows — 0.1.6. <a href="#client-update">Что нового</a></p></div>
+      <div class="section-heading"><div><span class="section-kicker">Стабильный выпуск 2.4.0</span><h2 id="easytier-title">Связь и диагностика.</h2></div><p>BeamPiP, отдельные окна мониторов и Beam Connect. Свой VPS для подключения через общие узлы не требуется.</p></div>
+      <div class="preview-notice"><span class="release-badge stable">Стабильная 2.4.0</span><p>Клиент и сервер Windows, Android — 2.4.0. Политика R13 бережнее сохраняет качество при умеренных потерях и учитывает фактический выход кодировщика. Два режима оверлея Windows, громкость сеанса и параметры рисования на клиенте. Beam Connect — 0.1.6. <a href="#client-update">Что нового</a></p></div>
       <div class="download-grid main-download-grid">
         <article class="download-card featured main-installer" data-product="setup" id="beam-installer">
           <div class="card-top"><div class="platform-icon"><svg class="icon" aria-hidden="true"><use href="#windows"/></svg></div><span class="release-badge stable">Стабильная</span></div>
           <span class="installer-label">Основной установщик</span>
           <h3>Beam для Windows</h3><p class="card-description">Сервер и клиент в одном мастере. Выберите, что установить на этот компьютер: подключаться к другим ПК, предоставлять доступ к своему или оба варианта. Beam Connect для интернета входит в комплект.</p>
           <div class="compatibility">Windows 10 / 11 · x64</div>
-          <div class="version-row"><strong>2.3.2 <small>Сервер 2.3.2 · Клиент 2.3.2</small></strong><span data-size="setup">50,11 МБ</span></div>
-          <a class="button primary download-button" data-download="setup" href="https://github.com/JughoDorf/beam-site/releases/download/v2.3.2/BeamSetup-2.3.2.exe"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Скачать Beam</a>
+          <div class="version-row"><strong>2.4.0 <small>Сервер 2.4.0 · Клиент 2.4.0</small></strong><span data-size="setup">50,18 МБ</span></div>
+          <a class="button primary download-button" data-download="setup" href="https://github.com/JughoDorf/beam-site/releases/download/v2.4.0/BeamSetup-2.4.0.exe"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Скачать Beam</a>
           <div class="card-links"><a href="#separate-installers">Отдельные компоненты</a><a href="sources.html#easytier">Исходники</a></div>
         </article>
         <article class="download-card android-card" data-product="android">
@@ -107,9 +107,9 @@
           <h3>Android и TV</h3><p class="card-description">Вход по ID, меню сеанса и исправление экранной клавиатуры. Для Pixel выбирайте ARM64, для остальных устройств — свою архитектуру или Universal.</p>
           <label class="visually-hidden" for="android-variant">Вариант APK с Beam Connect</label>
           <select id="android-variant"><option value="universal">Universal · все архитектуры</option><option value="arm64">ARM64 · Pixel и 64-битные устройства</option><option value="arm32">ARM32 · 32-битные устройства</option><option value="x86_64">x86_64 · совместимые устройства</option><option value="x86">x86 · совместимые устройства</option></select>
-          <div class="version-row"><strong>2.3.0 <small>Android 5.0+ · Beam Connect с 7.0</small></strong><span data-size="android">34,11 МБ</span></div>
-          <a class="button primary download-button" data-download="android" href="https://github.com/JughoDorf/beam-site/releases/download/v2.3.0/BeamAndroid-2.3.0-universal.apk"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Скачать APK</a>
-          <div class="card-links"><a href="#easytier-setup">Как подключить</a><a href="sources.html?v=20261028-stable232#easytier">Исходники</a></div>
+          <div class="version-row"><strong>2.4.0 <small>Android 5.0+ · Beam Connect с 7.0</small></strong><span data-size="android">34,11 МБ</span></div>
+          <a class="button primary download-button" data-download="android" href="https://github.com/JughoDorf/beam-site/releases/download/v2.4.0/BeamAndroid-2.4.0-universal.apk"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Скачать APK</a>
+          <div class="card-links"><a href="#easytier-setup">Как подключить</a><a href="sources.html?v=20261029-stable240#easytier">Исходники</a></div>
           <noscript><p class="noscript-note">Без JavaScript доступен Universal APK.</p></noscript>
         </article>
       </div>
@@ -118,17 +118,17 @@
           <div class="card-top"><div class="platform-icon"><svg class="icon" aria-hidden="true"><use href="#monitor"/></svg></div><span class="release-badge stable">Стабильная</span></div>
           <h3>Beam Server</h3><p class="card-description">Независимые потоки мониторов для BeamPiP и отдельных окон. Beam Connect — по выбору в установщике.</p>
           <div class="compatibility">Windows 10 / 11 · x64</div>
-          <div class="version-row"><strong>2.3.2</strong><span data-size="server">25,14 МБ</span></div>
-          <a class="button secondary download-button" data-download="server" href="https://github.com/JughoDorf/beam-site/releases/download/v2.3.2/BeamServerSetup-2.3.2.exe"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Скачать сервер</a>
-          <div class="card-links"><a href="#easytier-setup">Как подключить</a><a href="sources.html?v=20261028-stable232#easytier">Исходники</a></div>
+          <div class="version-row"><strong>2.4.0</strong><span data-size="server">25,17 МБ</span></div>
+          <a class="button secondary download-button" data-download="server" href="https://github.com/JughoDorf/beam-site/releases/download/v2.4.0/BeamServerSetup-2.4.0.exe"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Скачать сервер</a>
+          <div class="card-links"><a href="#easytier-setup">Как подключить</a><a href="sources.html?v=20261029-stable240#easytier">Исходники</a></div>
         </article>
 <article class="download-card" data-product="client">
           <div class="card-top"><div class="platform-icon"><svg class="icon" aria-hidden="true"><use href="#windows"/></svg></div><span class="release-badge stable">Стабильная</span></div>
           <h3>Клиент для Windows</h3><p class="card-description">Неошвейцарский стиль и системная светлая/тёмная схема по умолчанию. Адаптивная сетка компьютеров, BeamPiP и отдельные окна мониторов. Прежние ручные темы, настройки и подключения сохраняются.</p>
           <div class="compatibility">Windows 10 / 11 · x64</div>
-          <div class="version-row"><strong>2.3.2</strong><span data-size="client">31,83 МБ</span></div>
-          <a class="button secondary download-button" data-download="client" href="https://github.com/JughoDorf/beam-site/releases/download/v2.3.2/BeamClientSetup-2.3.2.exe"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Скачать клиент</a>
-          <div class="card-links"><a href="#easytier-setup">Как подключить</a><a href="sources.html?v=20261028-stable232#easytier">Исходники</a></div>
+          <div class="version-row"><strong>2.4.0</strong><span data-size="client">31,88 МБ</span></div>
+          <a class="button secondary download-button" data-download="client" href="https://github.com/JughoDorf/beam-site/releases/download/v2.4.0/BeamClientSetup-2.4.0.exe"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Скачать клиент</a>
+          <div class="card-links"><a href="#easytier-setup">Как подключить</a><a href="sources.html?v=20261029-stable240#easytier">Исходники</a></div>
         </article>
 <article class="download-card" data-product="module">
           <div class="card-top"><div class="platform-icon"><svg class="icon" aria-hidden="true"><use href="#sliders"/></svg></div><span class="release-badge stable">Стабильная</span></div>
@@ -139,7 +139,8 @@
           <div class="card-links"><a href="https://github.com/JughoDorf/beam-site/releases/download/v2.2.3/BeamConnect-0.1.6-windows-x64.zip">Переносная версия</a><a href="sources.html#easytier">Исходники</a></div>
         </article>
       </div></div></details>
-      <details class="preview-guide" id="client-update"><summary>Что нового в Beam · 28 октября</summary><div class="preview-guide-content">
+      <details class="preview-guide" id="client-update"><summary>Что нового в Beam · 29 октября</summary><div class="preview-guide-content">
+        <p><strong>Beam 2.4.0 · Сервер, Windows и Android.</strong> Классическая кнопка появляется при подключении; компактная панель вызывается Ctrl+Alt+Shift+B. У панели есть регулировка громкости, авторазмер и отдельные настройки положения. Сервер задаёт только право рисовать, параметры кисти и срок — на клиенте. R13 исправляет чрезмерное снижение качества при умеренных потерях и зависшее восстановление битрейта. Проверки на стенде и короткий тест владельца по LAN/Wi-Fi не гарантируют отсутствие рывков в любой сети.</p>
         <p><strong>Beam 2.3.2 · Общий выпуск для Windows.</strong> Клиент и веб-панель сервера используют неошвейцарский стиль по умолчанию; режим «Автоматически (система)» следует светлой или тёмной схеме ОС. Явно выбранные ручные темы сохраняются. Политика R11 исправляет лишнее снижение битрейта по устаревшей оценке POOR; это точечная правка, а не обещание устранить все задержки и рывки. Android 2.3.0 и Beam Connect 0.1.6 не менялись.</p>
         <p><strong>Beam 2.3.1 · Четыре темы для Windows.</strong> Выберите стиль Beam или неошвейцарский, в светлой или тёмной палитре. Встроенный шрифт Onest, общие цвета меню и настроек, исправленная сетка: два компьютера помещаются рядом. Оформление меняется в «Настройки → Приложение». Сервер, Android и медиатракт в этом выпуске не изменялись.</p>
         <p><strong>Beam 2.3.0 · Восстановление без зависшего ограничения.</strong> Редкие потери больше не удерживают аварийный FPS бесконечно. Пробное повышение подтверждается свежими здоровыми окнами и откатывается при неудаче. Windows-диагностика сохраняет сводку всего сеанса и ревизию серверной политики. Пройдены локальные видеопрогоны и автоматические проверки; отсутствие рывков в любой сети не обещается.</p>
@@ -148,7 +149,7 @@
         <p><strong>Сохранение качества.</strong> Пресеты кодировщиков, RTP/FEC, звук и очереди сохранены. При перегрузке адаптация временно снижает битрейт и частоту с проверочным восстановлением. Периодический Intra Refresh по умолчанию выключен. Реальные Wi-Fi/VPN-сети и целевые GPU продолжаем проверять.</p>
         <p><strong>Beam 2.2.2 · Project Beam.</strong> Компактные настройки клиента, раздельный выбор разрешения и FPS с информацией о битрейте, приглушённые карточки спящих компьютеров и меню у кнопки действий. Обновлена веб-панель сервера; цвета кнопок следуют выбранной теме. Установщики получили единое оформление.</p>
         <p><strong>Меньше фоновой работы.</strong> Статус сервера разбирается одним проходом; при обнаружении ПК сетевые адаптеры опрашиваются один раз. Диагностика загружает ограниченный конец журнала, пропускает неизменные данные и останавливает загрузку в скрытой вкладке. Кодеки, FPS, звук, FEC и очереди Apollo/Moonlight сохранены.</p>
-        <p><strong>Звук на Windows 10.</strong> Исключение выбранного приложения без приглушения игры доступно на обновлённой Windows 10 2004+ и Windows 11. Для более старой Windows 10 добавлена настройка раздельных аудиоустройств. <a href="https://github.com/JughoDorf/beam-site/releases/download/v2.3.2/INSTALL-BEAM-ru.md">Как настроить</a>. Диагностический отчёт теперь сохраняет и первые 30 секунд сеанса.</p>
+        <p><strong>Звук на Windows 10.</strong> Исключение выбранного приложения без приглушения игры доступно на обновлённой Windows 10 2004+ и Windows 11. Для более старой Windows 10 добавлена настройка раздельных аудиоустройств. <a href="https://github.com/JughoDorf/beam-site/releases/download/v2.4.0/INSTALL-BEAM-ru.md">Как настроить</a>. Диагностический отчёт теперь сохраняет и первые 30 секунд сеанса.</p>
         <p><strong>Компактнее установка.</strong> Клиент и сервер используют общую установленную копию Beam Connect 0.1.5; прежние профили и пользователи сохраняются.</p>
         <p><strong>Стабильность подключения.</strong> Фоновая проверка кодировщиков завершается перед подготовкой первого сеанса и не запускается после начала подключения. Во время проверки клиент получает последний завершённый список кодеков и возможностей BeamPiP. При обновлении удаляются неиспользуемые библиотеки и изображения прежнего пакета, поэтому уменьшение установленного размера действует и для существующих установок. Исходный медиатракт сохранён.</p>
         <p><strong>Новое в Beam 2.2.1.</strong> Подключение стало быстрее: на тестовом ПК первое подключение после запуска сервера занимает 1,7 с до первого кадра вместо 5,2 с, повторное — 1,7 с вместо 2,2 с. Сервер заранее проверяет кодировщики и больше не задерживает ответ на запуск сеанса проверкой настроек дисплея. Общий установщик стал меньше на 8,8 МБ, Android APK — на 1,4 МБ. Параметры захвата, кодирования, передачи и воспроизведения сохранены. В локальном сравнении на Intel Quick Sync частота кадров и нагрузка остались на уровне 2.2.0; длительную работу на других устройствах ещё проверяем.</p>
@@ -169,17 +170,17 @@
         <p><strong>Меню сеанса и переключение.</strong> Боковые разделы «Экраны» и «BeamPiP», основные действия в корне меню. Быстрые повторные выборы монитора больше не теряются. Буфер обмена не задерживает сеанс. Окно EasyTier не опрашивает диск, пока закрыто.</p>
         <p><strong>Исправление в клиенте 2.1.3.</strong> Выбранное разрешение и FPS снова видны на главной странице при любом поддерживаемом размере окна. Если места мало, строка переносится. Это параметры следующего подключения; фактический FPS доступен в статистике сеанса.</p>
         <p><strong>Быстрее подключение.</strong> Beam запоминает проверку декодера и звука для вашей системы: повторное подключение на тестовом ПК — 2,1 с вместо 2,8 с до первого кадра, при той же картинке и том же FPS. После обновления драйвера, смены монитора или звукового устройства проверка выполняется заново.</p>
-        <p>Актуальный комплект: клиент и сервер Windows 2.3.2, Android 2.3.0 и Beam Connect 0.1.6 для Windows. Проведены контролируемые локальные проверки; игровые проверки через Wi-Fi и интернет продолжаются.</p>
+        <p>Актуальный комплект: сервер и клиенты Windows/Android 2.4.0, Beam Connect 0.1.6 для Windows. Подробности проверок и ограничения приведены в заметках выпуска.</p>
       </div></details>
       <details class="preview-guide" id="easytier-setup"><summary>Как подключиться и обновить Beam</summary><div class="preview-guide-content">
-        <p><strong>Перед обновлением Windows завершите сеанс и отключите Beam Connect на обновляемом ПК.</strong> Запустите общий установщик Beam 2.3.2 поверх прежнего и выберите сервер, клиент или оба компонента. Для нового оформления и правки R11 обновите клиент и сервер Windows до 2.3.2. Beam Connect остаётся 0.1.6, Android — 2.3.0. Пользователей и профили удалять не нужно; явно выбранные ручные темы сохраняются.</p>
+        <p><strong>Перед обновлением Windows завершите сеанс и отключите Beam Connect на обновляемом ПК.</strong> Установите Beam 2.4.0 поверх прежней версии и выберите нужные компоненты. Обновите сервер и клиент. Если уже установлена тестовая 2.4.0, запустите окончательный установщик вручную. Пользователей, компьютеры и профили удалять не требуется. Android обновляется APK с прежним сертификатом.</p>
         <ol><li><strong>Подготовьте сервер.</strong> В установщике отметьте «Интернет через Beam Connect». В веб-панели «Интернет» нажмите «Создать сеть»: Beam подберёт доступные узлы с наименьшей измеренной задержкой, сохранит настройки и включит Beam Connect.</li><li><strong>Вход по ID.</strong> Передайте девятизначный ID из раздела «Интернет» сервера. В клиенте нажмите «Добавить компьютер», введите ID и затем обычные логин и пароль Beam. Android 2.3.0 также принимает ID в «+» на главном экране (Android 7.0+).</li><li><strong>Либо используйте приглашение.</strong> Для Android или входа без ID нажмите «Скопировать ссылку» в веб-панели и импортируйте приглашение в настройках клиента «Интернет через Beam Connect». При входе по ID на Windows или Android 2.3.0 этот шаг пропускается.</li><li><strong>Подключите сеть.</strong> На Windows выберите компонент Beam Connect в установщике; на Android он уже встроен. Подтвердите системное разрешение на создание адаптера или VPN.</li><li><strong>Начните сеанс.</strong> Дождитесь маршрута, нажмите «Добавить сервер в Beam» и используйте обычный вход или PIN-сопряжение.</li></ol>
         <p>Общие узлы помогают устройствам найти друг друга. По возможности соединение идёт напрямую; иначе доступность и скорость зависят от ретранслятора. Android допускает один VPN в профиле. После смены сети может потребоваться повторное подключение. Приглашение храните в секрете.</p>
         <p><strong>Ограничение ID.</strong> ID публичный, и ключ сети выводится из него. Знающий ID может присоединиться к туннелю; пароль Beam защищает вход в сеанс, но остаётся риск вмешательства в DHCP/маршруты и отказа в обслуживании. Используйте уникальные пароли. Для закрытой группы выбирайте секретное приглашение.</p>
         <p><strong>Moonlight и iPhone.</strong> В веб-панели скачайте конфигурацию для отдельного приложения EasyTier, импортируйте её и добавьте VPN-адрес сервера в Moonlight. Первое сопряжение iPhone рекомендуется выполнить в домашней сети; работа на физическом iPhone ещё проверяется.</p>
-        <div class="preview-links"><a href="https://github.com/JughoDorf/beam-site/releases/download/v2.3.2/INSTALL-BEAM-ru.md">Полная инструкция</a><a href="https://github.com/JughoDorf/beam-site/releases/download/v2.2.3/BeamConnect-0.1.6-windows-x64.zip">Модуль для переносной версии</a></div>
+        <div class="preview-links"><a href="https://github.com/JughoDorf/beam-site/releases/download/v2.4.0/INSTALL-BEAM-ru.md">Полная инструкция</a><a href="https://github.com/JughoDorf/beam-site/releases/download/v2.2.3/BeamConnect-0.1.6-windows-x64.zip">Модуль для переносной версии</a></div>
       </div></details>
-      <div class="preview-links"><a href="https://github.com/JughoDorf/beam-site/releases/tag/v2.3.2">Что нового и все файлы</a><a href="https://github.com/JughoDorf/beam-site/releases/download/v2.3.2/SHA256SUMS.txt">Контрольные суммы SHA-256</a></div>
+      <div class="preview-links"><a href="https://github.com/JughoDorf/beam-site/releases/tag/v2.4.0">Что нового и все файлы</a><a href="https://github.com/JughoDorf/beam-site/releases/download/v2.4.0/SHA256SUMS.txt">Контрольные суммы SHA-256</a></div>
     </section>
     <section class="section container" id="setup">
       <div class="section-heading"><div><span class="section-kicker">Три простых шага</span><h2>Подключитесь к своему ПК.</h2></div></div>
