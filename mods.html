@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <title>Моды для игр | Project Beam</title>
-  <meta name="description" content="Silent Hill 2 Remake LAN 0.1.0. Тестовый кооператив для двух игроков и инструкция по подключению.">
+  <meta name="description" content="Silent Hill 2 Remake LAN 0.1.1. Тестовый кооператив для двух игроков и инструкция по подключению.">
   <link rel="icon" href="assets/beam.png">
   <link rel="stylesheet" href="assets/site.css?v=20261029-stable240">
   <link rel="stylesheet" href="assets/project.css?v=mods-010">
@@ -28,28 +28,29 @@
   <main class="container source-page" id="main">
     <h1>Моды для игр</h1>
     <article class="mods-release" aria-labelledby="sh2-title">
-      <span class="release-badge beta">Тестовая версия 0.1.0</span>
+      <span class="release-badge beta">Тестовая версия 0.1.1</span>
       <h2 id="sh2-title">Silent Hill 2 Remake LAN</h2>
       <p>Кооператив для двух игроков с отдельным экраном у каждого. Подключение по IPv4 через LAN, Radmin или Tailscale.</p>
       <p class="notice">На двух экземплярах игры на одном ПК проверены вход в сеанс, загрузка стартовой площадки и движение обоих игроков. На двух разных ПК сборку ещё предстоит проверить. Бой, взаимодействия и прохождение кампании пока вне проверенного сценария.</p>
-      <a class="button primary" href="https://github.com/JughoDorf/beam-site/releases/download/sh2-lan-v0.1.0/SH2-LAN-0.1.0.zip">Скачать ZIP <span aria-hidden="true">↓</span></a>
-      <p>17,3 МБ · Windows x64 · около 36 ГБ для отдельной копии игры</p>
+      <a class="button primary" href="https://github.com/JughoDorf/beam-site/releases/download/sh2-lan-v0.1.1/SH2-LAN-0.1.1.zip">Скачать ZIP <span aria-hidden="true">↓</span></a>
+      <p>17,3 МБ · Windows x64 · запуск из установленной игры</p>
       <details class="mods-checksums">
         <summary>Совместимая сборка игры и контрольная сумма</summary>
         <p>Обоим игрокам нужна установленная игра с SHA-256 файла <code>SHProto-Win64-Shipping.exe</code></p>
         <p><code>c21ae87cdd186ca22760ad7aa66973eaac2a4d9a4e437a3b42daaab08eb729bc</code></p>
         <p>SHA-256 архива мода</p>
-        <p><code>54838dbe451fbaf030daff4f1df6e84242de61cadabf6e7173c8723f93d8b6f5</code></p>
-        <p><a href="https://github.com/JughoDorf/beam-site/releases/tag/sh2-lan-v0.1.0">Страница релиза на GitHub</a></p>
+        <p><code>2aeb5a9c6dbf84017b62791860fe779d9733e767607bae8cefb359b19056c70c</code></p>
+        <p><a href="https://github.com/JughoDorf/beam-site/releases/tag/sh2-lan-v0.1.1">Страница релиза на GitHub</a></p>
       </details>
     </article>
     <section aria-labelledby="install-title">
       <h2 id="install-title">Как подключиться</h2>
       <ol>
-        <li>Оба игрока распаковывают архив, запускают <code>Play.cmd</code> и указывают папку установленной игры. Лаунчер создаёт отдельную копию со своими сохранениями.</li>
+        <li>Оба игрока закрывают игру, распаковывают архив и запускают <code>Play.cmd</code>. Укажите папку установленной игры. Лаунчер запускает её без копирования, с отдельным профилем сохранений.</li>
         <li>Хост выбирает «Создать сеанс», вводит свой IPv4 в общей сети и начинает новую игру. После вступления лаунчер покажет «Хост готов».</li>
         <li>Гость выбирает «Подключиться», вводит IP и код из окна хоста и проходит стартовые экраны. После открытия главного меню игра подключится автоматически.</li>
       </ol>
+      <p>Файлы LAN-мода размещаются в папке игры на время сеанса. При выходе лаунчер возвращает прежние файлы и моды. После прерванного сеанса закройте игру и выберите «Восстановить файлы игры» в <code>Play.cmd</code>.</p>
       <p>При первом запуске игра может несколько минут компилировать шейдеры. Подробная инструкция находится в файле <code>ПРОЧИТАЙТЕ.md</code> в архиве.</p>
     </section>
   </main>
