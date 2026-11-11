@@ -1,14 +1,14 @@
 {
   "product": "Silent Hill 2 Remake LAN",
-  "version": "0.1.1",
+  "version": "0.2.0-preview.1",
   "status": "prerelease",
-  "tag": "sh2-lan-v0.1.1",
+  "tag": "sh2-lan-v0.2.0-preview.1",
   "files": [
     {
-      "name": "SH2-LAN-0.1.1.zip",
-      "bytes": 17283580,
-      "sha256": "2aeb5a9c6dbf84017b62791860fe779d9733e767607bae8cefb359b19056c70c",
-      "url": "https://github.com/JughoDorf/beam-site/releases/download/sh2-lan-v0.1.1/SH2-LAN-0.1.1.zip"
+      "name": "SH2-LAN-0.2.0-preview.1.zip",
+      "bytes": 11476169,
+      "sha256": "8077253b03ffb1c5d7fb976d6385dd10226dbd63626a232e63536ca7546ffabf",
+      "url": "https://github.com/JughoDorf/beam-site/releases/download/sh2-lan-v0.2.0-preview.1/SH2-LAN-0.2.0-preview.1.zip"
     }
   ]
 }
