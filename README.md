@@ -13,6 +13,10 @@
 и другие разделы Beam на `beam.html` с сохранением якоря. Без JavaScript на
 главной доступны ссылки на страницу и установщик Beam.
 
+`mods.html` — категория «Моды для игр». Для Silent Hill 2 Remake LAN есть
+отдельный предварительный релиз. Его архив и SHA-256 указаны в
+`mods-downloads.json`.
+
 BeamDNS 0.11.0-beta.1 опубликован отдельным prerelease `beamdns-v0.11.0-beta.1` (прежние бета-версии остаются в Releases).
 Его файлы и SHA-256 находятся в `beamdns-downloads.json`; этот каталог не меняет
 `downloads.json` и канал обновлений Beam. Не отмечать релиз BeamDNS как Latest:

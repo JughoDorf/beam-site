@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* The shared brand navigation and two independent products. */
 .product-bar{border-block:1px solid var(--line);background:var(--glass)}
-.product-nav{display:flex;align-items:center;gap:8px;min-height:56px;padding-block:8px;font-size:13px;font-weight:650}
+.product-nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px;min-height:56px;padding-block:8px;font-size:13px;font-weight:650}
 .product-nav a{padding:6px 14px;border-radius:9px;color:var(--muted);transition:color .2s,background .2s}
 .product-nav a:hover{color:var(--text);background:var(--surface-2)}
 .product-nav a[aria-current="page"]{color:var(--accent-ink);background:var(--accent-soft)}
@@ -42,6 +42,10 @@
 .project-about p{color:var(--muted);font-size:15px;margin:0 0 18px;line-height:1.9}
 .project-compat{font-size:13px;color:var(--muted);padding-bottom:26px}.project-compat a{color:var(--accent-ink);text-decoration:underline;text-underline-offset:4px}
 .project-home .footer,.dns-page .footer{border-top:1px solid var(--line);padding-top:30px}
+.mods-release{padding:clamp(20px,4vw,30px);border:1px solid var(--line-strong);border-radius:24px;background:var(--surface);box-shadow:var(--shadow-sm)}
+.mods-release h2{margin:16px 0 12px}
+.mods-checksums{margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
+.mods-checksums summary{cursor:pointer;color:var(--accent-ink);font-weight:650}
 
 /* BeamDNS: related to Beam, with its own calm teal accent. */
 .dns-page,.product-dns{--accent:#087b8c;--accent-2:#00a5a2;--accent-3:#3175d8;--accent-ink:#096d80;--accent-soft:#e8f7f7;--glow:rgba(0,150,150,.18);--spot:rgba(0,150,150,.08)}

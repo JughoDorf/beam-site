@@ -87,7 +87,18 @@ known_downloads.update(item['url'] for item in dns['files'])
 dns_installer = next(x for x in dns['files'] if x['name'].endswith('.exe'))
 assert dns_installer['name'] == 'BeamDNS-Setup-0.11.0-beta.1-win-x64.exe' and dns_installer['bytes'] == 5579264
 assert dns_installer['url'] in (root/'beamdns.html').read_text(encoding='utf-8')
-assert set(pages) == {'index.html', 'beam.html', 'beamdns.html', 'sources.html'}
+mods = json.loads((root/'mods-downloads.json').read_text(encoding='utf-8'))
+assert mods['status'] == 'prerelease' and mods['tag'] == 'sh2-lan-v' + mods['version']
+assert len(mods['files']) == 1
+mod_file = mods['files'][0]
+assert mod_file['name'] == 'SH2-LAN-' + mods['version'] + '.zip' and mod_file['bytes'] > 0
+assert re.fullmatch(r'[a-f0-9]{64}', mod_file['sha256'])
+assert mod_file['url'] == 'https://github.com/JughoDorf/beam-site/releases/download/' + mods['tag'] + '/' + mod_file['name']
+assert mod_file['url'] in pages['mods.html'].links and mod_file['url'] not in known_downloads
+assert mod_file['sha256'] in (root/'mods.html').read_text(encoding='utf-8')
+known_downloads.add(mod_file['url'])
+assert set(pages) == {'index.html', 'beam.html', 'beamdns.html', 'sources.html', 'mods.html'}
+assert all('mods.html' in page.links for page in pages.values())
 assert 'Project Beam — программы' in (root/'index.html').read_text(encoding='utf-8')
 assert 'BeamSetup-2.4.0.exe' in (root/'beam.html').read_text(encoding='utf-8')
 for filename, page in pages.items():
@@ -119,4 +130,4 @@ for node in nodes:
     assert not re.fullmatch(r'[0-9.]+', address.hostname)
     assert 1 <= address.port <= 65535
 assert 'public.easytier.cn' not in nodes
-print('PASS: four product/brand pages, 10 stable / 10 preview Beam files, independent BeamDNS beta, source links and SHA-256')
+print('PASS: five pages, Beam stable and preview downloads, separate BeamDNS and SH2 LAN prereleases, source links and SHA-256')
