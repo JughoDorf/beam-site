@@ -28,30 +28,30 @@
   <main class="container source-page" id="main">
     <h1>Моды для игр</h1>
     <article class="mods-release" aria-labelledby="sh2-title">
-      <span class="release-badge beta">Тестовая версия 0.2.0-preview.1</span>
+      <span class="release-badge beta">Тестовая версия 0.2.0-preview.2</span>
       <h2 id="sh2-title">Silent Hill 2 Remake LAN</h2>
       <p>Кооператив для двух игроков с отдельным экраном у каждого. Создание сеанса и подключение по IPv4 через LAN, Radmin или Tailscale доступны в меню F8.</p>
       <p class="notice">На двух экземплярах игры на одном ПК проверены вход из меню F8 и загрузка стартовой площадки. Обычный запуск через Steam на разных ПК, управление после подключения и прохождение кампании в этой сборке ещё предстоит проверить.</p>
-      <a class="button primary" href="https://github.com/JughoDorf/beam-site/releases/download/sh2-lan-v0.2.0-preview.1/SH2-LAN-0.2.0-preview.1.zip">Скачать ZIP <span aria-hidden="true">↓</span></a>
-      <p>11,5 МБ · Windows x64 · установка в папку игры</p>
+      <a class="button primary" href="https://github.com/JughoDorf/beam-site/releases/download/sh2-lan-v0.2.0-preview.2/SH2-LAN-0.2.0-preview.2.zip">Скачать ZIP <span aria-hidden="true">↓</span></a>
+      <p>17,2 МБ · Windows x64 · установщик UE4SS в комплекте</p>
       <details class="mods-checksums">
         <summary>Совместимая сборка игры и контрольная сумма</summary>
-        <p>Обоим игрокам нужен UE4SS 3.0.1 d935b5b и следующая контрольная сумма файла <code>SHProto-Win64-Shipping.exe</code>.</p>
+        <p>В комплекте UE4SS 3.0.1 d935b5b. У обоих игроков контрольная сумма файла <code>SHProto-Win64-Shipping.exe</code> должна совпадать со значением ниже.</p>
         <p><code>c21ae87cdd186ca22760ad7aa66973eaac2a4d9a4e437a3b42daaab08eb729bc</code></p>
         <p>SHA-256 архива мода</p>
-        <p><code>8077253b03ffb1c5d7fb976d6385dd10226dbd63626a232e63536ca7546ffabf</code></p>
-        <p><a href="https://github.com/JughoDorf/beam-site/releases/tag/sh2-lan-v0.2.0-preview.1">Страница релиза на GitHub</a></p>
+        <p><code>2b874502d12f5baea146188bffe95663fcc8e0817e5f562a86ec22254f040f55</code></p>
+        <p><a href="https://github.com/JughoDorf/beam-site/releases/tag/sh2-lan-v0.2.0-preview.2">Страница релиза на GitHub</a></p>
       </details>
     </article>
     <section aria-labelledby="install-title">
       <h2 id="install-title">Установка и подключение</h2>
       <ol>
-        <li>Закройте игру и скопируйте папку <code>SHProto</code> из архива в папку установленной игры с объединением папок. У обоих игроков должен быть установлен UE4SS 3.0.1 d935b5b.</li>
+        <li>Закройте игру и распакуйте ZIP. Запустите <code>Install-UE4SS.cmd</code>, укажите папку игры и дождитесь подтверждения. Затем скопируйте <code>SHProto</code> из архива в папку игры с объединением папок.</li>
         <li>Запустите игру обычным способом. Хост начинает новую игру и после вступления открывает <strong>F8 → Сетевая игра</strong>. Введите IPv4 хоста в общей сети, задайте код сеанса и выберите «Создать сеанс».</li>
         <li>Когда меню покажет «Хост готов», гость открывает <strong>F8 → Сетевая игра</strong> из главного меню, вводит тот же IP и код и выбирает «Подключиться».</li>
       </ol>
       <p>Подключение использует UDP 7777 для игры и TCP 27772 для загрузки окружения. Код сеанса проверяется на TCP-канале.</p>
-      <p>Разделённый экран на одном ПК подключается через установленный SH2Coop V1.1. Инструкция по его настройке находится в файле <code>ПРОЧИТАЙТЕ.md</code> в архиве.</p>
+      <p>Разделённый экран на одном ПК подключается через установленный SH2Coop V1.1. Пошаговая установка, настройка и решение частых проблем описаны в <code>ПРОЧИТАЙТЕ.txt</code> внутри архива.</p>
     </section>
   </main>
   <footer class="container footer">
